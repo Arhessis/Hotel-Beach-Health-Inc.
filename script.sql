@@ -11,7 +11,26 @@ IF OBJECT_ID('dbo.Invite', 'U')             IS NOT NULL DROP TABLE dbo.Invite;
 IF OBJECT_ID('dbo.Client', 'U')             IS NOT NULL DROP TABLE dbo.Client;
 IF OBJECT_ID('dbo.Chambre', 'U')            IS NOT NULL DROP TABLE dbo.Chambre;
 IF OBJECT_ID('dbo.TypeChambre', 'U')        IS NOT NULL DROP TABLE dbo.TypeChambre;
+IF OBJECT_ID('dbo.TypeUtilisateur', 'U')            IS NOT NULL DROP TABLE dbo.Chambre;
+IF OBJECT_ID('dbo.Utilisateur', 'U')        IS NOT NULL DROP TABLE dbo.TypeChambre;
 GO
+
+CREATE TABLE TypeUtilisateur (
+    NoType   NUMERIC(6)  NOT NULL,
+    identification  VARCHAR(50),
+
+    CONSTRAINT pk_type PRIMARY KEY (NoType)
+);
+
+CREATE TABLE Utilisateur (
+    NoUtilisateur   NUMERIC(6)  NOT NULL,
+    Nom             VARCHAR(30),
+    MotDePasse          VARCHAR(30),
+    NoType   NUMERIC(6),
+
+    CONSTRAINT fk_type FOREIGN KEY (NoType) REFERENCES TypeUtilisateur(NoType)
+    CONSTRAINT pk_type PRIMARY KEY (NoType)
+);
 
 CREATE TABLE Client (
     NoClient        NUMERIC(6)   NOT NULL,
@@ -23,6 +42,8 @@ CREATE TABLE Client (
     CodePostal      VARCHAR(10),
     DateInscription DATE,
     CONSTRAINT pk_Client PRIMARY KEY (NoClient)
+    CONSTRAINT ck_Client_NoClient CHECK (NoClient > 0 AND NoClient % 10 = 0)
+
 );
 
 CREATE TABLE Invite (
@@ -31,14 +52,15 @@ CREATE TABLE Invite (
     NoClient   NUMERIC(6)  NOT NULL,
     CONSTRAINT pk_Invite PRIMARY KEY (NoInvite),
     CONSTRAINT fk_Invite_Client FOREIGN KEY (NoClient) REFERENCES Client(NoClient)
+    CONSTRAINT ck_Invite_NoInvite CHECK (NoInvite > 0 AND NoInvite % 10 <> 0)
 );
 
 CREATE TABLE TypeChambre (
     NoTypeChambre NUMERIC(6)   NOT NULL,
     Description   VARCHAR(50),
-    PrixHaut      NUMERIC(8,2),
-    PrixBas       NUMERIC(8,2),
-    PrixMoyen     NUMERIC(8,2),
+    PrixHaut      NUMERIC(n,2),
+    PrixBas       NUMERIC(n,2),
+    PrixMoyen     NUMERIC(n,2),
     CONSTRAINT pk_TypeChambre PRIMARY KEY (NoTypeChambre)
 );
 
@@ -54,8 +76,8 @@ CREATE TABLE Chambre (
 CREATE TABLE ReservationChambre (
     NoClient     NUMERIC(6) NOT NULL,
     NoChambre    NUMERIC(6) NOT NULL,
-    DateArrivee  DATE       NOT NULL,
-    DateDepart   DATE,
+    DateArrivee  DATETIME   NOT NULL,
+    DateDepart   DATETIME,
     NbPersonnes  NUMERIC(2),
     CONSTRAINT pk_ReservationChambre PRIMARY KEY (NoClient, NoChambre, DateArrivee),
     CONSTRAINT fk_Reservation_Client  FOREIGN KEY (NoClient)  REFERENCES Client(NoClient),
@@ -74,7 +96,7 @@ CREATE TABLE Soin (
     Description VARCHAR(50),
     Duree       NUMERIC(4),
     NoTypeSoin  NUMERIC(6)   NOT NULL,
-    Prix        NUMERIC(8,2),
+    Prix        NUMERIC(n,2),
     CONSTRAINT pk_Soin PRIMARY KEY (NoSoin),
     CONSTRAINT fk_Soin_TypeSoin FOREIGN KEY (NoTypeSoin) REFERENCES TypeSoin(NoTypeSoin)
 );
