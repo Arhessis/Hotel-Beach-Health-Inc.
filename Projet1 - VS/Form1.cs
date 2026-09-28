@@ -16,5 +16,13 @@ namespace Projet1___VS
         {
             InitializeComponent();
         }
+
+        private void planifSoinBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.planifSoinBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.bDB56Projet1BKGDataSet);
+
+        }
     }
 }
