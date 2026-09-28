@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Projet_1.Properties
+namespace Projet1___VS.Properties
 {
 
 

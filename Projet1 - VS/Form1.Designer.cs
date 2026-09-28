@@ -1,4 +1,4 @@
-﻿namespace Projet_1
+﻿namespace Projet1___VS
 {
     partial class Form1
     {
