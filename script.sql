@@ -41,7 +41,7 @@ CREATE TABLE Client (
     Adresse         VARCHAR(60),
     CodePostal      VARCHAR(10),
     DateInscription DATE,
-    CONSTRAINT pk_Client PRIMARY KEY (NoClient)
+    CONSTRAINT pk_Client PRIMARY KEY (NoClient),
     CONSTRAINT ck_Client_NoClient CHECK (NoClient > 0 AND NoClient % 10 = 0)
 
 );
@@ -51,7 +51,7 @@ CREATE TABLE Invite (
     NomPrenom  VARCHAR(50),
     NoClient   NUMERIC(6)  NOT NULL,
     CONSTRAINT pk_Invite PRIMARY KEY (NoInvite),
-    CONSTRAINT fk_Invite_Client FOREIGN KEY (NoClient) REFERENCES Client(NoClient)
+    CONSTRAINT fk_Invite_Client FOREIGN KEY (NoClient) REFERENCES Client(NoClient),
     CONSTRAINT ck_Invite_NoInvite CHECK (NoInvite > 0 AND NoInvite % 10 <> 0)
 );
 
