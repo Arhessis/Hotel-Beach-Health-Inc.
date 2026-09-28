@@ -19,7 +19,7 @@ CREATE TABLE TypeUtilisateur (
     NoType   NUMERIC(6)  NOT NULL,
     identification  VARCHAR(50),
 
-    CONSTRAINT pk_type PRIMARY KEY (NoType)
+    CONSTRAINT pk_typeTU PRIMARY KEY (NoType)
 );
 
 CREATE TABLE Utilisateur (
@@ -29,7 +29,7 @@ CREATE TABLE Utilisateur (
     NoType   NUMERIC(6),
 
     CONSTRAINT fk_type FOREIGN KEY (NoType) REFERENCES TypeUtilisateur(NoType),
-    CONSTRAINT pk_type PRIMARY KEY (NoType)
+    CONSTRAINT pk_typeU PRIMARY KEY (NoType)
 );
 
 CREATE TABLE Client (
