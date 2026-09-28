@@ -24,7 +24,6 @@ DROP TABLE ReservationChambre;
 IF OBJECT_ID ('TypeChambre') is not null
 DROP TABLE TypeChambre;
 
-
 IF OBJECT_ID ('Chambre') is not null
 DROP TABLE Chambre;
 
@@ -37,32 +36,9 @@ CREATE TABLE Client (
    Pays         VARCHAR(20),
    Adresse      VARCHAR(20),
    CodePostal   VARCHAR(20),
-   DateInscription  DATE
+   DateInscription  DATETIME
    
    CONSTRAINT pk_client  PRIMARY KEY(NoClient)
-   );
-
-
-CREATE TABLE Invite (
-   NoInvite     NUMERIC(6) ,
-   NomPrenom    VARCHAR(20),
-   NoClient     NUMERIC(6)
-   CONSTRAINT fk_client FOREIGN KEY(NoClient) references Client(NoClient),
-
-   CONSTRAINT pk_invite  PRIMARY KEY(NoInvite)
-   );
-
-CREATE TABLE ReservationChambre (
-   NoClient     NUMERIC(6) ,
-   NoChambre    VARCHAR(20),
-   DateArrivee     DATE,
-   DateDepart     DATE,
-   NbPersonnes NUMERIC(2)
-
-   CONSTRAINT fk_noclient FOREIGN KEY(NoClient) references Client(NoClient),
-   CONSTRAINT chambre FOREIGN KEY(NoChambre) references Chambre(NoChambre),
-
-   CONSTRAINT pk_datearrivee  PRIMARY KEY(DateArrivee)
    );
 
 CREATE TABLE TypeChambre (
@@ -85,4 +61,31 @@ CREATE TABLE Chambre (
 
    CONSTRAINT pk_nochambre  PRIMARY KEY(NoChambre)
    );
+
+
+CREATE TABLE Invite (
+   NoInvite     NUMERIC(6) ,
+   NomPrenom    VARCHAR(20),
+   NoClient     NUMERIC(6)
+   CONSTRAINT fk_client FOREIGN KEY(NoClient) references Client(NoClient),
+
+   CONSTRAINT pk_invite  PRIMARY KEY(NoInvite)
+   );
+
+CREATE TABLE ReservationChambre (
+   NoClient     NUMERIC(6) ,
+   NoChambre    NUMERIC(20),
+   DateArrivee     DATETIME,
+   DateDepart     DATETIME,
+   NbPersonnes NUMERIC(2)
+
+   CONSTRAINT fk_noclient FOREIGN KEY(NoClient) references Client(NoClient),
+   CONSTRAINT chambre FOREIGN KEY(NoChambre) references Chambre(NoChambre),
+
+   CONSTRAINT pk_reservationchambre  PRIMARY KEY(NoClient,NoChambre,DateArrivee)
+   );
+
+
+
+
 
