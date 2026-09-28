@@ -1,25 +1,108 @@
-use BDB56Projet1BKG
+USE BDB56Projet1BKG;
+GO
 
-IF OBJECT_ID ('client') is not null 
-DROP TABLE client;
+IF OBJECT_ID('dbo.PlanifSoin', 'U')         IS NOT NULL DROP TABLE dbo.PlanifSoin;
+IF OBJECT_ID('dbo.AssistantSoin', 'U')      IS NOT NULL DROP TABLE dbo.AssistantSoin;
+IF OBJECT_ID('dbo.Soin', 'U')               IS NOT NULL DROP TABLE dbo.Soin;
+IF OBJECT_ID('dbo.TypeSoin', 'U')           IS NOT NULL DROP TABLE dbo.TypeSoin;
+IF OBJECT_ID('dbo.Assistant', 'U')          IS NOT NULL DROP TABLE dbo.Assistant;
+IF OBJECT_ID('dbo.ReservationChambre', 'U') IS NOT NULL DROP TABLE dbo.ReservationChambre;
+IF OBJECT_ID('dbo.Invite', 'U')             IS NOT NULL DROP TABLE dbo.Invite;
+IF OBJECT_ID('dbo.Client', 'U')             IS NOT NULL DROP TABLE dbo.Client;
+IF OBJECT_ID('dbo.Chambre', 'U')            IS NOT NULL DROP TABLE dbo.Chambre;
+IF OBJECT_ID('dbo.TypeChambre', 'U')        IS NOT NULL DROP TABLE dbo.TypeChambre;
+GO
 
-IF OBJECT_ID ('Invite') is not null
-DROP TABLE Invite;
+CREATE TABLE Client (
+    NoClient        NUMERIC(6)   NOT NULL,
+    Nom             VARCHAR(30),
+    Prenom          VARCHAR(30),
+    Ville           VARCHAR(30),
+    Pays            VARCHAR(30),
+    Adresse         VARCHAR(60),
+    CodePostal      VARCHAR(10),
+    DateInscription DATE,
+    CONSTRAINT pk_Client PRIMARY KEY (NoClient)
+);
 
-IF OBJECT_ID ('planifSoin') is not null 
-DROP TABLE planifSoin;
+CREATE TABLE Invite (
+    NoInvite   NUMERIC(6)  NOT NULL,
+    NomPrenom  VARCHAR(50),
+    NoClient   NUMERIC(6)  NOT NULL,
+    CONSTRAINT pk_Invite PRIMARY KEY (NoInvite),
+    CONSTRAINT fk_Invite_Client FOREIGN KEY (NoClient) REFERENCES Client(NoClient)
+);
 
-IF OBJECT_ID ('typeSoin') is not null
-DROP TABLE typeSoin;
+CREATE TABLE TypeChambre (
+    NoTypeChambre NUMERIC(6)   NOT NULL,
+    Description   VARCHAR(50),
+    PrixHaut      NUMERIC(8,2),
+    PrixBas       NUMERIC(8,2),
+    PrixMoyen     NUMERIC(8,2),
+    CONSTRAINT pk_TypeChambre PRIMARY KEY (NoTypeChambre)
+);
 
-IF OBJECT_ID ('typeUtilisateur') is not null
-DROP TABLE typeUtilisateur;
+CREATE TABLE Chambre (
+    NoChambre     NUMERIC(6)  NOT NULL,
+    Emplacement   VARCHAR(30),
+    Decorations   VARCHAR(50),
+    NoTypeChambre NUMERIC(6)  NOT NULL,
+    CONSTRAINT pk_Chambre PRIMARY KEY (NoChambre),
+    CONSTRAINT fk_Chambre_TypeChambre FOREIGN KEY (NoTypeChambre) REFERENCES TypeChambre(NoTypeChambre)
+);
 
-IF OBJECT_ID ('utilisateur') is not null
-DROP TABLE utilisateur;
+CREATE TABLE ReservationChambre (
+    NoClient     NUMERIC(6) NOT NULL,
+    NoChambre    NUMERIC(6) NOT NULL,
+    DateArrivee  DATE       NOT NULL,
+    DateDepart   DATE,
+    NbPersonnes  NUMERIC(2),
+    CONSTRAINT pk_ReservationChambre PRIMARY KEY (NoClient, NoChambre, DateArrivee),
+    CONSTRAINT fk_Reservation_Client  FOREIGN KEY (NoClient)  REFERENCES Client(NoClient),
+    CONSTRAINT fk_Reservation_Chambre FOREIGN KEY (NoChambre) REFERENCES Chambre(NoChambre)
+);
 
-CREATE TABLE client (
-   cliNo		NUMERIC(6) ,
-   
-   CONSTRAINT pk_client  PRIMARY KEY(cliNo)
-   );
+
+CREATE TABLE TypeSoin (
+    NoTypeSoin  NUMERIC(6)  NOT NULL,
+    Description VARCHAR(50),
+    CONSTRAINT pk_TypeSoin PRIMARY KEY (NoTypeSoin)
+);
+
+CREATE TABLE Soin (
+    NoSoin      NUMERIC(6)   NOT NULL,
+    Description VARCHAR(50),
+    Duree       NUMERIC(4),
+    NoTypeSoin  NUMERIC(6)   NOT NULL,
+    Prix        NUMERIC(8,2),
+    CONSTRAINT pk_Soin PRIMARY KEY (NoSoin),
+    CONSTRAINT fk_Soin_TypeSoin FOREIGN KEY (NoTypeSoin) REFERENCES TypeSoin(NoTypeSoin)
+);
+
+CREATE TABLE Assistant (
+    NoAssistant NUMERIC(6)   NOT NULL,
+    Prenom      VARCHAR(30),
+    Nom         VARCHAR(30),
+    Specialites VARCHAR(100),
+    Remarques   VARCHAR(200),
+    CONSTRAINT pk_Assistant PRIMARY KEY (NoAssistant)
+);
+
+CREATE TABLE AssistantSoin (
+    NoAssistant NUMERIC(6) NOT NULL,
+    NoSoin      NUMERIC(6) NOT NULL,
+    CONSTRAINT pk_AssistantSoin PRIMARY KEY (NoAssistant, NoSoin),
+    CONSTRAINT fk_AssistantSoin_Assistant FOREIGN KEY (NoAssistant) REFERENCES Assistant(NoAssistant),
+    CONSTRAINT fk_AssistantSoin_Soin      FOREIGN KEY (NoSoin)      REFERENCES Soin(NoSoin)
+);
+
+CREATE TABLE PlanifSoin (
+    NoPersonne  NUMERIC(6) NOT NULL,
+    NoAssistant NUMERIC(6) NOT NULL,
+    DateHeure   DATETIME   NOT NULL,
+    NoSoin      NUMERIC(6) NOT NULL,
+    CONSTRAINT pk_PlanifSoin PRIMARY KEY (NoPersonne, NoAssistant, DateHeure),
+    CONSTRAINT fk_PlanifSoin_Assistant FOREIGN KEY (NoAssistant) REFERENCES Assistant(NoAssistant),
+    CONSTRAINT fk_PlanifSoin_Soin      FOREIGN KEY (NoSoin)      REFERENCES Soin(NoSoin)
+);
+GO
