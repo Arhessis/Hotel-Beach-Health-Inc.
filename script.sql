@@ -11,8 +11,8 @@ IF OBJECT_ID('dbo.Invite', 'U')             IS NOT NULL DROP TABLE dbo.Invite;
 IF OBJECT_ID('dbo.Client', 'U')             IS NOT NULL DROP TABLE dbo.Client;
 IF OBJECT_ID('dbo.Chambre', 'U')            IS NOT NULL DROP TABLE dbo.Chambre;
 IF OBJECT_ID('dbo.TypeChambre', 'U')        IS NOT NULL DROP TABLE dbo.TypeChambre;
-IF OBJECT_ID('dbo.TypeUtilisateur', 'U')            IS NOT NULL DROP TABLE dbo.Chambre;
-IF OBJECT_ID('dbo.Utilisateur', 'U')        IS NOT NULL DROP TABLE dbo.TypeChambre;
+IF OBJECT_ID('dbo.Utilisateur', 'U') IS NOT NULL DROP TABLE dbo.Utilisateur;
+IF OBJECT_ID('dbo.TypeUtilisateur', 'U') IS NOT NULL DROP TABLE dbo.TypeUtilisateur;
 GO
 
 CREATE TABLE TypeUtilisateur (
