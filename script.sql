@@ -28,7 +28,7 @@ CREATE TABLE Utilisateur (
     MotDePasse          VARCHAR(30),
     NoType   NUMERIC(6),
 
-    CONSTRAINT fk_type FOREIGN KEY (NoType) REFERENCES TypeUtilisateur(NoType)
+    CONSTRAINT fk_type FOREIGN KEY (NoType) REFERENCES TypeUtilisateur(NoType),
     CONSTRAINT pk_type PRIMARY KEY (NoType)
 );
 
@@ -58,9 +58,9 @@ CREATE TABLE Invite (
 CREATE TABLE TypeChambre (
     NoTypeChambre NUMERIC(6)   NOT NULL,
     Description   VARCHAR(50),
-    PrixHaut      NUMERIC(n,2),
-    PrixBas       NUMERIC(n,2),
-    PrixMoyen     NUMERIC(n,2),
+    PrixHaut      NUMERIC(6,2),
+    PrixBas       NUMERIC(6,2),
+    PrixMoyen     NUMERIC(6,2),
     CONSTRAINT pk_TypeChambre PRIMARY KEY (NoTypeChambre)
 );
 
@@ -96,7 +96,7 @@ CREATE TABLE Soin (
     Description VARCHAR(50),
     Duree       NUMERIC(4),
     NoTypeSoin  NUMERIC(6)   NOT NULL,
-    Prix        NUMERIC(n,2),
+    Prix        NUMERIC(6,2),
     CONSTRAINT pk_Soin PRIMARY KEY (NoSoin),
     CONSTRAINT fk_Soin_TypeSoin FOREIGN KEY (NoTypeSoin) REFERENCES TypeSoin(NoTypeSoin)
 );

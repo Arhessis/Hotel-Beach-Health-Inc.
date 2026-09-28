@@ -1,12 +1,35 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\georg\\OneDrive\\Documents\\HotelPlageSante\\Projet1 - SQL Server\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\georg\\OneDrive\\Documents\\HotelPlageSante\\script.sql||{B5A506EB-11BE-4782-9A18-21265C2CA0B4}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "script.sql - 424sql.cgodin.qc.ca,5433.BDB56Projet1BKG (B56Projet1BKG (100))",
+              "DocumentMoniker": "C:\\Users\\georg\\OneDrive\\Documents\\HotelPlageSante\\script.sql",
+              "RelativeDocumentMoniker": "..\\script.sql",
+              "ToolTip": "C:\\Users\\georg\\OneDrive\\Documents\\HotelPlageSante\\script.sql - 424sql.cgodin.qc.ca,5433.BDB56Projet1BKG (B56Projet1BKG (100))",
+              "RelativeToolTip": "..\\script.sql - 424sql.cgodin.qc.ca,5433.BDB56Projet1BKG (B56Projet1BKG (100))",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2026-09-28T19:15:58.639Z",
+              "EditorCaption": " - 424sql.cgodin.qc.ca,5433.BDB56Projet1BKG (B56Projet1BKG (100))"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
