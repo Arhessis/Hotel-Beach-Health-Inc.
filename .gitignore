@@ -1,5 +1,35 @@
+# Build output
 bin/
 obj/
+
+# Visual Studio user-specific files
 .vs/
 *.user
 *.suo
+*.userosscache
+*.sln.docstates
+
+# Build / generated files
+*.pdb
+*.cache
+*.dll
+*.exe
+
+# NuGet
+packages/
+
+# Test results
+TestResults/
+*.trx
+
+# ReSharper
+_ReSharper*/
+*.[Rr]e[Ss]harper*
+*.DotSettings.user
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Visual Studio Code (if applicable)
+.vscode/
