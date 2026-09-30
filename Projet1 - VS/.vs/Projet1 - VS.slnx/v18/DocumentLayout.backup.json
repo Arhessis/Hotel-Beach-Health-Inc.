@@ -1,15 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\wamp64\\www\\project1Base3\\Projet1 - VS\\",
+  "WorkspaceRootPath": "C:\\Users\\georg\\OneDrive\\Documents\\HotelPlageSante\\Projet1 - VS\\",
   "Documents": [
     {
       "AbsoluteMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|c:\\users\\georg\\onedrive\\documents\\hotelplagesante\\projet1 - vs\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|solutionrelative:menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|c:\\users\\georg\\onedrive\\documents\\hotelplagesante\\projet1 - vs\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|C:\\Users\\georg\\OneDrive\\Documents\\HotelPlageSante\\Projet1 - VS\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|solutionrelative:menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-
     }
   ],
   "DocumentGroupContainers": [
@@ -47,8 +46,7 @@
               "ToolTip": "C:\\Users\\georg\\OneDrive\\Documents\\HotelPlageSante\\Projet1 - VS\\Menu.cs [Design]",
               "RelativeToolTip": "Menu.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-30T17:13:10.984Z",
-
+              "WhenOpened": "2026-09-30T17:12:09.243Z",
               "EditorCaption": " [Design]"
             }
           ]
