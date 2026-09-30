@@ -16,5 +16,22 @@ namespace Projet1___VS
         {
             InitializeComponent();
         }
+
+        private void clientBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.clientBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.bDB56Projet1BKGDataSet);
+
+        }
+
+        private void GestionClientEtInvite_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'bDB56Projet1BKGDataSet.Invite' table. You can move, or remove it, as needed.
+            this.inviteTableAdapter.Fill(this.bDB56Projet1BKGDataSet.Invite);
+            // TODO: This line of code loads data into the 'bDB56Projet1BKGDataSet.Client' table. You can move, or remove it, as needed.
+            this.clientTableAdapter.Fill(this.bDB56Projet1BKGDataSet.Client);
+
+        }
     }
 }

@@ -107,6 +107,9 @@
     <Compile Include="Visualisation.Designer.cs">
       <DependentUpon>Visualisation.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="GestionClientEtInvite.resx">
+      <DependentUpon>GestionClientEtInvite.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
