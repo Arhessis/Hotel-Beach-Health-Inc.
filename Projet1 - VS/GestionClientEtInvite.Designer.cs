@@ -34,20 +34,30 @@
             this.clientBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.clientTableAdapter = new Projet1___VS.BDB56Projet1BKGDataSetTableAdapters.ClientTableAdapter();
             this.tableAdapterManager = new Projet1___VS.BDB56Projet1BKGDataSetTableAdapters.TableAdapterManager();
+            this.inviteTableAdapter = new Projet1___VS.BDB56Projet1BKGDataSetTableAdapters.InviteTableAdapter();
             this.clientBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.clientBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.clientDataGridView = new System.Windows.Forms.DataGridView();
+            this.inviteBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnGestionClient = new System.Windows.Forms.Button();
+            this.btnClientPrecedent = new System.Windows.Forms.Button();
+            this.btnClientSuivant = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.splitter1 = new System.Windows.Forms.Splitter();
+            this.inviteDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -56,23 +66,12 @@
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.inviteBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.inviteTableAdapter = new Projet1___VS.BDB56Projet1BKGDataSetTableAdapters.InviteTableAdapter();
-            this.inviteDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
+            this.btnInviteSuivant = new System.Windows.Forms.Button();
+            this.btnInvitePrecedent = new System.Windows.Forms.Button();
+            this.btnGestionInvite = new System.Windows.Forms.Button();
+            this.noInviteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nomPrenomDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.noClientDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.bDB56Projet1BKGDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientBindingNavigator)).BeginInit();
@@ -113,6 +112,10 @@
             this.tableAdapterManager.UpdateOrder = Projet1___VS.BDB56Projet1BKGDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.UtilisateurTableAdapter = null;
             // 
+            // inviteTableAdapter
+            // 
+            this.inviteTableAdapter.ClearBeforeFill = true;
+            // 
             // clientBindingNavigator
             // 
             this.clientBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
@@ -143,6 +146,32 @@
             this.clientBindingNavigator.Size = new System.Drawing.Size(1484, 42);
             this.clientBindingNavigator.TabIndex = 0;
             this.clientBindingNavigator.Text = "bindingNavigator1";
+            this.clientBindingNavigator.Visible = false;
+            // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(46, 36);
+            this.bindingNavigatorAddNewItem.Text = "Add new";
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(70, 36);
+            this.bindingNavigatorCountItem.Text = "of {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(46, 36);
+            this.bindingNavigatorDeleteItem.Text = "Delete";
             // 
             // bindingNavigatorMoveFirstItem
             // 
@@ -150,7 +179,7 @@
             this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
             this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
             this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(46, 19);
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(46, 36);
             this.bindingNavigatorMoveFirstItem.Text = "Move first";
             // 
             // bindingNavigatorMovePreviousItem
@@ -165,28 +194,22 @@
             // bindingNavigatorSeparator
             // 
             this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 6);
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 42);
             // 
             // bindingNavigatorPositionItem
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Position";
             this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 39);
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Current position";
             // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(70, 32);
-            this.bindingNavigatorCountItem.Text = "of {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
-            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 6);
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 42);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -208,39 +231,22 @@
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 6);
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(46, 36);
-            this.bindingNavigatorAddNewItem.Text = "Add new";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(46, 36);
-            this.bindingNavigatorDeleteItem.Text = "Delete";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 42);
             // 
             // clientBindingNavigatorSaveItem
             // 
             this.clientBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.clientBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("clientBindingNavigatorSaveItem.Image")));
             this.clientBindingNavigatorSaveItem.Name = "clientBindingNavigatorSaveItem";
-            this.clientBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 23);
+            this.clientBindingNavigatorSaveItem.Size = new System.Drawing.Size(46, 36);
             this.clientBindingNavigatorSaveItem.Text = "Save Data";
             this.clientBindingNavigatorSaveItem.Click += new System.EventHandler(this.clientBindingNavigatorSaveItem_Click);
             // 
             // clientDataGridView
             // 
             this.clientDataGridView.AutoGenerateColumns = false;
+            this.clientDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.clientDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.clientDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -252,20 +258,113 @@
             this.dataGridViewTextBoxColumn7,
             this.dataGridViewTextBoxColumn8});
             this.clientDataGridView.DataSource = this.clientBindingSource;
-            this.clientDataGridView.Location = new System.Drawing.Point(27, 143);
+            this.clientDataGridView.Location = new System.Drawing.Point(27, 233);
             this.clientDataGridView.Name = "clientDataGridView";
-            this.clientDataGridView.RowHeadersWidth = 82;
+            this.clientDataGridView.RowHeadersWidth = 40;
             this.clientDataGridView.RowTemplate.Height = 33;
-            this.clientDataGridView.Size = new System.Drawing.Size(672, 622);
+            this.clientDataGridView.Size = new System.Drawing.Size(1386, 622);
             this.clientDataGridView.TabIndex = 1;
+            // 
+            // inviteBindingSource
+            // 
+            this.inviteBindingSource.DataMember = "Invite";
+            this.inviteBindingSource.DataSource = this.bDB56Projet1BKGDataSet;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(27, 54);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(557, 79);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Clients et Invités";
+            // 
+            // btnGestionClient
+            // 
+            this.btnGestionClient.Location = new System.Drawing.Point(369, 865);
+            this.btnGestionClient.Name = "btnGestionClient";
+            this.btnGestionClient.Size = new System.Drawing.Size(702, 69);
+            this.btnGestionClient.TabIndex = 6;
+            this.btnGestionClient.Text = "Gestion du Client";
+            this.btnGestionClient.UseVisualStyleBackColor = true;
+            this.btnGestionClient.Click += new System.EventHandler(this.btnGestionClient_Click);
+            // 
+            // btnClientPrecedent
+            // 
+            this.btnClientPrecedent.Font = new System.Drawing.Font("Microsoft Tai Le", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClientPrecedent.Location = new System.Drawing.Point(27, 865);
+            this.btnClientPrecedent.Name = "btnClientPrecedent";
+            this.btnClientPrecedent.Size = new System.Drawing.Size(336, 69);
+            this.btnClientPrecedent.TabIndex = 10;
+            this.btnClientPrecedent.Text = "<--";
+            this.btnClientPrecedent.UseVisualStyleBackColor = true;
+            this.btnClientPrecedent.Click += new System.EventHandler(this.btnClientPrecedent_Click);
+            // 
+            // btnClientSuivant
+            // 
+            this.btnClientSuivant.Font = new System.Drawing.Font("Microsoft Tai Le", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClientSuivant.Location = new System.Drawing.Point(1077, 865);
+            this.btnClientSuivant.Name = "btnClientSuivant";
+            this.btnClientSuivant.Size = new System.Drawing.Size(336, 69);
+            this.btnClientSuivant.TabIndex = 11;
+            this.btnClientSuivant.Text = "-->";
+            this.btnClientSuivant.UseVisualStyleBackColor = true;
+            this.btnClientSuivant.Click += new System.EventHandler(this.btnClientSuivant_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(16, 151);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(191, 61);
+            this.label2.TabIndex = 14;
+            this.label2.Text = "Clients";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(1450, 151);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(182, 61);
+            this.label3.TabIndex = 15;
+            this.label3.Text = "Invités";
+            // 
+            // splitter1
+            // 
+            this.splitter1.Location = new System.Drawing.Point(0, 0);
+            this.splitter1.Name = "splitter1";
+            this.splitter1.Size = new System.Drawing.Size(3, 965);
+            this.splitter1.TabIndex = 16;
+            this.splitter1.TabStop = false;
+            // 
+            // inviteDataGridView
+            // 
+            this.inviteDataGridView.AutoGenerateColumns = false;
+            this.inviteDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.inviteDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.inviteDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.noInviteDataGridViewTextBoxColumn,
+            this.nomPrenomDataGridViewTextBoxColumn,
+            this.noClientDataGridViewTextBoxColumn});
+            this.inviteDataGridView.DataSource = this.inviteBindingSource;
+            this.inviteDataGridView.Location = new System.Drawing.Point(1461, 233);
+            this.inviteDataGridView.Name = "inviteDataGridView";
+            this.inviteDataGridView.RowHeadersWidth = 30;
+            this.inviteDataGridView.RowTemplate.Height = 33;
+            this.inviteDataGridView.Size = new System.Drawing.Size(686, 622);
+            this.inviteDataGridView.TabIndex = 16;
             // 
             // dataGridViewTextBoxColumn1
             // 
+            this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
             this.dataGridViewTextBoxColumn1.DataPropertyName = "NoClient";
-            this.dataGridViewTextBoxColumn1.HeaderText = "NoClient";
+            this.dataGridViewTextBoxColumn1.HeaderText = "No";
             this.dataGridViewTextBoxColumn1.MinimumWidth = 10;
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.Width = 200;
+            this.dataGridViewTextBoxColumn1.Width = 84;
             // 
             // dataGridViewTextBoxColumn2
             // 
@@ -273,7 +372,6 @@
             this.dataGridViewTextBoxColumn2.HeaderText = "Nom";
             this.dataGridViewTextBoxColumn2.MinimumWidth = 10;
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.Width = 200;
             // 
             // dataGridViewTextBoxColumn3
             // 
@@ -281,7 +379,6 @@
             this.dataGridViewTextBoxColumn3.HeaderText = "Prenom";
             this.dataGridViewTextBoxColumn3.MinimumWidth = 10;
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.Width = 200;
             // 
             // dataGridViewTextBoxColumn4
             // 
@@ -289,7 +386,6 @@
             this.dataGridViewTextBoxColumn4.HeaderText = "Ville";
             this.dataGridViewTextBoxColumn4.MinimumWidth = 10;
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.Width = 200;
             // 
             // dataGridViewTextBoxColumn5
             // 
@@ -297,7 +393,6 @@
             this.dataGridViewTextBoxColumn5.HeaderText = "Pays";
             this.dataGridViewTextBoxColumn5.MinimumWidth = 10;
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.Width = 200;
             // 
             // dataGridViewTextBoxColumn6
             // 
@@ -305,7 +400,6 @@
             this.dataGridViewTextBoxColumn6.HeaderText = "Adresse";
             this.dataGridViewTextBoxColumn6.MinimumWidth = 10;
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.Width = 200;
             // 
             // dataGridViewTextBoxColumn7
             // 
@@ -313,7 +407,6 @@
             this.dataGridViewTextBoxColumn7.HeaderText = "CodePostal";
             this.dataGridViewTextBoxColumn7.MinimumWidth = 10;
             this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            this.dataGridViewTextBoxColumn7.Width = 200;
             // 
             // dataGridViewTextBoxColumn8
             // 
@@ -321,174 +414,76 @@
             this.dataGridViewTextBoxColumn8.HeaderText = "DateInscription";
             this.dataGridViewTextBoxColumn8.MinimumWidth = 10;
             this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            this.dataGridViewTextBoxColumn8.Width = 200;
             // 
-            // inviteBindingSource
+            // btnInviteSuivant
             // 
-            this.inviteBindingSource.DataMember = "Invite";
-            this.inviteBindingSource.DataSource = this.bDB56Projet1BKGDataSet;
+            this.btnInviteSuivant.Font = new System.Drawing.Font("Microsoft Tai Le", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInviteSuivant.Location = new System.Drawing.Point(1931, 865);
+            this.btnInviteSuivant.Name = "btnInviteSuivant";
+            this.btnInviteSuivant.Size = new System.Drawing.Size(216, 69);
+            this.btnInviteSuivant.TabIndex = 19;
+            this.btnInviteSuivant.Text = "-->";
+            this.btnInviteSuivant.UseVisualStyleBackColor = true;
+            this.btnInviteSuivant.Click += new System.EventHandler(this.btnInviteSuivant_Click);
             // 
-            // inviteTableAdapter
+            // btnInvitePrecedent
             // 
-            this.inviteTableAdapter.ClearBeforeFill = true;
+            this.btnInvitePrecedent.Font = new System.Drawing.Font("Microsoft Tai Le", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInvitePrecedent.Location = new System.Drawing.Point(1461, 865);
+            this.btnInvitePrecedent.Name = "btnInvitePrecedent";
+            this.btnInvitePrecedent.Size = new System.Drawing.Size(216, 69);
+            this.btnInvitePrecedent.TabIndex = 18;
+            this.btnInvitePrecedent.Text = "<--";
+            this.btnInvitePrecedent.UseVisualStyleBackColor = true;
+            this.btnInvitePrecedent.Click += new System.EventHandler(this.btnInvitePrecedent_Click);
             // 
-            // inviteDataGridView
+            // btnGestionInvite
             // 
-            this.inviteDataGridView.AutoGenerateColumns = false;
-            this.inviteDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.inviteDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn9,
-            this.dataGridViewTextBoxColumn10,
-            this.dataGridViewTextBoxColumn11});
-            this.inviteDataGridView.DataSource = this.inviteBindingSource;
-            this.inviteDataGridView.Location = new System.Drawing.Point(784, 143);
-            this.inviteDataGridView.Name = "inviteDataGridView";
-            this.inviteDataGridView.RowHeadersWidth = 82;
-            this.inviteDataGridView.RowTemplate.Height = 33;
-            this.inviteDataGridView.Size = new System.Drawing.Size(672, 622);
-            this.inviteDataGridView.TabIndex = 2;
+            this.btnGestionInvite.Location = new System.Drawing.Point(1681, 865);
+            this.btnGestionInvite.Name = "btnGestionInvite";
+            this.btnGestionInvite.Size = new System.Drawing.Size(246, 69);
+            this.btnGestionInvite.TabIndex = 17;
+            this.btnGestionInvite.Text = "Gestion de l\'Invité";
+            this.btnGestionInvite.UseVisualStyleBackColor = true;
+            this.btnGestionInvite.Click += new System.EventHandler(this.btnGestionInvite_Click);
             // 
-            // dataGridViewTextBoxColumn9
+            // noInviteDataGridViewTextBoxColumn
             // 
-            this.dataGridViewTextBoxColumn9.DataPropertyName = "NoInvite";
-            this.dataGridViewTextBoxColumn9.HeaderText = "NoInvite";
-            this.dataGridViewTextBoxColumn9.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            this.dataGridViewTextBoxColumn9.Width = 200;
+            this.noInviteDataGridViewTextBoxColumn.DataPropertyName = "NoInvite";
+            this.noInviteDataGridViewTextBoxColumn.HeaderText = "NoInvite";
+            this.noInviteDataGridViewTextBoxColumn.MinimumWidth = 10;
+            this.noInviteDataGridViewTextBoxColumn.Name = "noInviteDataGridViewTextBoxColumn";
             // 
-            // dataGridViewTextBoxColumn10
+            // nomPrenomDataGridViewTextBoxColumn
             // 
-            this.dataGridViewTextBoxColumn10.DataPropertyName = "NomPrenom";
-            this.dataGridViewTextBoxColumn10.HeaderText = "NomPrenom";
-            this.dataGridViewTextBoxColumn10.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
-            this.dataGridViewTextBoxColumn10.Width = 200;
+            this.nomPrenomDataGridViewTextBoxColumn.DataPropertyName = "NomPrenom";
+            this.nomPrenomDataGridViewTextBoxColumn.HeaderText = "NomPrenom";
+            this.nomPrenomDataGridViewTextBoxColumn.MinimumWidth = 10;
+            this.nomPrenomDataGridViewTextBoxColumn.Name = "nomPrenomDataGridViewTextBoxColumn";
             // 
-            // dataGridViewTextBoxColumn11
+            // noClientDataGridViewTextBoxColumn
             // 
-            this.dataGridViewTextBoxColumn11.DataPropertyName = "NoClient";
-            this.dataGridViewTextBoxColumn11.HeaderText = "NoClient";
-            this.dataGridViewTextBoxColumn11.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
-            this.dataGridViewTextBoxColumn11.Width = 200;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(27, 54);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(539, 79);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Clients et Invités";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(27, 891);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(170, 69);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(277, 891);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(170, 69);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(529, 891);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(170, 69);
-            this.button3.TabIndex = 6;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(1286, 891);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(170, 69);
-            this.button4.TabIndex = 9;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(1034, 891);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(170, 69);
-            this.button5.TabIndex = 8;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(784, 891);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(170, 69);
-            this.button6.TabIndex = 7;
-            this.button6.Text = "button6";
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // button7
-            // 
-            this.button7.Location = new System.Drawing.Point(27, 775);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(336, 69);
-            this.button7.TabIndex = 10;
-            this.button7.Text = "button7";
-            this.button7.UseVisualStyleBackColor = true;
-            // 
-            // button8
-            // 
-            this.button8.Location = new System.Drawing.Point(363, 775);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(336, 69);
-            this.button8.TabIndex = 11;
-            this.button8.Text = "button8";
-            this.button8.UseVisualStyleBackColor = true;
-            // 
-            // button9
-            // 
-            this.button9.Location = new System.Drawing.Point(1120, 775);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(336, 69);
-            this.button9.TabIndex = 13;
-            this.button9.Text = "button9";
-            this.button9.UseVisualStyleBackColor = true;
-            // 
-            // button10
-            // 
-            this.button10.Location = new System.Drawing.Point(784, 775);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(336, 69);
-            this.button10.TabIndex = 12;
-            this.button10.Text = "button10";
-            this.button10.UseVisualStyleBackColor = true;
+            this.noClientDataGridViewTextBoxColumn.DataPropertyName = "NoClient";
+            this.noClientDataGridViewTextBoxColumn.HeaderText = "NoClient";
+            this.noClientDataGridViewTextBoxColumn.MinimumWidth = 10;
+            this.noClientDataGridViewTextBoxColumn.Name = "noClientDataGridViewTextBoxColumn";
             // 
             // GestionClientEtInvite
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1484, 972);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.button10);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(2160, 965);
+            this.Controls.Add(this.btnInviteSuivant);
+            this.Controls.Add(this.btnInvitePrecedent);
+            this.Controls.Add(this.btnGestionInvite);
             this.Controls.Add(this.inviteDataGridView);
+            this.Controls.Add(this.splitter1);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.btnClientSuivant);
+            this.Controls.Add(this.btnClientPrecedent);
+            this.Controls.Add(this.btnGestionClient);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.clientDataGridView);
             this.Controls.Add(this.clientBindingNavigator);
             this.Name = "GestionClientEtInvite";
@@ -528,6 +523,15 @@
         private System.Windows.Forms.ToolStripButton clientBindingNavigatorSaveItem;
         private BDB56Projet1BKGDataSetTableAdapters.InviteTableAdapter inviteTableAdapter;
         private System.Windows.Forms.DataGridView clientDataGridView;
+        private System.Windows.Forms.BindingSource inviteBindingSource;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnGestionClient;
+        private System.Windows.Forms.Button btnClientPrecedent;
+        private System.Windows.Forms.Button btnClientSuivant;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Splitter splitter1;
+        private System.Windows.Forms.DataGridView inviteDataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
@@ -536,21 +540,11 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
-        private System.Windows.Forms.BindingSource inviteBindingSource;
-        private System.Windows.Forms.DataGridView inviteDataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button btnInviteSuivant;
+        private System.Windows.Forms.Button btnInvitePrecedent;
+        private System.Windows.Forms.Button btnGestionInvite;
+        private System.Windows.Forms.DataGridViewTextBoxColumn noInviteDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nomPrenomDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn noClientDataGridViewTextBoxColumn;
     }
 }

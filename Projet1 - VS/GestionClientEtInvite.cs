@@ -33,5 +33,36 @@ namespace Projet1___VS
             this.clientTableAdapter.Fill(this.bDB56Projet1BKGDataSet.Client);
 
         }
+
+        private void btnClientPrecedent_Click(object sender, EventArgs e)
+        {
+            clientBindingSource.MovePrevious();
+        }
+
+        private void btnClientSuivant_Click(object sender, EventArgs e)
+        {
+            clientBindingSource.MoveNext();
+
+        }
+
+        private void btnInvitePrecedent_Click(object sender, EventArgs e)
+        {
+            inviteBindingSource.MovePrevious();
+        }
+
+        private void btnInviteSuivant_Click(object sender, EventArgs e)
+        {
+            inviteBindingSource.MoveNext();
+        }
+
+        private void btnGestionClient_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnGestionInvite_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
