@@ -28,19 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtUtilisateur = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtMotDePasse = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.ConnexionMarche = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txtUtilisateur
             // 
-            this.textBox1.Location = new System.Drawing.Point(249, 122);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 31);
-            this.textBox1.TabIndex = 0;
+            this.txtUtilisateur.Location = new System.Drawing.Point(249, 122);
+            this.txtUtilisateur.Name = "txtUtilisateur";
+            this.txtUtilisateur.Size = new System.Drawing.Size(100, 31);
+            this.txtUtilisateur.TabIndex = 0;
             // 
             // label1
             // 
@@ -52,12 +53,12 @@
             this.label1.Text = "Username";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // textBox2
+            // txtMotDePasse
             // 
-            this.textBox2.Location = new System.Drawing.Point(286, 210);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 31);
-            this.textBox2.TabIndex = 2;
+            this.txtMotDePasse.Location = new System.Drawing.Point(286, 210);
+            this.txtMotDePasse.Name = "txtMotDePasse";
+            this.txtMotDePasse.Size = new System.Drawing.Size(100, 31);
+            this.txtMotDePasse.TabIndex = 2;
             // 
             // label2
             // 
@@ -76,17 +77,27 @@
             this.button1.TabIndex = 4;
             this.button1.Text = "Se connecter";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // ConnexionMarche
+            // 
+            this.ConnexionMarche.AutoSize = true;
+            this.ConnexionMarche.Location = new System.Drawing.Point(154, 290);
+            this.ConnexionMarche.Name = "ConnexionMarche";
+            this.ConnexionMarche.Size = new System.Drawing.Size(0, 25);
+            this.ConnexionMarche.TabIndex = 5;
             // 
             // Connexion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.ConnexionMarche);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtMotDePasse);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtUtilisateur);
             this.Name = "Connexion";
             this.Text = "Connexion";
             this.ResumeLayout(false);
@@ -96,10 +107,11 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtUtilisateur;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtMotDePasse;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label ConnexionMarche;
     }
 }

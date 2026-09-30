@@ -1,22 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\georg\\OneDrive\\Documents\\HotelPlageSante\\Projet1 - VS\\",
+  "WorkspaceRootPath": "C:\\wamp64\\www\\project1Base3\\Projet1 - VS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|c:\\users\\georg\\onedrive\\documents\\hotelplagesante\\projet1 - vs\\menuadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|solutionrelative:menuadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|c:\\wamp64\\www\\project1base3\\projet1 - vs\\connexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|solutionrelative:connexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|c:\\users\\georg\\onedrive\\documents\\hotelplagesante\\projet1 - vs\\menuprep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|solutionrelative:menuprep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|C:\\Users\\georg\\OneDrive\\Documents\\HotelPlageSante\\Projet1 - VS\\menuprep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|solutionrelative:menuprep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|c:\\users\\georg\\onedrive\\documents\\hotelplagesante\\projet1 - vs\\menuadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|solutionrelative:menuadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|c:\\wamp64\\www\\project1base3\\projet1 - vs\\connexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|solutionrelative:connexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,65 +18,36 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MenuAdmin.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\georg\\OneDrive\\Documents\\HotelPlageSante\\Projet1 - VS\\MenuAdmin.cs",
-              "RelativeDocumentMoniker": "MenuAdmin.cs",
-              "ToolTip": "C:\\Users\\georg\\OneDrive\\Documents\\HotelPlageSante\\Projet1 - VS\\MenuAdmin.cs [Design]",
-              "RelativeToolTip": "MenuAdmin.cs [Design]",
+              "Title": "Connexion.cs",
+              "DocumentMoniker": "C:\\wamp64\\www\\project1Base3\\Projet1 - VS\\Connexion.cs",
+              "RelativeDocumentMoniker": "Connexion.cs",
+              "ToolTip": "C:\\wamp64\\www\\project1Base3\\Projet1 - VS\\Connexion.cs",
+              "RelativeToolTip": "Connexion.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAgwDcAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-30T17:36:27.945Z",
-              "IsPinned": true,
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MenuAdmin.cs",
-              "DocumentMoniker": "C:\\Users\\georg\\OneDrive\\Documents\\HotelPlageSante\\Projet1 - VS\\MenuAdmin.cs",
-              "RelativeDocumentMoniker": "MenuAdmin.cs",
-              "ToolTip": "C:\\Users\\georg\\OneDrive\\Documents\\HotelPlageSante\\Projet1 - VS\\MenuAdmin.cs",
-              "RelativeToolTip": "MenuAdmin.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-30T17:51:56.67Z",
-              "IsPinned": true,
+              "WhenOpened": "2026-09-30T18:25:26.321Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MenuPrep.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\georg\\OneDrive\\Documents\\HotelPlageSante\\Projet1 - VS\\MenuPrep.cs",
-              "RelativeDocumentMoniker": "MenuPrep.cs",
-              "ToolTip": "C:\\Users\\georg\\OneDrive\\Documents\\HotelPlageSante\\Projet1 - VS\\MenuPrep.cs [Design]",
-              "RelativeToolTip": "MenuPrep.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-30T17:47:20.307Z",
-              "IsPinned": true,
-              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "MenuPrep.cs",
-              "DocumentMoniker": "C:\\Users\\georg\\OneDrive\\Documents\\HotelPlageSante\\Projet1 - VS\\MenuPrep.cs",
-              "RelativeDocumentMoniker": "MenuPrep.cs",
-              "ToolTip": "C:\\Users\\georg\\OneDrive\\Documents\\HotelPlageSante\\Projet1 - VS\\MenuPrep.cs",
-              "RelativeToolTip": "MenuPrep.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAIwCsAAAAYAAAAAAAAAA==",
+              "Title": "Connexion.cs [Design]",
+              "DocumentMoniker": "C:\\wamp64\\www\\project1Base3\\Projet1 - VS\\Connexion.cs",
+              "RelativeDocumentMoniker": "Connexion.cs",
+              "ToolTip": "C:\\wamp64\\www\\project1Base3\\Projet1 - VS\\Connexion.cs [Design]",
+              "RelativeToolTip": "Connexion.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-30T17:52:18.403Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "WhenOpened": "2026-09-30T18:24:12.521Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

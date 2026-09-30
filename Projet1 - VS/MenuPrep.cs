@@ -13,6 +13,7 @@ namespace Projet1___VS
     public partial class MenuPrep : Form
     {
 
+        public string NoUtilisateur { get; set; }
         GestionClientEtInvite gestionClientEtInvite = new GestionClientEtInvite();
         PlannificationSoin plannificationSoin = new PlannificationSoin();
         ReservationChambre reservationChambre = new ReservationChambre();

@@ -12,6 +12,7 @@ namespace Projet1___VS
 {
     public partial class MenuAdmin : Form
     {
+        public string NoUtilisateur { get; set; }
 
         GestionUtilisateurs gestionUtilisateurs = new GestionUtilisateurs();
         GestionClientEtInvite gestionClientEtInvite = new GestionClientEtInvite();
