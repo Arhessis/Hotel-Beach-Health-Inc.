@@ -1,5 +1,4 @@
 C:\Users\georg\OneDrive\Documents\HotelPlageSante\Projet1 - VS\obj\Debug\Projet1 - VS.csproj.AssemblyReference.cache
-C:\Users\georg\OneDrive\Documents\HotelPlageSante\Projet1 - VS\obj\Debug\Projet1___VS.Menu.resources
 C:\Users\georg\OneDrive\Documents\HotelPlageSante\Projet1 - VS\obj\Debug\Projet1___VS.Properties.Resources.resources
 C:\Users\georg\OneDrive\Documents\HotelPlageSante\Projet1 - VS\obj\Debug\Projet1 - VS.csproj.GenerateResource.cache
 C:\Users\georg\OneDrive\Documents\HotelPlageSante\Projet1 - VS\obj\Debug\Projet1 - VS.csproj.CoreCompileInputs.cache
@@ -10,3 +9,5 @@ C:\Users\georg\OneDrive\Documents\HotelPlageSante\Projet1 - VS\obj\Debug\Projet1
 C:\Users\georg\OneDrive\Documents\HotelPlageSante\Projet1 - VS\obj\Debug\Projet1 - VS.pdb
 C:\Users\georg\OneDrive\Documents\HotelPlageSante\Projet1 - VS\obj\Debug\Projet1___VS.Connexion.resources
 C:\Users\georg\OneDrive\Documents\HotelPlageSante\Projet1 - VS\obj\Debug\Projet1___VS.GestionClientEtInvite.resources
+C:\Users\georg\OneDrive\Documents\HotelPlageSante\Projet1 - VS\obj\Debug\Projet1___VS.MenuAdmin.resources
+C:\Users\georg\OneDrive\Documents\HotelPlageSante\Projet1 - VS\obj\Debug\Projet1___VS.MenuPrep.resources
