@@ -57,8 +57,56 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="GestionAssistantEtSoin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionAssistantEtSoin.Designer.cs">
+      <DependentUpon>GestionAssistantEtSoin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionChambreEtType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionChambreEtType.Designer.cs">
+      <DependentUpon>GestionChambreEtType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionClientEtInvite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionClientEtInvite.Designer.cs">
+      <DependentUpon>GestionClientEtInvite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionSoin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionSoin.Designer.cs">
+      <DependentUpon>GestionSoin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionUtilisateurs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionUtilisateurs.Designer.cs">
+      <DependentUpon>GestionUtilisateurs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlannificationSoin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlannificationSoin.Designer.cs">
+      <DependentUpon>PlannificationSoin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReservationChambre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReservationChambre.Designer.cs">
+      <DependentUpon>ReservationChambre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Visualisation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visualisation.Designer.cs">
+      <DependentUpon>Visualisation.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

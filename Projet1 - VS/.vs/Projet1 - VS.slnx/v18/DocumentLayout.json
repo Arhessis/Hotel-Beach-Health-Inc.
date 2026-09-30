@@ -3,7 +3,47 @@
   "WorkspaceRootPath": "C:\\Users\\georg\\OneDrive\\Documents\\HotelPlageSante\\Projet1 - VS\\",
   "Documents": [
     {
+<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|c:\\users\\georg\\onedrive\\documents\\hotelplagesante\\projet1 - vs\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+=======
+      "AbsoluteMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|c:\\users\\starr\\documents\\github\\projet_i_bd\\projet1 - vs\\visualisation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|solutionrelative:visualisation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|c:\\users\\starr\\documents\\github\\projet_i_bd\\projet1 - vs\\reservationchambre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|solutionrelative:reservationchambre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|c:\\users\\starr\\documents\\github\\projet_i_bd\\projet1 - vs\\gestionchambreettype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|solutionrelative:gestionchambreettype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|c:\\users\\starr\\documents\\github\\projet_i_bd\\projet1 - vs\\plannificationsoin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|solutionrelative:plannificationsoin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|c:\\users\\starr\\documents\\github\\projet_i_bd\\projet1 - vs\\gestionsoin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|solutionrelative:gestionsoin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|c:\\users\\starr\\documents\\github\\projet_i_bd\\projet1 - vs\\gestionassistantetsoin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|solutionrelative:gestionassistantetsoin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|c:\\users\\starr\\documents\\github\\projet_i_bd\\projet1 - vs\\gestionclientetinvite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|solutionrelative:gestionclientetinvite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|c:\\users\\starr\\documents\\github\\projet_i_bd\\projet1 - vs\\gestionutilisateurs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|solutionrelative:gestionutilisateurs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|c:\\users\\starr\\documents\\github\\projet_i_bd\\projet1 - vs\\bdb56projet1bkgdataset.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}",
+      "RelativeMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|solutionrelative:bdb56projet1bkgdataset.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|C:\\Users\\starr\\Documents\\GitHub\\Projet_I_BD\\Projet1 - VS\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+>>>>>>> Stashed changes
       "RelativeMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -23,14 +63,124 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+<<<<<<< Updated upstream
+=======
+              "Title": "Visualisation.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\starr\\Documents\\GitHub\\Projet_I_BD\\Projet1 - VS\\Visualisation.cs",
+              "RelativeDocumentMoniker": "Visualisation.cs",
+              "ToolTip": "C:\\Users\\starr\\Documents\\GitHub\\Projet_I_BD\\Projet1 - VS\\Visualisation.cs [Design]",
+              "RelativeToolTip": "Visualisation.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-30T17:10:56.117Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ReservationChambre.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\starr\\Documents\\GitHub\\Projet_I_BD\\Projet1 - VS\\ReservationChambre.cs",
+              "RelativeDocumentMoniker": "ReservationChambre.cs",
+              "ToolTip": "C:\\Users\\starr\\Documents\\GitHub\\Projet_I_BD\\Projet1 - VS\\ReservationChambre.cs [Design]",
+              "RelativeToolTip": "ReservationChambre.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-30T17:10:35.079Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GestionChambreEtType.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\starr\\Documents\\GitHub\\Projet_I_BD\\Projet1 - VS\\GestionChambreEtType.cs",
+              "RelativeDocumentMoniker": "GestionChambreEtType.cs",
+              "ToolTip": "C:\\Users\\starr\\Documents\\GitHub\\Projet_I_BD\\Projet1 - VS\\GestionChambreEtType.cs [Design]",
+              "RelativeToolTip": "GestionChambreEtType.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-30T17:10:17.369Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PlannificationSoin.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\starr\\Documents\\GitHub\\Projet_I_BD\\Projet1 - VS\\PlannificationSoin.cs",
+              "RelativeDocumentMoniker": "PlannificationSoin.cs",
+              "ToolTip": "C:\\Users\\starr\\Documents\\GitHub\\Projet_I_BD\\Projet1 - VS\\PlannificationSoin.cs [Design]",
+              "RelativeToolTip": "PlannificationSoin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-30T17:10:00.325Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GestionSoin.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\starr\\Documents\\GitHub\\Projet_I_BD\\Projet1 - VS\\GestionSoin.cs",
+              "RelativeDocumentMoniker": "GestionSoin.cs",
+              "ToolTip": "C:\\Users\\starr\\Documents\\GitHub\\Projet_I_BD\\Projet1 - VS\\GestionSoin.cs [Design]",
+              "RelativeToolTip": "GestionSoin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-30T17:09:49.052Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GestionAssistantEtSoin.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\starr\\Documents\\GitHub\\Projet_I_BD\\Projet1 - VS\\GestionAssistantEtSoin.cs",
+              "RelativeDocumentMoniker": "GestionAssistantEtSoin.cs",
+              "ToolTip": "C:\\Users\\starr\\Documents\\GitHub\\Projet_I_BD\\Projet1 - VS\\GestionAssistantEtSoin.cs [Design]",
+              "RelativeToolTip": "GestionAssistantEtSoin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-30T17:09:20.095Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GestionClientEtInvite.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\starr\\Documents\\GitHub\\Projet_I_BD\\Projet1 - VS\\GestionClientEtInvite.cs",
+              "RelativeDocumentMoniker": "GestionClientEtInvite.cs",
+              "ToolTip": "C:\\Users\\starr\\Documents\\GitHub\\Projet_I_BD\\Projet1 - VS\\GestionClientEtInvite.cs [Design]",
+              "RelativeToolTip": "GestionClientEtInvite.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-30T17:08:54.048Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GestionUtilisateurs.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\starr\\Documents\\GitHub\\Projet_I_BD\\Projet1 - VS\\GestionUtilisateurs.cs",
+              "RelativeDocumentMoniker": "GestionUtilisateurs.cs",
+              "ToolTip": "C:\\Users\\starr\\Documents\\GitHub\\Projet_I_BD\\Projet1 - VS\\GestionUtilisateurs.cs [Design]",
+              "RelativeToolTip": "GestionUtilisateurs.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-30T17:07:54.569Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BDB56Projet1BKGDataSet.xsd",
+              "DocumentMoniker": "C:\\Users\\starr\\Documents\\GitHub\\Projet_I_BD\\Projet1 - VS\\BDB56Projet1BKGDataSet.xsd",
+              "RelativeDocumentMoniker": "BDB56Projet1BKGDataSet.xsd",
+              "ToolTip": "C:\\Users\\starr\\Documents\\GitHub\\Projet_I_BD\\Projet1 - VS\\BDB56Projet1BKGDataSet.xsd",
+              "RelativeToolTip": "BDB56Projet1BKGDataSet.xsd",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003579|",
+              "WhenOpened": "2026-09-30T12:27:43.545Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+>>>>>>> Stashed changes
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\georg\\OneDrive\\Documents\\HotelPlageSante\\Projet1 - VS\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "C:\\Users\\georg\\OneDrive\\Documents\\HotelPlageSante\\Projet1 - VS\\Form1.cs [Design]",
               "RelativeToolTip": "Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-30T12:27:38.136Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-09-30T12:27:38.136Z"
             }
           ]
         }
