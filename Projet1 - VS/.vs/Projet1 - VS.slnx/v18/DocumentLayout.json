@@ -1,13 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\starr\\Documents\\GitHub\\Projet_I_BD\\Projet1 - VS\\",
+  "WorkspaceRootPath": "C:\\Users\\georg\\OneDrive\\Documents\\HotelPlageSante\\Projet1 - VS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|c:\\users\\starr\\documents\\github\\projet_i_bd\\projet1 - vs\\bdb56projet1bkgdataset.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}",
-      "RelativeMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|solutionrelative:bdb56projet1bkgdataset.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|c:\\users\\starr\\documents\\github\\projet_i_bd\\projet1 - vs\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|c:\\users\\georg\\onedrive\\documents\\hotelplagesante\\projet1 - vs\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -27,22 +23,10 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "BDB56Projet1BKGDataSet.xsd",
-              "DocumentMoniker": "C:\\Users\\starr\\Documents\\GitHub\\Projet_I_BD\\Projet1 - VS\\BDB56Projet1BKGDataSet.xsd",
-              "RelativeDocumentMoniker": "BDB56Projet1BKGDataSet.xsd",
-              "ToolTip": "C:\\Users\\starr\\Documents\\GitHub\\Projet_I_BD\\Projet1 - VS\\BDB56Projet1BKGDataSet.xsd",
-              "RelativeToolTip": "BDB56Projet1BKGDataSet.xsd",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003579|",
-              "WhenOpened": "2026-09-30T12:27:43.545Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\starr\\Documents\\GitHub\\Projet_I_BD\\Projet1 - VS\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\georg\\OneDrive\\Documents\\HotelPlageSante\\Projet1 - VS\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\starr\\Documents\\GitHub\\Projet_I_BD\\Projet1 - VS\\Form1.cs [Design]",
+              "ToolTip": "C:\\Users\\georg\\OneDrive\\Documents\\HotelPlageSante\\Projet1 - VS\\Form1.cs [Design]",
               "RelativeToolTip": "Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-30T12:27:38.136Z",
