@@ -1,0 +1,10 @@
+C:\Users\georg\OneDrive\Documents\HotelPlageSante\Projet1 - VS\obj\Debug\Projet1 - VS.csproj.AssemblyReference.cache
+C:\Users\georg\OneDrive\Documents\HotelPlageSante\Projet1 - VS\obj\Debug\Projet1___VS.Menu.resources
+C:\Users\georg\OneDrive\Documents\HotelPlageSante\Projet1 - VS\obj\Debug\Projet1___VS.Properties.Resources.resources
+C:\Users\georg\OneDrive\Documents\HotelPlageSante\Projet1 - VS\obj\Debug\Projet1 - VS.csproj.GenerateResource.cache
+C:\Users\georg\OneDrive\Documents\HotelPlageSante\Projet1 - VS\obj\Debug\Projet1 - VS.csproj.CoreCompileInputs.cache
+C:\Users\georg\OneDrive\Documents\HotelPlageSante\Projet1 - VS\bin\Debug\Projet1 - VS.exe.config
+C:\Users\georg\OneDrive\Documents\HotelPlageSante\Projet1 - VS\bin\Debug\Projet1 - VS.exe
+C:\Users\georg\OneDrive\Documents\HotelPlageSante\Projet1 - VS\bin\Debug\Projet1 - VS.pdb
+C:\Users\georg\OneDrive\Documents\HotelPlageSante\Projet1 - VS\obj\Debug\Projet1 - VS.exe
+C:\Users\georg\OneDrive\Documents\HotelPlageSante\Projet1 - VS\obj\Debug\Projet1 - VS.pdb
