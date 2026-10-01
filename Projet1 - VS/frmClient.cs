@@ -31,5 +31,20 @@ namespace Projet1___VS
             this.clientTableAdapter.Fill(this.bDB56Projet1BKGDataSet.Client);
 
         }
+
+        private void btnAjouter_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSupprimer_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAnnuler_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

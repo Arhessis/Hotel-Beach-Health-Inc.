@@ -63,6 +63,12 @@
     <Compile Include="frmClient.Designer.cs">
       <DependentUpon>frmClient.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmInvite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInvite.Designer.cs">
+      <DependentUpon>frmInvite.cs</DependentUpon>
+    </Compile>
     <Compile Include="MenuAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,6 +136,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmClient.resx">
       <DependentUpon>frmClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInvite.resx">
+      <DependentUpon>frmInvite.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GestionClientEtInvite.resx">
       <DependentUpon>GestionClientEtInvite.cs</DependentUpon>
