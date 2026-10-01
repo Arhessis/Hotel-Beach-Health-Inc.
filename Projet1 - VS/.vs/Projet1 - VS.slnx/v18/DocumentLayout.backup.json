@@ -1,5 +1,6 @@
 {
   "Version": 1,
+<<<<<<< Updated upstream
 <<<<<<< HEAD
   "WorkspaceRootPath": "C:\\wamp64\\www\\project1Base3\\Projet1 - VS\\",
   "Documents": [
@@ -31,13 +32,36 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|C:\\Users\\starr\\Documents\\GitHub\\Projet_I_BD\\Projet1 - VS\\frmclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+=======
+  "WorkspaceRootPath": "C:\\Users\\georg\\OneDrive\\Documents\\HotelPlageSante\\Projet1 - VS\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|c:\\users\\georg\\onedrive\\documents\\hotelplagesante\\projet1 - vs\\connexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|solutionrelative:connexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|C:\\Users\\georg\\OneDrive\\Documents\\HotelPlageSante\\Projet1 - VS\\gestionclientetinvite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|solutionrelative:gestionclientetinvite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|C:\\Users\\georg\\OneDrive\\Documents\\HotelPlageSante\\Projet1 - VS\\menuadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|solutionrelative:menuadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|C:\\Users\\georg\\OneDrive\\Documents\\HotelPlageSante\\Projet1 - VS\\menuprep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|solutionrelative:menuprep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|C:\\Users\\georg\\OneDrive\\Documents\\HotelPlageSante\\Projet1 - VS\\frmclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+>>>>>>> Stashed changes
       "RelativeMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|solutionrelative:frmclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|C:\\Users\\starr\\Documents\\GitHub\\Projet_I_BD\\Projet1 - VS\\gestionclientetinvite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|C:\\Users\\georg\\OneDrive\\Documents\\HotelPlageSante\\Projet1 - VS\\gestionclientetinvite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|solutionrelative:gestionclientetinvite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|c:\\users\\starr\\documents\\github\\projet_i_bd\\projet1 - vs\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
@@ -50,6 +74,9 @@
       "RelativeMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|solutionrelative:menuadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
 >>>>>>> 990c9fb19c9c61b4e6d0b4b6bd892d33ea7ceb45
 >>>>>>> 9c0a063a7e78135fffa2213d7c8243abf536ffd7
+=======
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|c:\\users\\starr\\documents\\github\\projet_i_bd\\projet1 - vs\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+>>>>>>> Stashed changes
     }
   ],
   "DocumentGroupContainers": [
@@ -64,6 +91,7 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+<<<<<<< Updated upstream
             },
             {
               "$type": "Document",
@@ -171,12 +199,24 @@
               "RelativeDocumentMoniker": "GestionClientEtInvite.cs",
               "ToolTip": "C:\\Users\\starr\\Documents\\GitHub\\Projet_I_BD\\Projet1 - VS\\GestionClientEtInvite.cs [Design]",
               "RelativeToolTip": "GestionClientEtInvite.cs [Design]",
+=======
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Connexion.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\georg\\OneDrive\\Documents\\HotelPlageSante\\Projet1 - VS\\Connexion.cs",
+              "RelativeDocumentMoniker": "Connexion.cs",
+              "ToolTip": "C:\\Users\\georg\\OneDrive\\Documents\\HotelPlageSante\\Projet1 - VS\\Connexion.cs [Design]",
+              "RelativeToolTip": "Connexion.cs [Design]",
+>>>>>>> Stashed changes
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-30T17:32:51.471Z",
+              "WhenOpened": "2026-09-30T18:29:21.125Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 4,
               "Title": "frmClient.cs [Design]",
               "DocumentMoniker": "C:\\Users\\starr\\Documents\\GitHub\\Projet_I_BD\\Projet1 - VS\\frmClient.cs",
@@ -185,18 +225,77 @@
               "RelativeToolTip": "frmClient.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-30T18:03:21.539Z"
+=======
+              "DocumentIndex": 3,
+              "Title": "MenuPrep.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\georg\\OneDrive\\Documents\\HotelPlageSante\\Projet1 - VS\\MenuPrep.cs",
+              "RelativeDocumentMoniker": "MenuPrep.cs",
+              "ToolTip": "C:\\Users\\starr\\Documents\\GitHub\\Projet_I_BD\\Projet1 - VS\\MenuPrep.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\starr\\Documents\\GitHub\\Projet_I_BD\\Projet1 - VS\\MenuPrep.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-30T18:29:21.172Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MenuAdmin.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\georg\\OneDrive\\Documents\\HotelPlageSante\\Projet1 - VS\\MenuAdmin.cs",
+              "RelativeDocumentMoniker": "MenuAdmin.cs",
+              "ToolTip": "C:\\Users\\starr\\Documents\\GitHub\\Projet_I_BD\\Projet1 - VS\\MenuAdmin.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\starr\\Documents\\GitHub\\Projet_I_BD\\Projet1 - VS\\MenuAdmin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-30T18:29:21.172Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GestionClientEtInvite.cs",
+              "DocumentMoniker": "C:\\Users\\georg\\OneDrive\\Documents\\HotelPlageSante\\Projet1 - VS\\GestionClientEtInvite.cs",
+              "RelativeDocumentMoniker": "GestionClientEtInvite.cs",
+              "ToolTip": "C:\\Users\\georg\\OneDrive\\Documents\\HotelPlageSante\\Projet1 - VS\\GestionClientEtInvite.cs",
+              "RelativeToolTip": "GestionClientEtInvite.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAIwDsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-30T18:29:21.172Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GestionClientEtInvite.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\georg\\OneDrive\\Documents\\HotelPlageSante\\Projet1 - VS\\GestionClientEtInvite.cs",
+              "RelativeDocumentMoniker": "GestionClientEtInvite.cs",
+              "ToolTip": "C:\\Users\\starr\\Documents\\GitHub\\Projet_I_BD\\Projet1 - VS\\GestionClientEtInvite.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\starr\\Documents\\GitHub\\Projet_I_BD\\Projet1 - VS\\GestionClientEtInvite.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-30T18:29:21.172Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "frmClient.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\georg\\OneDrive\\Documents\\HotelPlageSante\\Projet1 - VS\\frmClient.cs",
+              "RelativeDocumentMoniker": "frmClient.cs",
+              "ToolTip": "C:\\Users\\starr\\Documents\\GitHub\\Projet_I_BD\\Projet1 - VS\\frmClient.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\starr\\Documents\\GitHub\\Projet_I_BD\\Projet1 - VS\\frmClient.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-30T18:29:21.172Z"
+>>>>>>> Stashed changes
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "Menu.cs [Design]",
               "DocumentMoniker": "C:\\Users\\starr\\Documents\\GitHub\\Projet_I_BD\\Projet1 - VS\\Menu.cs",
-              "RelativeDocumentMoniker": "Menu.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\starr\\Documents\\GitHub\\Projet_I_BD\\Projet1 - VS\\Menu.cs",
               "ToolTip": "C:\\Users\\starr\\Documents\\GitHub\\Projet_I_BD\\Projet1 - VS\\Menu.cs [Design]",
-              "RelativeToolTip": "Menu.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\starr\\Documents\\GitHub\\Projet_I_BD\\Projet1 - VS\\Menu.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+<<<<<<< Updated upstream
               "WhenOpened": "2026-09-30T17:32:56.009Z"
 >>>>>>> 9c0a063a7e78135fffa2213d7c8243abf536ffd7
+=======
+              "WhenOpened": "2026-09-30T18:29:21.172Z"
+>>>>>>> Stashed changes
             }
           ]
         }
