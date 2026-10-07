@@ -16,5 +16,20 @@ namespace Projet1___VS
         {
             InitializeComponent();
         }
+
+        private void utilisateurBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.utilisateurBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.bDB56Projet1BKGDataSet);
+
+        }
+
+        private void GestionUtilisateurs_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'bDB56Projet1BKGDataSet.Utilisateur' table. You can move, or remove it, as needed.
+            this.utilisateurTableAdapter.Fill(this.bDB56Projet1BKGDataSet.Utilisateur);
+
+        }
     }
 }

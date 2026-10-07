@@ -143,6 +143,9 @@
     <EmbeddedResource Include="GestionClientEtInvite.resx">
       <DependentUpon>GestionClientEtInvite.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GestionUtilisateurs.resx">
+      <DependentUpon>GestionUtilisateurs.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MenuAdmin.resx">
       <DependentUpon>MenuAdmin.cs</DependentUpon>
     </EmbeddedResource>
