@@ -152,6 +152,9 @@
     <EmbeddedResource Include="MenuPrep.resx">
       <DependentUpon>MenuPrep.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PlannificationSoin.resx">
+      <DependentUpon>PlannificationSoin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
