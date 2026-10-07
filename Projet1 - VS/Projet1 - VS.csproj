@@ -69,6 +69,18 @@
     <Compile Include="frmInvite.Designer.cs">
       <DependentUpon>frmInvite.cs</DependentUpon>
     </Compile>
+    <Compile Include="GestionChambre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionChambre.Designer.cs">
+      <DependentUpon>GestionChambre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionTypeChambre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionTypeChambre.Designer.cs">
+      <DependentUpon>GestionTypeChambre.cs</DependentUpon>
+    </Compile>
     <Compile Include="MenuAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -140,6 +152,9 @@
     <EmbeddedResource Include="frmInvite.resx">
       <DependentUpon>frmInvite.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GestionChambreEtType.resx">
+      <DependentUpon>GestionChambreEtType.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GestionClientEtInvite.resx">
       <DependentUpon>GestionClientEtInvite.cs</DependentUpon>
     </EmbeddedResource>
@@ -158,6 +173,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ReservationChambre.resx">
+      <DependentUpon>ReservationChambre.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="BDB56Projet1BKGDataSet.xsc">
       <DependentUpon>BDB56Projet1BKGDataSet.xsd</DependentUpon>
     </None>

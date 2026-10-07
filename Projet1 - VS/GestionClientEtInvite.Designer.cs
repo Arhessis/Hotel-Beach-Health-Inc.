@@ -49,6 +49,14 @@
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.clientBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.clientDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.inviteBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.btnGestionClient = new System.Windows.Forms.Button();
@@ -58,20 +66,12 @@
             this.label3 = new System.Windows.Forms.Label();
             this.splitter1 = new System.Windows.Forms.Splitter();
             this.inviteDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnInviteSuivant = new System.Windows.Forms.Button();
-            this.btnInvitePrecedent = new System.Windows.Forms.Button();
-            this.btnGestionInvite = new System.Windows.Forms.Button();
             this.noInviteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nomPrenomDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.noClientDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnInviteSuivant = new System.Windows.Forms.Button();
+            this.btnInvitePrecedent = new System.Windows.Forms.Button();
+            this.btnGestionInvite = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.bDB56Projet1BKGDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientBindingNavigator)).BeginInit();
@@ -265,6 +265,64 @@
             this.clientDataGridView.Size = new System.Drawing.Size(1386, 622);
             this.clientDataGridView.TabIndex = 1;
             // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "NoClient";
+            this.dataGridViewTextBoxColumn1.HeaderText = "No";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 10;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.Width = 84;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Nom";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Nom";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 10;
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Prenom";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Prenom";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 10;
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "Ville";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Ville";
+            this.dataGridViewTextBoxColumn4.MinimumWidth = 10;
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "Pays";
+            this.dataGridViewTextBoxColumn5.HeaderText = "Pays";
+            this.dataGridViewTextBoxColumn5.MinimumWidth = 10;
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "Adresse";
+            this.dataGridViewTextBoxColumn6.HeaderText = "Adresse";
+            this.dataGridViewTextBoxColumn6.MinimumWidth = 10;
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "CodePostal";
+            this.dataGridViewTextBoxColumn7.HeaderText = "CodePostal";
+            this.dataGridViewTextBoxColumn7.MinimumWidth = 10;
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "DateInscription";
+            this.dataGridViewTextBoxColumn8.HeaderText = "DateInscription";
+            this.dataGridViewTextBoxColumn8.MinimumWidth = 10;
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            // 
             // inviteBindingSource
             // 
             this.inviteBindingSource.DataMember = "Invite";
@@ -274,7 +332,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(27, 54);
+            this.label1.Location = new System.Drawing.Point(9, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(557, 79);
             this.label1.TabIndex = 3;
@@ -357,63 +415,26 @@
             this.inviteDataGridView.Size = new System.Drawing.Size(686, 622);
             this.inviteDataGridView.TabIndex = 16;
             // 
-            // dataGridViewTextBoxColumn1
+            // noInviteDataGridViewTextBoxColumn
             // 
-            this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "NoClient";
-            this.dataGridViewTextBoxColumn1.HeaderText = "No";
-            this.dataGridViewTextBoxColumn1.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.Width = 84;
+            this.noInviteDataGridViewTextBoxColumn.DataPropertyName = "NoInvite";
+            this.noInviteDataGridViewTextBoxColumn.HeaderText = "NoInvite";
+            this.noInviteDataGridViewTextBoxColumn.MinimumWidth = 10;
+            this.noInviteDataGridViewTextBoxColumn.Name = "noInviteDataGridViewTextBoxColumn";
             // 
-            // dataGridViewTextBoxColumn2
+            // nomPrenomDataGridViewTextBoxColumn
             // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Nom";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Nom";
-            this.dataGridViewTextBoxColumn2.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.nomPrenomDataGridViewTextBoxColumn.DataPropertyName = "NomPrenom";
+            this.nomPrenomDataGridViewTextBoxColumn.HeaderText = "NomPrenom";
+            this.nomPrenomDataGridViewTextBoxColumn.MinimumWidth = 10;
+            this.nomPrenomDataGridViewTextBoxColumn.Name = "nomPrenomDataGridViewTextBoxColumn";
             // 
-            // dataGridViewTextBoxColumn3
+            // noClientDataGridViewTextBoxColumn
             // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Prenom";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Prenom";
-            this.dataGridViewTextBoxColumn3.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "Ville";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Ville";
-            this.dataGridViewTextBoxColumn4.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "Pays";
-            this.dataGridViewTextBoxColumn5.HeaderText = "Pays";
-            this.dataGridViewTextBoxColumn5.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "Adresse";
-            this.dataGridViewTextBoxColumn6.HeaderText = "Adresse";
-            this.dataGridViewTextBoxColumn6.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "CodePostal";
-            this.dataGridViewTextBoxColumn7.HeaderText = "CodePostal";
-            this.dataGridViewTextBoxColumn7.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "DateInscription";
-            this.dataGridViewTextBoxColumn8.HeaderText = "DateInscription";
-            this.dataGridViewTextBoxColumn8.MinimumWidth = 10;
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.noClientDataGridViewTextBoxColumn.DataPropertyName = "NoClient";
+            this.noClientDataGridViewTextBoxColumn.HeaderText = "NoClient";
+            this.noClientDataGridViewTextBoxColumn.MinimumWidth = 10;
+            this.noClientDataGridViewTextBoxColumn.Name = "noClientDataGridViewTextBoxColumn";
             // 
             // btnInviteSuivant
             // 
@@ -446,27 +467,6 @@
             this.btnGestionInvite.Text = "Gestion de l\'Invité";
             this.btnGestionInvite.UseVisualStyleBackColor = true;
             this.btnGestionInvite.Click += new System.EventHandler(this.btnGestionInvite_Click);
-            // 
-            // noInviteDataGridViewTextBoxColumn
-            // 
-            this.noInviteDataGridViewTextBoxColumn.DataPropertyName = "NoInvite";
-            this.noInviteDataGridViewTextBoxColumn.HeaderText = "NoInvite";
-            this.noInviteDataGridViewTextBoxColumn.MinimumWidth = 10;
-            this.noInviteDataGridViewTextBoxColumn.Name = "noInviteDataGridViewTextBoxColumn";
-            // 
-            // nomPrenomDataGridViewTextBoxColumn
-            // 
-            this.nomPrenomDataGridViewTextBoxColumn.DataPropertyName = "NomPrenom";
-            this.nomPrenomDataGridViewTextBoxColumn.HeaderText = "NomPrenom";
-            this.nomPrenomDataGridViewTextBoxColumn.MinimumWidth = 10;
-            this.nomPrenomDataGridViewTextBoxColumn.Name = "nomPrenomDataGridViewTextBoxColumn";
-            // 
-            // noClientDataGridViewTextBoxColumn
-            // 
-            this.noClientDataGridViewTextBoxColumn.DataPropertyName = "NoClient";
-            this.noClientDataGridViewTextBoxColumn.HeaderText = "NoClient";
-            this.noClientDataGridViewTextBoxColumn.MinimumWidth = 10;
-            this.noClientDataGridViewTextBoxColumn.Name = "noClientDataGridViewTextBoxColumn";
             // 
             // GestionClientEtInvite
             // 

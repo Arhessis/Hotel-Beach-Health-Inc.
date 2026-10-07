@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmInvite));
             System.Windows.Forms.Label noInviteLabel;
             System.Windows.Forms.Label nomPrenomLabel;
             System.Windows.Forms.Label noClientLabel1;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmInvite));
             this.label2 = new System.Windows.Forms.Label();
             this.btnAjouter = new System.Windows.Forms.Button();
             this.btnSupprimer = new System.Windows.Forms.Button();
@@ -43,17 +43,17 @@
             this.inviteTableAdapter = new Projet1___VS.BDB56Projet1BKGDataSetTableAdapters.InviteTableAdapter();
             this.tableAdapterManager = new Projet1___VS.BDB56Projet1BKGDataSetTableAdapters.TableAdapterManager();
             this.inviteBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.inviteBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.noInviteTextBox = new System.Windows.Forms.TextBox();
             this.nomPrenomTextBox = new System.Windows.Forms.TextBox();
@@ -66,6 +66,36 @@
             ((System.ComponentModel.ISupportInitialize)(this.inviteBindingNavigator)).BeginInit();
             this.inviteBindingNavigator.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // noInviteLabel
+            // 
+            noInviteLabel.AutoSize = true;
+            noInviteLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            noInviteLabel.Location = new System.Drawing.Point(93, 128);
+            noInviteLabel.Name = "noInviteLabel";
+            noInviteLabel.Size = new System.Drawing.Size(151, 37);
+            noInviteLabel.TabIndex = 54;
+            noInviteLabel.Text = "No Invite:";
+            // 
+            // nomPrenomLabel
+            // 
+            nomPrenomLabel.AutoSize = true;
+            nomPrenomLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            nomPrenomLabel.Location = new System.Drawing.Point(28, 177);
+            nomPrenomLabel.Name = "nomPrenomLabel";
+            nomPrenomLabel.Size = new System.Drawing.Size(216, 37);
+            nomPrenomLabel.TabIndex = 56;
+            nomPrenomLabel.Text = "Nom Prenom:";
+            // 
+            // noClientLabel1
+            // 
+            noClientLabel1.AutoSize = true;
+            noClientLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            noClientLabel1.Location = new System.Drawing.Point(86, 227);
+            noClientLabel1.Name = "noClientLabel1";
+            noClientLabel1.Size = new System.Drawing.Size(158, 37);
+            noClientLabel1.TabIndex = 58;
+            noClientLabel1.Text = "No Client:";
             // 
             // label2
             // 
@@ -173,9 +203,34 @@
             this.inviteBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.inviteBindingNavigator.Name = "inviteBindingNavigator";
             this.inviteBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.inviteBindingNavigator.Size = new System.Drawing.Size(639, 42);
+            this.inviteBindingNavigator.Size = new System.Drawing.Size(639, 50);
             this.inviteBindingNavigator.TabIndex = 54;
             this.inviteBindingNavigator.Text = "bindingNavigator1";
+            // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(46, 44);
+            this.bindingNavigatorAddNewItem.Text = "Add new";
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(70, 44);
+            this.bindingNavigatorCountItem.Text = "of {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(46, 44);
+            this.bindingNavigatorDeleteItem.Text = "Delete";
             // 
             // bindingNavigatorMoveFirstItem
             // 
@@ -183,7 +238,7 @@
             this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
             this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
             this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(46, 36);
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(46, 44);
             this.bindingNavigatorMoveFirstItem.Text = "Move first";
             // 
             // bindingNavigatorMovePreviousItem
@@ -192,13 +247,13 @@
             this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
             this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
             this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(46, 36);
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(46, 44);
             this.bindingNavigatorMovePreviousItem.Text = "Move previous";
             // 
             // bindingNavigatorSeparator
             // 
             this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 42);
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 50);
             // 
             // bindingNavigatorPositionItem
             // 
@@ -210,17 +265,10 @@
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Current position";
             // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(70, 36);
-            this.bindingNavigatorCountItem.Text = "of {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
-            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 42);
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 50);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -228,7 +276,7 @@
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(46, 36);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(46, 44);
             this.bindingNavigatorMoveNextItem.Text = "Move next";
             // 
             // bindingNavigatorMoveLastItem
@@ -237,50 +285,22 @@
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(46, 36);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(46, 44);
             this.bindingNavigatorMoveLastItem.Text = "Move last";
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 42);
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(46, 36);
-            this.bindingNavigatorAddNewItem.Text = "Add new";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(46, 36);
-            this.bindingNavigatorDeleteItem.Text = "Delete";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 50);
             // 
             // inviteBindingNavigatorSaveItem
             // 
             this.inviteBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.inviteBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("inviteBindingNavigatorSaveItem.Image")));
             this.inviteBindingNavigatorSaveItem.Name = "inviteBindingNavigatorSaveItem";
-            this.inviteBindingNavigatorSaveItem.Size = new System.Drawing.Size(46, 36);
+            this.inviteBindingNavigatorSaveItem.Size = new System.Drawing.Size(46, 44);
             this.inviteBindingNavigatorSaveItem.Text = "Save Data";
             this.inviteBindingNavigatorSaveItem.Click += new System.EventHandler(this.inviteBindingNavigatorSaveItem_Click);
-            // 
-            // noInviteLabel
-            // 
-            noInviteLabel.AutoSize = true;
-            noInviteLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            noInviteLabel.Location = new System.Drawing.Point(93, 128);
-            noInviteLabel.Name = "noInviteLabel";
-            noInviteLabel.Size = new System.Drawing.Size(151, 37);
-            noInviteLabel.TabIndex = 54;
-            noInviteLabel.Text = "No Invite:";
             // 
             // noInviteTextBox
             // 
@@ -291,16 +311,6 @@
             this.noInviteTextBox.Size = new System.Drawing.Size(336, 44);
             this.noInviteTextBox.TabIndex = 55;
             // 
-            // nomPrenomLabel
-            // 
-            nomPrenomLabel.AutoSize = true;
-            nomPrenomLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            nomPrenomLabel.Location = new System.Drawing.Point(28, 177);
-            nomPrenomLabel.Name = "nomPrenomLabel";
-            nomPrenomLabel.Size = new System.Drawing.Size(216, 37);
-            nomPrenomLabel.TabIndex = 56;
-            nomPrenomLabel.Text = "Nom Prenom:";
-            // 
             // nomPrenomTextBox
             // 
             this.nomPrenomTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.inviteBindingSource, "NomPrenom", true));
@@ -309,16 +319,6 @@
             this.nomPrenomTextBox.Name = "nomPrenomTextBox";
             this.nomPrenomTextBox.Size = new System.Drawing.Size(336, 44);
             this.nomPrenomTextBox.TabIndex = 57;
-            // 
-            // noClientLabel1
-            // 
-            noClientLabel1.AutoSize = true;
-            noClientLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            noClientLabel1.Location = new System.Drawing.Point(86, 227);
-            noClientLabel1.Name = "noClientLabel1";
-            noClientLabel1.Size = new System.Drawing.Size(158, 37);
-            noClientLabel1.TabIndex = 58;
-            noClientLabel1.Text = "No Client:";
             // 
             // noClientTextBox1
             // 
