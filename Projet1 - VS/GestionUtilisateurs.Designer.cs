@@ -29,27 +29,27 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GestionUtilisateurs));
             System.Windows.Forms.Label noUtilisateurLabel;
             System.Windows.Forms.Label nomLabel;
             System.Windows.Forms.Label motDePasseLabel;
             System.Windows.Forms.Label noTypeLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GestionUtilisateurs));
             this.bDB56Projet1BKGDataSet = new Projet1___VS.BDB56Projet1BKGDataSet();
             this.utilisateurBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.utilisateurTableAdapter = new Projet1___VS.BDB56Projet1BKGDataSetTableAdapters.UtilisateurTableAdapter();
             this.tableAdapterManager = new Projet1___VS.BDB56Projet1BKGDataSetTableAdapters.TableAdapterManager();
             this.utilisateurBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.utilisateurBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.noUtilisateurTextBox = new System.Windows.Forms.TextBox();
             this.nomTextBox = new System.Windows.Forms.TextBox();
@@ -58,7 +58,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnAjouter = new System.Windows.Forms.Button();
             this.btnModifier = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnSupprimer = new System.Windows.Forms.Button();
             noUtilisateurLabel = new System.Windows.Forms.Label();
             nomLabel = new System.Windows.Forms.Label();
             motDePasseLabel = new System.Windows.Forms.Label();
@@ -68,6 +68,46 @@
             ((System.ComponentModel.ISupportInitialize)(this.utilisateurBindingNavigator)).BeginInit();
             this.utilisateurBindingNavigator.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // noUtilisateurLabel
+            // 
+            noUtilisateurLabel.AutoSize = true;
+            noUtilisateurLabel.Font = new System.Drawing.Font("Montserrat ExtraBold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            noUtilisateurLabel.Location = new System.Drawing.Point(31, 127);
+            noUtilisateurLabel.Name = "noUtilisateurLabel";
+            noUtilisateurLabel.Size = new System.Drawing.Size(142, 27);
+            noUtilisateurLabel.TabIndex = 1;
+            noUtilisateurLabel.Text = "No Utilisateur:";
+            // 
+            // nomLabel
+            // 
+            nomLabel.AutoSize = true;
+            nomLabel.Font = new System.Drawing.Font("Montserrat ExtraBold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            nomLabel.Location = new System.Drawing.Point(31, 155);
+            nomLabel.Name = "nomLabel";
+            nomLabel.Size = new System.Drawing.Size(60, 27);
+            nomLabel.TabIndex = 3;
+            nomLabel.Text = "Nom:";
+            // 
+            // motDePasseLabel
+            // 
+            motDePasseLabel.AutoSize = true;
+            motDePasseLabel.Font = new System.Drawing.Font("Montserrat ExtraBold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            motDePasseLabel.Location = new System.Drawing.Point(31, 183);
+            motDePasseLabel.Name = "motDePasseLabel";
+            motDePasseLabel.Size = new System.Drawing.Size(140, 27);
+            motDePasseLabel.TabIndex = 5;
+            motDePasseLabel.Text = "Mot De Passe:";
+            // 
+            // noTypeLabel
+            // 
+            noTypeLabel.AutoSize = true;
+            noTypeLabel.Font = new System.Drawing.Font("Montserrat ExtraBold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            noTypeLabel.Location = new System.Drawing.Point(31, 211);
+            noTypeLabel.Name = "noTypeLabel";
+            noTypeLabel.Size = new System.Drawing.Size(92, 27);
+            noTypeLabel.TabIndex = 7;
+            noTypeLabel.Text = "No Type:";
             // 
             // bDB56Projet1BKGDataSet
             // 
@@ -131,6 +171,31 @@
             this.utilisateurBindingNavigator.TabIndex = 0;
             this.utilisateurBindingNavigator.Text = "bindingNavigator1";
             // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorAddNewItem.Text = "Add new";
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(45, 24);
+            this.bindingNavigatorCountItem.Text = "of {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorDeleteItem.Text = "Delete";
+            // 
             // bindingNavigatorMoveFirstItem
             // 
             this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -164,16 +229,9 @@
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Current position";
             // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(45, 24);
-            this.bindingNavigatorCountItem.Text = "of {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
-            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
             this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 27);
             // 
             // bindingNavigatorMoveNextItem
@@ -196,26 +254,8 @@
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 27);
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 24);
-            this.bindingNavigatorAddNewItem.Text = "Add new";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 24);
-            this.bindingNavigatorDeleteItem.Text = "Delete";
             // 
             // utilisateurBindingNavigatorSaveItem
             // 
@@ -226,16 +266,6 @@
             this.utilisateurBindingNavigatorSaveItem.Text = "Save Data";
             this.utilisateurBindingNavigatorSaveItem.Click += new System.EventHandler(this.utilisateurBindingNavigatorSaveItem_Click);
             // 
-            // noUtilisateurLabel
-            // 
-            noUtilisateurLabel.AutoSize = true;
-            noUtilisateurLabel.Font = new System.Drawing.Font("Montserrat ExtraBold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            noUtilisateurLabel.Location = new System.Drawing.Point(31, 127);
-            noUtilisateurLabel.Name = "noUtilisateurLabel";
-            noUtilisateurLabel.Size = new System.Drawing.Size(142, 27);
-            noUtilisateurLabel.TabIndex = 1;
-            noUtilisateurLabel.Text = "No Utilisateur:";
-            // 
             // noUtilisateurTextBox
             // 
             this.noUtilisateurTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.utilisateurBindingSource, "NoUtilisateur", true));
@@ -243,16 +273,6 @@
             this.noUtilisateurTextBox.Name = "noUtilisateurTextBox";
             this.noUtilisateurTextBox.Size = new System.Drawing.Size(100, 22);
             this.noUtilisateurTextBox.TabIndex = 2;
-            // 
-            // nomLabel
-            // 
-            nomLabel.AutoSize = true;
-            nomLabel.Font = new System.Drawing.Font("Montserrat ExtraBold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            nomLabel.Location = new System.Drawing.Point(31, 155);
-            nomLabel.Name = "nomLabel";
-            nomLabel.Size = new System.Drawing.Size(60, 27);
-            nomLabel.TabIndex = 3;
-            nomLabel.Text = "Nom:";
             // 
             // nomTextBox
             // 
@@ -262,16 +282,6 @@
             this.nomTextBox.Size = new System.Drawing.Size(100, 22);
             this.nomTextBox.TabIndex = 4;
             // 
-            // motDePasseLabel
-            // 
-            motDePasseLabel.AutoSize = true;
-            motDePasseLabel.Font = new System.Drawing.Font("Montserrat ExtraBold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            motDePasseLabel.Location = new System.Drawing.Point(31, 183);
-            motDePasseLabel.Name = "motDePasseLabel";
-            motDePasseLabel.Size = new System.Drawing.Size(140, 27);
-            motDePasseLabel.TabIndex = 5;
-            motDePasseLabel.Text = "Mot De Passe:";
-            // 
             // motDePasseTextBox
             // 
             this.motDePasseTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.utilisateurBindingSource, "MotDePasse", true));
@@ -279,16 +289,6 @@
             this.motDePasseTextBox.Name = "motDePasseTextBox";
             this.motDePasseTextBox.Size = new System.Drawing.Size(100, 22);
             this.motDePasseTextBox.TabIndex = 6;
-            // 
-            // noTypeLabel
-            // 
-            noTypeLabel.AutoSize = true;
-            noTypeLabel.Font = new System.Drawing.Font("Montserrat ExtraBold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            noTypeLabel.Location = new System.Drawing.Point(31, 211);
-            noTypeLabel.Name = "noTypeLabel";
-            noTypeLabel.Size = new System.Drawing.Size(92, 27);
-            noTypeLabel.TabIndex = 7;
-            noTypeLabel.Text = "No Type:";
             // 
             // noTypeTextBox
             // 
@@ -317,6 +317,7 @@
             this.btnAjouter.TabIndex = 10;
             this.btnAjouter.Text = "Ajouter";
             this.btnAjouter.UseVisualStyleBackColor = true;
+            this.btnAjouter.Click += new System.EventHandler(this.btnAjouter_Click);
             // 
             // btnModifier
             // 
@@ -327,23 +328,25 @@
             this.btnModifier.TabIndex = 11;
             this.btnModifier.Text = "Modifier";
             this.btnModifier.UseVisualStyleBackColor = true;
+            this.btnModifier.Click += new System.EventHandler(this.btnModifier_Click);
             // 
-            // button3
+            // btnSupprimer
             // 
-            this.button3.Font = new System.Drawing.Font("Montserrat ExtraBold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(234, 320);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(151, 66);
-            this.button3.TabIndex = 12;
-            this.button3.Text = "Supprimer";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnSupprimer.Font = new System.Drawing.Font("Montserrat ExtraBold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSupprimer.Location = new System.Drawing.Point(234, 320);
+            this.btnSupprimer.Name = "btnSupprimer";
+            this.btnSupprimer.Size = new System.Drawing.Size(151, 66);
+            this.btnSupprimer.TabIndex = 12;
+            this.btnSupprimer.Text = "Supprimer";
+            this.btnSupprimer.UseVisualStyleBackColor = true;
+            this.btnSupprimer.Click += new System.EventHandler(this.btnSupprimer_Click);
             // 
             // GestionUtilisateurs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(397, 398);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.btnSupprimer);
             this.Controls.Add(this.btnModifier);
             this.Controls.Add(this.btnAjouter);
             this.Controls.Add(this.label1);
@@ -395,6 +398,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnAjouter;
         private System.Windows.Forms.Button btnModifier;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnSupprimer;
     }
 }
