@@ -34,7 +34,7 @@ namespace Projet1___VS
 
         private void btnAjouter_Click(object sender, EventArgs e)
         {
-
+              
         }
 
         private void btnModifier_Click(object sender, EventArgs e)
