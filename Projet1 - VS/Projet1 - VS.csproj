@@ -152,6 +152,9 @@
     <EmbeddedResource Include="frmInvite.resx">
       <DependentUpon>frmInvite.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GestionAssistantEtSoin.resx">
+      <DependentUpon>GestionAssistantEtSoin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GestionChambreEtType.resx">
       <DependentUpon>GestionChambreEtType.cs</DependentUpon>
     </EmbeddedResource>
