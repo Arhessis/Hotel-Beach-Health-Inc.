@@ -32,3 +32,4 @@ C:\Users\georg\OneDrive\Documents\HotelPlageSante\Projet1 - VS\obj\Debug\Projet1
 C:\Users\georg\OneDrive\Documents\HotelPlageSante\Projet1 - VS\obj\Debug\Projet1 - VS.pdb
 C:\Users\georg\OneDrive\Documents\HotelPlageSante\Projet1 - VS\obj\Debug\Projet1___VS.GestionAssistantEtSoin.resources
 C:\Users\georg\OneDrive\Documents\HotelPlageSante\Projet1 - VS\obj\Debug\Projet1___VS.MenuAdmin.resources
+C:\Users\georg\OneDrive\Documents\HotelPlageSante\Projet1 - VS\obj\Debug\Projet1___VS.PlannificationSoin.resources
