@@ -39,7 +39,7 @@
             this.Duree = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NoTypeSoin = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Prix = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.assistantDataGridView = new System.Windows.Forms.DataGridView();
+            this.dgAssistant = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -48,7 +48,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.bDB56Projet1BKGDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgAssitant)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgSoin)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.assistantDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgAssistant)).BeginInit();
             this.SuspendLayout();
             // 
             // bDB56Projet1BKGDataSet
@@ -91,11 +91,12 @@
             this.Duree,
             this.NoTypeSoin,
             this.Prix});
-            this.dgSoin.Location = new System.Drawing.Point(1, 168);
+            this.dgSoin.Location = new System.Drawing.Point(0, 87);
+            this.dgSoin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgSoin.Name = "dgSoin";
             this.dgSoin.RowHeadersWidth = 82;
             this.dgSoin.RowTemplate.Height = 33;
-            this.dgSoin.Size = new System.Drawing.Size(1033, 150);
+            this.dgSoin.Size = new System.Drawing.Size(516, 78);
             this.dgSoin.TabIndex = 1;
             // 
             // NoSoin
@@ -133,23 +134,24 @@
             this.Prix.Name = "Prix";
             this.Prix.Width = 200;
             // 
-            // assistantDataGridView
+            // dgAssistant
             // 
-            this.assistantDataGridView.AutoGenerateColumns = false;
-            this.assistantDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.assistantDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgAssistant.AutoGenerateColumns = false;
+            this.dgAssistant.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgAssistant.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4,
             this.dataGridViewTextBoxColumn5});
-            this.assistantDataGridView.DataSource = this.dgAssitant;
-            this.assistantDataGridView.Location = new System.Drawing.Point(287, 12);
-            this.assistantDataGridView.Name = "assistantDataGridView";
-            this.assistantDataGridView.RowHeadersWidth = 82;
-            this.assistantDataGridView.RowTemplate.Height = 33;
-            this.assistantDataGridView.Size = new System.Drawing.Size(300, 220);
-            this.assistantDataGridView.TabIndex = 1;
+            this.dgAssistant.DataSource = this.dgAssitant;
+            this.dgAssistant.Location = new System.Drawing.Point(144, 6);
+            this.dgAssistant.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgAssistant.Name = "dgAssistant";
+            this.dgAssistant.RowHeadersWidth = 82;
+            this.dgAssistant.RowTemplate.Height = 33;
+            this.dgAssistant.Size = new System.Drawing.Size(150, 114);
+            this.dgAssistant.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -193,19 +195,20 @@
             // 
             // GestionAssistantEtSoin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1263, 520);
-            this.Controls.Add(this.assistantDataGridView);
+            this.ClientSize = new System.Drawing.Size(632, 461);
+            this.Controls.Add(this.dgAssistant);
             this.Controls.Add(this.dgSoin);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "GestionAssistantEtSoin";
             this.Text = "GestionAssistantEtSoin";
             this.Load += new System.EventHandler(this.GestionAssistantEtSoin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bDB56Projet1BKGDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgAssitant)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgSoin)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.assistantDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgAssistant)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -221,7 +224,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Duree;
         private System.Windows.Forms.DataGridViewTextBoxColumn NoTypeSoin;
         private System.Windows.Forms.DataGridViewTextBoxColumn Prix;
-        private System.Windows.Forms.DataGridView assistantDataGridView;
+        private System.Windows.Forms.DataGridView dgAssistant;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;

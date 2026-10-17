@@ -30,4 +30,5 @@ C:\Users\georg\OneDrive\Documents\HotelPlageSante\Projet1 - VS\obj\Debug\Projet1
 C:\Users\georg\OneDrive\Documents\HotelPlageSante\Projet1 - VS\obj\Debug\Projet1 - VS.csproj.CoreCompileInputs.cache
 C:\Users\georg\OneDrive\Documents\HotelPlageSante\Projet1 - VS\obj\Debug\Projet1 - VS.exe
 C:\Users\georg\OneDrive\Documents\HotelPlageSante\Projet1 - VS\obj\Debug\Projet1 - VS.pdb
-C:\Users\georg\OneDrive\Documents\HotelPlageSante\Projet1 - VS\obj\Debug\Projet1___VS.Menu.resources
+C:\Users\georg\OneDrive\Documents\HotelPlageSante\Projet1 - VS\obj\Debug\Projet1___VS.GestionAssistantEtSoin.resources
+C:\Users\georg\OneDrive\Documents\HotelPlageSante\Projet1 - VS\obj\Debug\Projet1___VS.MenuAdmin.resources

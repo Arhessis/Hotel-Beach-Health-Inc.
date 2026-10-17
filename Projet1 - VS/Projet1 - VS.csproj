@@ -87,11 +87,11 @@
     <Compile Include="GestionUtilisateurs.Designer.cs">
       <DependentUpon>GestionUtilisateurs.cs</DependentUpon>
     </Compile>
-    <Compile Include="Menu.cs">
+    <Compile Include="MenuAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Menu.Designer.cs">
-      <DependentUpon>Menu.cs</DependentUpon>
+    <Compile Include="MenuAdmin.Designer.cs">
+      <DependentUpon>MenuAdmin.cs</DependentUpon>
     </Compile>
     <Compile Include="GestionAssistantEtSoin.cs">
       <SubType>Form</SubType>
@@ -164,8 +164,8 @@
     <EmbeddedResource Include="GestionUtilisateurs.resx">
       <DependentUpon>GestionUtilisateurs.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Menu.resx">
-      <DependentUpon>Menu.cs</DependentUpon>
+    <EmbeddedResource Include="MenuAdmin.resx">
+      <DependentUpon>MenuAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuPrep.resx">
       <DependentUpon>MenuPrep.cs</DependentUpon>

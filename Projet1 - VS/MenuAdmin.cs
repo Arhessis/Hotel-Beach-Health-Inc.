@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Projet1___VS
 {
-    public partial class Menu : Form
+    public partial class MenuAdmin : Form
     {
         public string NoUtilisateur { get; set; }
 
@@ -22,7 +22,7 @@ namespace Projet1___VS
         ReservationChambre reservationChambre = new ReservationChambre();
         Visualisation visualiserRapport = new Visualisation();
 
-        public Menu()
+        public MenuAdmin()
         {
             InitializeComponent();
         }
@@ -93,6 +93,11 @@ namespace Projet1___VS
         private void quitterToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void MenuAdmin_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

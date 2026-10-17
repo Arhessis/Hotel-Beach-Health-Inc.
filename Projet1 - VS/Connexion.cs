@@ -52,7 +52,7 @@ namespace Projet1___VS
                 //case 1
                 if (NoType == 1)
                 {
-                    Menu formulaire = new Menu();
+                    MenuAdmin formulaire = new MenuAdmin();
                     formulaire.NoUtilisateur = NoUtilisateur.ToString();
                     formulaire.ShowDialog();
                 }

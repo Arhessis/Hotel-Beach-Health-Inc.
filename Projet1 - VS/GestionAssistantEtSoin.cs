@@ -25,7 +25,7 @@ namespace Projet1___VS
         private void assistantBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
             this.Validate();
-            this.assistantBindingSource.EndEdit();
+            //this.assistantBindingSource.EndEdit();
             this.tableAdapterManager.UpdateAll(this.bDB56Projet1BKGDataSet);
 
         }
