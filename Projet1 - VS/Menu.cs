@@ -10,11 +10,10 @@ using System.Windows.Forms;
 
 namespace Projet1___VS
 {
-    public partial class MenuAdmin : Form
+    public partial class Menu : Form
     {
         public string NoUtilisateur { get; set; }
 
-        GestionUtilisateurs gestionUtilisateurs = new GestionUtilisateurs();
         GestionClientEtInvite gestionClientEtInvite = new GestionClientEtInvite();
         GestionAssistantEtSoin gestionAssistantEtSoin = new GestionAssistantEtSoin();
         GestionSoin gestionSoin = new GestionSoin();
@@ -23,7 +22,7 @@ namespace Projet1___VS
         ReservationChambre reservationChambre = new ReservationChambre();
         Visualisation visualiserRapport = new Visualisation();
 
-        public MenuAdmin()
+        public Menu()
         {
             InitializeComponent();
         }
@@ -31,7 +30,9 @@ namespace Projet1___VS
         private void gestionUtilisateursToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Hide();
-            gestionUtilisateurs.ShowDialog();
+            decimal loggedInId = decimal.TryParse(this.NoUtilisateur, out decimal id) ? id : 1;
+            GestionUtilisateurs frm = new GestionUtilisateurs(loggedInId);
+            frm.ShowDialog();
             this.Show();
         }
 

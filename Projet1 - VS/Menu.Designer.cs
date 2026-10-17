@@ -1,6 +1,6 @@
 ﻿namespace Projet1___VS
 {
-    partial class MenuAdmin
+    partial class Menu
     {
         /// <summary>
         /// Required designer variable.

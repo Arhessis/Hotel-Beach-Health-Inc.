@@ -4235,9 +4235,9 @@ namespace Projet1___VS {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            public UtilisateurRow FindByNoType(decimal NoType) {
+            public UtilisateurRow FindByNoUtilisateur(decimal NoUtilisateur) {
                 return ((UtilisateurRow)(this.Rows.Find(new object[] {
-                            NoType})));
+                            NoUtilisateur})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4275,12 +4275,12 @@ namespace Projet1___VS {
                 this.columnNoType = new global::System.Data.DataColumn("NoType", typeof(decimal), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnNoType);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columnNoType}, true));
+                                this.columnNoUtilisateur}, true));
                 this.columnNoUtilisateur.AllowDBNull = false;
+                this.columnNoUtilisateur.Unique = true;
                 this.columnNom.MaxLength = 30;
                 this.columnMotDePasse.MaxLength = 30;
                 this.columnNoType.AllowDBNull = false;
-                this.columnNoType.Unique = true;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -10749,8 +10749,8 @@ SELECT NoUtilisateur, Nom, MotDePasse, NoType FROM Utilisateur WHERE (NoType = @
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(decimal NoUtilisateur, string Nom, string MotDePasse, decimal Original_NoUtilisateur, string Original_Nom, string Original_MotDePasse, decimal Original_NoType) {
-            return this.Update(NoUtilisateur, Nom, MotDePasse, Original_NoType, Original_NoUtilisateur, Original_Nom, Original_MotDePasse, Original_NoType);
+        public virtual int Update(string Nom, string MotDePasse, decimal NoType, decimal Original_NoUtilisateur, string Original_Nom, string Original_MotDePasse, decimal Original_NoType) {
+            return this.Update(Original_NoUtilisateur, Nom, MotDePasse, NoType, Original_NoUtilisateur, Original_Nom, Original_MotDePasse, Original_NoType);
         }
     }
     
