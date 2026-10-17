@@ -29,27 +29,27 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PlannificationSoin));
             System.Windows.Forms.Label noPersonneLabel;
             System.Windows.Forms.Label noAssistantLabel;
             System.Windows.Forms.Label dateHeureLabel;
             System.Windows.Forms.Label noSoinLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PlannificationSoin));
             this.bDB56Projet1BKGDataSet = new Projet1___VS.BDB56Projet1BKGDataSet();
             this.planifSoinBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.planifSoinTableAdapter = new Projet1___VS.BDB56Projet1BKGDataSetTableAdapters.PlanifSoinTableAdapter();
             this.tableAdapterManager = new Projet1___VS.BDB56Projet1BKGDataSetTableAdapters.TableAdapterManager();
             this.planifSoinBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.planifSoinBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.noPersonneTextBox = new System.Windows.Forms.TextBox();
             this.noAssistantTextBox = new System.Windows.Forms.TextBox();
@@ -58,6 +58,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnAjouter = new System.Windows.Forms.Button();
             this.btnSupprimer = new System.Windows.Forms.Button();
+            this.planifSoinDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             noPersonneLabel = new System.Windows.Forms.Label();
             noAssistantLabel = new System.Windows.Forms.Label();
             dateHeureLabel = new System.Windows.Forms.Label();
@@ -66,7 +71,48 @@
             ((System.ComponentModel.ISupportInitialize)(this.planifSoinBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.planifSoinBindingNavigator)).BeginInit();
             this.planifSoinBindingNavigator.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.planifSoinDataGridView)).BeginInit();
             this.SuspendLayout();
+            // 
+            // noPersonneLabel
+            // 
+            noPersonneLabel.AutoSize = true;
+            noPersonneLabel.Font = new System.Drawing.Font("Montserrat ExtraBold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            noPersonneLabel.Location = new System.Drawing.Point(20, 127);
+            noPersonneLabel.Name = "noPersonneLabel";
+            noPersonneLabel.Size = new System.Drawing.Size(134, 27);
+            noPersonneLabel.TabIndex = 1;
+            noPersonneLabel.Text = "No Personne:";
+            // 
+            // noAssistantLabel
+            // 
+            noAssistantLabel.AutoSize = true;
+            noAssistantLabel.Font = new System.Drawing.Font("Montserrat ExtraBold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            noAssistantLabel.Location = new System.Drawing.Point(20, 155);
+            noAssistantLabel.Name = "noAssistantLabel";
+            noAssistantLabel.Size = new System.Drawing.Size(131, 27);
+            noAssistantLabel.TabIndex = 3;
+            noAssistantLabel.Text = "No Assistant:";
+            // 
+            // dateHeureLabel
+            // 
+            dateHeureLabel.AutoSize = true;
+            dateHeureLabel.Font = new System.Drawing.Font("Montserrat ExtraBold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dateHeureLabel.Location = new System.Drawing.Point(20, 184);
+            dateHeureLabel.Name = "dateHeureLabel";
+            dateHeureLabel.Size = new System.Drawing.Size(122, 27);
+            dateHeureLabel.TabIndex = 5;
+            dateHeureLabel.Text = "Date Heure:";
+            // 
+            // noSoinLabel
+            // 
+            noSoinLabel.AutoSize = true;
+            noSoinLabel.Font = new System.Drawing.Font("Montserrat ExtraBold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            noSoinLabel.Location = new System.Drawing.Point(20, 211);
+            noSoinLabel.Name = "noSoinLabel";
+            noSoinLabel.Size = new System.Drawing.Size(86, 27);
+            noSoinLabel.TabIndex = 7;
+            noSoinLabel.Text = "No Soin:";
             // 
             // bDB56Projet1BKGDataSet
             // 
@@ -126,9 +172,34 @@
             this.planifSoinBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.planifSoinBindingNavigator.Name = "planifSoinBindingNavigator";
             this.planifSoinBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.planifSoinBindingNavigator.Size = new System.Drawing.Size(467, 27);
+            this.planifSoinBindingNavigator.Size = new System.Drawing.Size(1004, 31);
             this.planifSoinBindingNavigator.TabIndex = 0;
             this.planifSoinBindingNavigator.Text = "bindingNavigator1";
+            // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorAddNewItem.Text = "Add new";
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(45, 28);
+            this.bindingNavigatorCountItem.Text = "of {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorDeleteItem.Text = "Delete";
             // 
             // bindingNavigatorMoveFirstItem
             // 
@@ -163,16 +234,9 @@
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Current position";
             // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(45, 28);
-            this.bindingNavigatorCountItem.Text = "of {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
-            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
             this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 31);
             // 
             // bindingNavigatorMoveNextItem
@@ -195,26 +259,8 @@
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 31);
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 24);
-            this.bindingNavigatorAddNewItem.Text = "Add new";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 28);
-            this.bindingNavigatorDeleteItem.Text = "Delete";
             // 
             // planifSoinBindingNavigatorSaveItem
             // 
@@ -225,16 +271,6 @@
             this.planifSoinBindingNavigatorSaveItem.Text = "Save Data";
             this.planifSoinBindingNavigatorSaveItem.Click += new System.EventHandler(this.planifSoinBindingNavigatorSaveItem_Click);
             // 
-            // noPersonneLabel
-            // 
-            noPersonneLabel.AutoSize = true;
-            noPersonneLabel.Font = new System.Drawing.Font("Montserrat ExtraBold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            noPersonneLabel.Location = new System.Drawing.Point(20, 127);
-            noPersonneLabel.Name = "noPersonneLabel";
-            noPersonneLabel.Size = new System.Drawing.Size(134, 27);
-            noPersonneLabel.TabIndex = 1;
-            noPersonneLabel.Text = "No Personne:";
-            // 
             // noPersonneTextBox
             // 
             this.noPersonneTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.planifSoinBindingSource, "NoPersonne", true));
@@ -242,16 +278,6 @@
             this.noPersonneTextBox.Name = "noPersonneTextBox";
             this.noPersonneTextBox.Size = new System.Drawing.Size(200, 22);
             this.noPersonneTextBox.TabIndex = 2;
-            // 
-            // noAssistantLabel
-            // 
-            noAssistantLabel.AutoSize = true;
-            noAssistantLabel.Font = new System.Drawing.Font("Montserrat ExtraBold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            noAssistantLabel.Location = new System.Drawing.Point(20, 155);
-            noAssistantLabel.Name = "noAssistantLabel";
-            noAssistantLabel.Size = new System.Drawing.Size(131, 27);
-            noAssistantLabel.TabIndex = 3;
-            noAssistantLabel.Text = "No Assistant:";
             // 
             // noAssistantTextBox
             // 
@@ -261,16 +287,6 @@
             this.noAssistantTextBox.Size = new System.Drawing.Size(200, 22);
             this.noAssistantTextBox.TabIndex = 4;
             // 
-            // dateHeureLabel
-            // 
-            dateHeureLabel.AutoSize = true;
-            dateHeureLabel.Font = new System.Drawing.Font("Montserrat ExtraBold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dateHeureLabel.Location = new System.Drawing.Point(20, 184);
-            dateHeureLabel.Name = "dateHeureLabel";
-            dateHeureLabel.Size = new System.Drawing.Size(122, 27);
-            dateHeureLabel.TabIndex = 5;
-            dateHeureLabel.Text = "Date Heure:";
-            // 
             // dateHeureDateTimePicker
             // 
             this.dateHeureDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.planifSoinBindingSource, "DateHeure", true));
@@ -278,16 +294,6 @@
             this.dateHeureDateTimePicker.Name = "dateHeureDateTimePicker";
             this.dateHeureDateTimePicker.Size = new System.Drawing.Size(200, 22);
             this.dateHeureDateTimePicker.TabIndex = 6;
-            // 
-            // noSoinLabel
-            // 
-            noSoinLabel.AutoSize = true;
-            noSoinLabel.Font = new System.Drawing.Font("Montserrat ExtraBold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            noSoinLabel.Location = new System.Drawing.Point(20, 211);
-            noSoinLabel.Name = "noSoinLabel";
-            noSoinLabel.Size = new System.Drawing.Size(86, 27);
-            noSoinLabel.TabIndex = 7;
-            noSoinLabel.Text = "No Soin:";
             // 
             // noSoinTextBox
             // 
@@ -301,7 +307,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Montserrat ExtraBold", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 53);
+            this.label1.Location = new System.Drawing.Point(305, 43);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(441, 52);
             this.label1.TabIndex = 9;
@@ -310,28 +316,80 @@
             // btnAjouter
             // 
             this.btnAjouter.Font = new System.Drawing.Font("Montserrat ExtraBold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAjouter.Location = new System.Drawing.Point(12, 255);
+            this.btnAjouter.Location = new System.Drawing.Point(278, 534);
             this.btnAjouter.Name = "btnAjouter";
             this.btnAjouter.Size = new System.Drawing.Size(204, 81);
             this.btnAjouter.TabIndex = 10;
             this.btnAjouter.Text = "Ajouter";
             this.btnAjouter.UseVisualStyleBackColor = true;
+            this.btnAjouter.Click += new System.EventHandler(this.btnAjouter_Click);
             // 
             // btnSupprimer
             // 
             this.btnSupprimer.Font = new System.Drawing.Font("Montserrat ExtraBold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSupprimer.Location = new System.Drawing.Point(232, 255);
+            this.btnSupprimer.Location = new System.Drawing.Point(512, 534);
             this.btnSupprimer.Name = "btnSupprimer";
             this.btnSupprimer.Size = new System.Drawing.Size(204, 81);
             this.btnSupprimer.TabIndex = 11;
             this.btnSupprimer.Text = "Supprimer";
             this.btnSupprimer.UseVisualStyleBackColor = true;
+            this.btnSupprimer.Click += new System.EventHandler(this.btnSupprimer_Click);
+            // 
+            // planifSoinDataGridView
+            // 
+            this.planifSoinDataGridView.AutoGenerateColumns = false;
+            this.planifSoinDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.planifSoinDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4});
+            this.planifSoinDataGridView.DataSource = this.planifSoinBindingSource;
+            this.planifSoinDataGridView.Location = new System.Drawing.Point(12, 284);
+            this.planifSoinDataGridView.Name = "planifSoinDataGridView";
+            this.planifSoinDataGridView.RowHeadersWidth = 51;
+            this.planifSoinDataGridView.RowTemplate.Height = 24;
+            this.planifSoinDataGridView.Size = new System.Drawing.Size(980, 220);
+            this.planifSoinDataGridView.TabIndex = 12;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "NoPersonne";
+            this.dataGridViewTextBoxColumn1.HeaderText = "NoPersonne";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "NoAssistant";
+            this.dataGridViewTextBoxColumn2.HeaderText = "NoAssistant";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "DateHeure";
+            this.dataGridViewTextBoxColumn3.HeaderText = "DateHeure";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "NoSoin";
+            this.dataGridViewTextBoxColumn4.HeaderText = "NoSoin";
+            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.Width = 125;
             // 
             // PlannificationSoin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(467, 361);
+            this.ClientSize = new System.Drawing.Size(1004, 659);
+            this.Controls.Add(this.planifSoinDataGridView);
             this.Controls.Add(this.btnSupprimer);
             this.Controls.Add(this.btnAjouter);
             this.Controls.Add(this.label1);
@@ -352,6 +410,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.planifSoinBindingNavigator)).EndInit();
             this.planifSoinBindingNavigator.ResumeLayout(false);
             this.planifSoinBindingNavigator.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.planifSoinDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -383,5 +442,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnAjouter;
         private System.Windows.Forms.Button btnSupprimer;
+        private System.Windows.Forms.DataGridView planifSoinDataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
     }
 }

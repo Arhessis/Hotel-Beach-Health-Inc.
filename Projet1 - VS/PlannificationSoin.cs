@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Projet1___VS.BDB56Projet1BKGDataSetTableAdapters;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,11 +8,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static Projet1___VS.BDB56Projet1BKGDataSet;
 
 namespace Projet1___VS
 {
     public partial class PlannificationSoin : Form
     {
+        private BDB56Projet1BKGDataSet dataset;
+        private PlanifSoinTableAdapter planifAdapter;
+        private AssistantTableAdapter assistantAdapter;
+        private SoinTableAdapter soinAdapter;
+        private ClientTableAdapter clientAdapter;
+        private InviteTableAdapter inviteAdapter;
+        private AssistantSoinTableAdapter assistantSoinAdapter;
+
         public PlannificationSoin()
         {
             InitializeComponent();
@@ -29,6 +39,16 @@ namespace Projet1___VS
         {
             // TODO: This line of code loads data into the 'bDB56Projet1BKGDataSet.PlanifSoin' table. You can move, or remove it, as needed.
             this.planifSoinTableAdapter.Fill(this.bDB56Projet1BKGDataSet.PlanifSoin);
+
+        }
+
+        private void btnAjouter_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSupprimer_Click(object sender, EventArgs e)
+        {
 
         }
     }
