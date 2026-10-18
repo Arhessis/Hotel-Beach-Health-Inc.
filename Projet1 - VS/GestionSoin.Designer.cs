@@ -71,7 +71,7 @@
             // noSoinLabel
             // 
             noSoinLabel.AutoSize = true;
-            noSoinLabel.Location = new System.Drawing.Point(22, 145);
+            noSoinLabel.Location = new System.Drawing.Point(13, 98);
             noSoinLabel.Name = "noSoinLabel";
             noSoinLabel.Size = new System.Drawing.Size(48, 13);
             noSoinLabel.TabIndex = 1;
@@ -80,7 +80,7 @@
             // descriptionLabel
             // 
             descriptionLabel.AutoSize = true;
-            descriptionLabel.Location = new System.Drawing.Point(22, 171);
+            descriptionLabel.Location = new System.Drawing.Point(13, 124);
             descriptionLabel.Name = "descriptionLabel";
             descriptionLabel.Size = new System.Drawing.Size(63, 13);
             descriptionLabel.TabIndex = 3;
@@ -89,7 +89,7 @@
             // dureeLabel
             // 
             dureeLabel.AutoSize = true;
-            dureeLabel.Location = new System.Drawing.Point(22, 197);
+            dureeLabel.Location = new System.Drawing.Point(13, 150);
             dureeLabel.Name = "dureeLabel";
             dureeLabel.Size = new System.Drawing.Size(39, 13);
             dureeLabel.TabIndex = 5;
@@ -98,7 +98,7 @@
             // noTypeSoinLabel
             // 
             noTypeSoinLabel.AutoSize = true;
-            noTypeSoinLabel.Location = new System.Drawing.Point(22, 223);
+            noTypeSoinLabel.Location = new System.Drawing.Point(13, 176);
             noTypeSoinLabel.Name = "noTypeSoinLabel";
             noTypeSoinLabel.Size = new System.Drawing.Size(75, 13);
             noTypeSoinLabel.TabIndex = 7;
@@ -107,7 +107,7 @@
             // prixLabel
             // 
             prixLabel.AutoSize = true;
-            prixLabel.Location = new System.Drawing.Point(22, 250);
+            prixLabel.Location = new System.Drawing.Point(13, 203);
             prixLabel.Name = "prixLabel";
             prixLabel.Size = new System.Drawing.Size(27, 13);
             prixLabel.TabIndex = 9;
@@ -155,7 +155,7 @@
             // noSoinTextBox
             // 
             this.noSoinTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.soinBindingSource, "NoSoin", true));
-            this.noSoinTextBox.Location = new System.Drawing.Point(103, 142);
+            this.noSoinTextBox.Location = new System.Drawing.Point(94, 95);
             this.noSoinTextBox.Name = "noSoinTextBox";
             this.noSoinTextBox.ReadOnly = true;
             this.noSoinTextBox.Size = new System.Drawing.Size(121, 20);
@@ -164,7 +164,7 @@
             // descriptionTextBox
             // 
             this.descriptionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.soinBindingSource, "Description", true));
-            this.descriptionTextBox.Location = new System.Drawing.Point(103, 168);
+            this.descriptionTextBox.Location = new System.Drawing.Point(94, 121);
             this.descriptionTextBox.MaxLength = 50;
             this.descriptionTextBox.Name = "descriptionTextBox";
             this.descriptionTextBox.Size = new System.Drawing.Size(121, 20);
@@ -173,7 +173,7 @@
             // dureeTextBox
             // 
             this.dureeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.soinBindingSource, "Duree", true));
-            this.dureeTextBox.Location = new System.Drawing.Point(103, 194);
+            this.dureeTextBox.Location = new System.Drawing.Point(94, 147);
             this.dureeTextBox.Name = "dureeTextBox";
             this.dureeTextBox.ReadOnly = true;
             this.dureeTextBox.Size = new System.Drawing.Size(121, 20);
@@ -187,7 +187,7 @@
             this.noTypeSoinComboBox.DisplayMember = "Description";
             this.noTypeSoinComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.noTypeSoinComboBox.FormattingEnabled = true;
-            this.noTypeSoinComboBox.Location = new System.Drawing.Point(103, 220);
+            this.noTypeSoinComboBox.Location = new System.Drawing.Point(94, 173);
             this.noTypeSoinComboBox.Name = "noTypeSoinComboBox";
             this.noTypeSoinComboBox.Size = new System.Drawing.Size(121, 21);
             this.noTypeSoinComboBox.TabIndex = 8;
@@ -201,7 +201,7 @@
             // prixTextBox
             // 
             this.prixTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.soinBindingSource, "Prix", true));
-            this.prixTextBox.Location = new System.Drawing.Point(103, 247);
+            this.prixTextBox.Location = new System.Drawing.Point(94, 200);
             this.prixTextBox.Name = "prixTextBox";
             this.prixTextBox.Size = new System.Drawing.Size(121, 20);
             this.prixTextBox.TabIndex = 10;
@@ -214,7 +214,7 @@
             // btnFermer
             // 
             this.btnFermer.CausesValidation = false;
-            this.btnFermer.Location = new System.Drawing.Point(343, 222);
+            this.btnFermer.Location = new System.Drawing.Point(338, 186);
             this.btnFermer.Name = "btnFermer";
             this.btnFermer.Size = new System.Drawing.Size(81, 29);
             this.btnFermer.TabIndex = 24;
@@ -225,7 +225,7 @@
             // btnAnnuler
             // 
             this.btnAnnuler.CausesValidation = false;
-            this.btnAnnuler.Location = new System.Drawing.Point(256, 222);
+            this.btnAnnuler.Location = new System.Drawing.Point(251, 186);
             this.btnAnnuler.Name = "btnAnnuler";
             this.btnAnnuler.Size = new System.Drawing.Size(81, 30);
             this.btnAnnuler.TabIndex = 23;
@@ -235,7 +235,7 @@
             // 
             // btnEnregistrer
             // 
-            this.btnEnregistrer.Location = new System.Drawing.Point(343, 184);
+            this.btnEnregistrer.Location = new System.Drawing.Point(338, 148);
             this.btnEnregistrer.Name = "btnEnregistrer";
             this.btnEnregistrer.Size = new System.Drawing.Size(81, 30);
             this.btnEnregistrer.TabIndex = 22;
@@ -245,7 +245,7 @@
             // 
             // btnSupprimer
             // 
-            this.btnSupprimer.Location = new System.Drawing.Point(256, 183);
+            this.btnSupprimer.Location = new System.Drawing.Point(251, 147);
             this.btnSupprimer.Name = "btnSupprimer";
             this.btnSupprimer.Size = new System.Drawing.Size(81, 33);
             this.btnSupprimer.TabIndex = 21;
@@ -255,7 +255,7 @@
             // 
             // btnModifier
             // 
-            this.btnModifier.Location = new System.Drawing.Point(343, 145);
+            this.btnModifier.Location = new System.Drawing.Point(338, 109);
             this.btnModifier.Name = "btnModifier";
             this.btnModifier.Size = new System.Drawing.Size(81, 32);
             this.btnModifier.TabIndex = 20;
@@ -265,7 +265,7 @@
             // 
             // btnAjouter
             // 
-            this.btnAjouter.Location = new System.Drawing.Point(256, 145);
+            this.btnAjouter.Location = new System.Drawing.Point(251, 109);
             this.btnAjouter.Name = "btnAjouter";
             this.btnAjouter.Size = new System.Drawing.Size(81, 32);
             this.btnAjouter.TabIndex = 19;
@@ -277,7 +277,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Baskervville", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(87, 32);
+            this.label1.Location = new System.Drawing.Point(109, 21);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(228, 40);
             this.label1.TabIndex = 25;
@@ -296,7 +296,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(498, 484);
+            this.ClientSize = new System.Drawing.Size(498, 233);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnFermer);
             this.Controls.Add(this.btnAnnuler);
