@@ -1,8 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\star\\Documents\\School\\bd_projet_1\\Projet1 - VS\\",
+  "WorkspaceRootPath": "C:\\Users\\georg\\OneDrive\\Documents\\HotelPlageSante\\Projet1 - VS\\",
   "Documents": [
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|c:\\users\\star\\documents\\school\\bd_projet_1\\projet1 - vs\\frmvisualisation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|solutionrelative:frmvisualisation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
@@ -13,6 +14,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|c:\\users\\star\\documents\\school\\bd_projet_1\\projet1 - vs\\frmchambreettype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|solutionrelative:frmchambreettype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+=======
+      "AbsoluteMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|c:\\users\\georg\\onedrive\\documents\\hotelplagesante\\projet1 - vs\\gestionsoin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|solutionrelative:gestionsoin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|C:\\Users\\georg\\OneDrive\\Documents\\HotelPlageSante\\Projet1 - VS\\gestionsoin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|solutionrelative:gestionsoin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> Gestion-des-soins
     }
   ],
   "DocumentGroupContainers": [
@@ -22,14 +31,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
           "SelectedChildIndex": 3,
+=======
+          "SelectedChildIndex": 0,
+>>>>>>> Gestion-des-soins
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 2,
               "Title": "frmChambreEtType.cs [Design]",
               "DocumentMoniker": "C:\\Users\\star\\Documents\\School\\bd_projet_1\\Projet1 - VS\\frmChambreEtType.cs",
@@ -38,11 +48,23 @@
               "RelativeToolTip": "frmChambreEtType.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-18T15:25:13.689Z",
+=======
+              "DocumentIndex": 0,
+              "Title": "GestionSoin.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\georg\\OneDrive\\Documents\\HotelPlageSante\\Projet1 - VS\\GestionSoin.cs",
+              "RelativeDocumentMoniker": "GestionSoin.cs",
+              "ToolTip": "C:\\Users\\georg\\OneDrive\\Documents\\HotelPlageSante\\Projet1 - VS\\GestionSoin.cs [Design]",
+              "RelativeToolTip": "GestionSoin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-18T17:35:36.089Z",
+              "IsPinned": true,
+>>>>>>> Gestion-des-soins
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+<<<<<<< HEAD
               "Title": "frmVisualisation.cs",
               "DocumentMoniker": "C:\\Users\\star\\Documents\\School\\bd_projet_1\\Projet1 - VS\\frmVisualisation.cs",
               "RelativeDocumentMoniker": "frmVisualisation.cs",
@@ -64,6 +86,21 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-18T15:24:53.723Z",
               "EditorCaption": " [Design]"
+=======
+              "Title": "GestionSoin.cs",
+              "DocumentMoniker": "C:\\Users\\georg\\OneDrive\\Documents\\HotelPlageSante\\Projet1 - VS\\GestionSoin.cs",
+              "RelativeDocumentMoniker": "GestionSoin.cs",
+              "ToolTip": "C:\\Users\\georg\\OneDrive\\Documents\\HotelPlageSante\\Projet1 - VS\\GestionSoin.cs",
+              "RelativeToolTip": "GestionSoin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-18T17:36:42.653Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+>>>>>>> Gestion-des-soins
             }
           ]
         }

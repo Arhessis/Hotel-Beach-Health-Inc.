@@ -182,6 +182,9 @@
     <EmbeddedResource Include="frmClientEtInvite.resx">
       <DependentUpon>frmClientEtInvite.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GestionSoin.resx">
+      <DependentUpon>GestionSoin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GestionUtilisateurs.resx">
       <DependentUpon>GestionUtilisateurs.cs</DependentUpon>
     </EmbeddedResource>
