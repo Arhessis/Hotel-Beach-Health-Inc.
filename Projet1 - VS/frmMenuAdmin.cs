@@ -21,7 +21,7 @@ namespace Projet1___VS
         PlannificationSoin plannificationSoin = new PlannificationSoin();
         frmChambreEtType gestionChambreEtType = new frmChambreEtType();
         ReservationChambre reservationChambre = new ReservationChambre();
-        Visualisation visualiserRapport = new Visualisation();
+        frmVisualisation visualiserRapport = new frmVisualisation();
 
         public frmMenuAdmin()
         {
