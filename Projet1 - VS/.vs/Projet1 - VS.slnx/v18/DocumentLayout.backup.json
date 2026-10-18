@@ -5,6 +5,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|c:\\users\\georg\\onedrive\\documents\\hotelplagesante\\projet1 - vs\\gestionsoin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|solutionrelative:gestionsoin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|c:\\users\\georg\\onedrive\\documents\\hotelplagesante\\projet1 - vs\\gestionsoin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|solutionrelative:gestionsoin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,12 +18,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -30,7 +30,26 @@
               "RelativeToolTip": "GestionSoin.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-18T17:35:36.089Z",
+              "IsPinned": true,
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GestionSoin.cs",
+              "DocumentMoniker": "C:\\Users\\georg\\OneDrive\\Documents\\HotelPlageSante\\Projet1 - VS\\GestionSoin.cs",
+              "RelativeDocumentMoniker": "GestionSoin.cs",
+              "ToolTip": "C:\\Users\\georg\\OneDrive\\Documents\\HotelPlageSante\\Projet1 - VS\\GestionSoin.cs",
+              "RelativeToolTip": "GestionSoin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-18T17:36:42.653Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             }
           ]
         }

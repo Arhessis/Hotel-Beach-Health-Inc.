@@ -10,30 +10,54 @@ using System.Windows.Forms;
 
 namespace Projet1___VS
 {
+
     public partial class GestionSoin : Form
     {
+        private bool enModeAjout = false;
+
         public GestionSoin()
         {
             InitializeComponent();
         }
 
-        private void soinBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        private void GestionSoin_Load(object sender, EventArgs e)
         {
-            this.Validate();
-            this.soinBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.bDB56Projet1BKGDataSet);
+            this.planifSoinTableAdapter.Fill(this.bDB56Projet1BKGDataSet.PlanifSoin);
+            try
+            {
+                this.typeSoinTableAdapter.Fill(this.bDB56Projet1BKGDataSet.TypeSoin);
+
+                this.soinTableAdapter.Fill(this.bDB56Projet1BKGDataSet.Soin);
+
+                this.assistantSoinTableAdapter.Fill(this.bDB56Projet1BKGDataSet.AssistantSoin);
+                this.planifSoinTableAdapter.Fill(this.bDB56Projet1BKGDataSet.PlanifSoin);
+
+                GererEtatControles(false);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erreur lors du chargement des données : " + ex.Message,
+                    "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
 
         }
 
-        private void GestionSoin_Load(object sender, EventArgs e)
+        private void GererEtatControles(bool enEdition)
         {
-            // TODO: This line of code loads data into the 'bDB56Projet1BKGDataSet.AssistantSoin' table. You can move, or remove it, as needed.
-            this.assistantSoinTableAdapter.Fill(this.bDB56Projet1BKGDataSet.AssistantSoin);
-            // TODO: This line of code loads data into the 'bDB56Projet1BKGDataSet.TypeSoin' table. You can move, or remove it, as needed.
-            this.typeSoinTableAdapter.Fill(this.bDB56Projet1BKGDataSet.TypeSoin);
-            // TODO: This line of code loads data into the 'bDB56Projet1BKGDataSet.Soin' table. You can move, or remove it, as needed.
-            this.soinTableAdapter.Fill(this.bDB56Projet1BKGDataSet.Soin);
+            btnAjouter.Enabled = !enEdition;
+            btnModifier.Enabled = !enEdition && soinBindingSource.Count > 0;
+            btnSupprimer.Enabled = !enEdition && soinBindingSource.Count > 0;
 
+            btnEnregistrer.Enabled = enEdition;
+            btnAnnuler.Enabled = enEdition;
+
+            noSoinTextBox.ReadOnly = true;
+
+            dureeTextBox.ReadOnly = true;
+
+            descriptionTextBox.ReadOnly = !enEdition;
+            prixTextBox.ReadOnly = !enEdition;
+            noTypeSoinComboBox.Enabled = enEdition;
         }
     }
 }

@@ -38,15 +38,15 @@
             this.soinBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.soinTableAdapter = new Projet1___VS.BDB56Projet1BKGDataSetTableAdapters.SoinTableAdapter();
             this.tableAdapterManager = new Projet1___VS.BDB56Projet1BKGDataSetTableAdapters.TableAdapterManager();
+            this.assistantSoinTableAdapter = new Projet1___VS.BDB56Projet1BKGDataSetTableAdapters.AssistantSoinTableAdapter();
+            this.typeSoinTableAdapter = new Projet1___VS.BDB56Projet1BKGDataSetTableAdapters.TypeSoinTableAdapter();
             this.noSoinTextBox = new System.Windows.Forms.TextBox();
             this.descriptionTextBox = new System.Windows.Forms.TextBox();
             this.dureeTextBox = new System.Windows.Forms.TextBox();
             this.noTypeSoinComboBox = new System.Windows.Forms.ComboBox();
-            this.prixTextBox = new System.Windows.Forms.TextBox();
             this.typeSoinBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.typeSoinTableAdapter = new Projet1___VS.BDB56Projet1BKGDataSetTableAdapters.TypeSoinTableAdapter();
+            this.prixTextBox = new System.Windows.Forms.TextBox();
             this.assistantSoinBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.assistantSoinTableAdapter = new Projet1___VS.BDB56Projet1BKGDataSetTableAdapters.AssistantSoinTableAdapter();
             this.btnFermer = new System.Windows.Forms.Button();
             this.btnAnnuler = new System.Windows.Forms.Button();
             this.btnEnregistrer = new System.Windows.Forms.Button();
@@ -54,6 +54,8 @@
             this.btnModifier = new System.Windows.Forms.Button();
             this.btnAjouter = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.planifSoinBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.planifSoinTableAdapter = new Projet1___VS.BDB56Projet1BKGDataSetTableAdapters.PlanifSoinTableAdapter();
             noSoinLabel = new System.Windows.Forms.Label();
             descriptionLabel = new System.Windows.Forms.Label();
             dureeLabel = new System.Windows.Forms.Label();
@@ -63,7 +65,53 @@
             ((System.ComponentModel.ISupportInitialize)(this.soinBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.typeSoinBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.assistantSoinBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.planifSoinBindingSource)).BeginInit();
             this.SuspendLayout();
+            // 
+            // noSoinLabel
+            // 
+            noSoinLabel.AutoSize = true;
+            noSoinLabel.Location = new System.Drawing.Point(22, 145);
+            noSoinLabel.Name = "noSoinLabel";
+            noSoinLabel.Size = new System.Drawing.Size(48, 13);
+            noSoinLabel.TabIndex = 1;
+            noSoinLabel.Text = "No Soin:";
+            // 
+            // descriptionLabel
+            // 
+            descriptionLabel.AutoSize = true;
+            descriptionLabel.Location = new System.Drawing.Point(22, 171);
+            descriptionLabel.Name = "descriptionLabel";
+            descriptionLabel.Size = new System.Drawing.Size(63, 13);
+            descriptionLabel.TabIndex = 3;
+            descriptionLabel.Text = "Description:";
+            // 
+            // dureeLabel
+            // 
+            dureeLabel.AutoSize = true;
+            dureeLabel.Location = new System.Drawing.Point(22, 197);
+            dureeLabel.Name = "dureeLabel";
+            dureeLabel.Size = new System.Drawing.Size(39, 13);
+            dureeLabel.TabIndex = 5;
+            dureeLabel.Text = "Duree:";
+            // 
+            // noTypeSoinLabel
+            // 
+            noTypeSoinLabel.AutoSize = true;
+            noTypeSoinLabel.Location = new System.Drawing.Point(22, 223);
+            noTypeSoinLabel.Name = "noTypeSoinLabel";
+            noTypeSoinLabel.Size = new System.Drawing.Size(75, 13);
+            noTypeSoinLabel.TabIndex = 7;
+            noTypeSoinLabel.Text = "No Type Soin:";
+            // 
+            // prixLabel
+            // 
+            prixLabel.AutoSize = true;
+            prixLabel.Location = new System.Drawing.Point(22, 250);
+            prixLabel.Name = "prixLabel";
+            prixLabel.Size = new System.Drawing.Size(27, 13);
+            prixLabel.TabIndex = 9;
+            prixLabel.Text = "Prix:";
             // 
             // bDB56Projet1BKGDataSet
             // 
@@ -96,14 +144,13 @@
             this.tableAdapterManager.UpdateOrder = Projet1___VS.BDB56Projet1BKGDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.UtilisateurTableAdapter = null;
             // 
-            // noSoinLabel
+            // assistantSoinTableAdapter
             // 
-            noSoinLabel.AutoSize = true;
-            noSoinLabel.Location = new System.Drawing.Point(22, 145);
-            noSoinLabel.Name = "noSoinLabel";
-            noSoinLabel.Size = new System.Drawing.Size(48, 13);
-            noSoinLabel.TabIndex = 1;
-            noSoinLabel.Text = "No Soin:";
+            this.assistantSoinTableAdapter.ClearBeforeFill = true;
+            // 
+            // typeSoinTableAdapter
+            // 
+            this.typeSoinTableAdapter.ClearBeforeFill = true;
             // 
             // noSoinTextBox
             // 
@@ -114,15 +161,6 @@
             this.noSoinTextBox.Size = new System.Drawing.Size(121, 20);
             this.noSoinTextBox.TabIndex = 2;
             // 
-            // descriptionLabel
-            // 
-            descriptionLabel.AutoSize = true;
-            descriptionLabel.Location = new System.Drawing.Point(22, 171);
-            descriptionLabel.Name = "descriptionLabel";
-            descriptionLabel.Size = new System.Drawing.Size(63, 13);
-            descriptionLabel.TabIndex = 3;
-            descriptionLabel.Text = "Description:";
-            // 
             // descriptionTextBox
             // 
             this.descriptionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.soinBindingSource, "Description", true));
@@ -132,15 +170,6 @@
             this.descriptionTextBox.Size = new System.Drawing.Size(121, 20);
             this.descriptionTextBox.TabIndex = 4;
             // 
-            // dureeLabel
-            // 
-            dureeLabel.AutoSize = true;
-            dureeLabel.Location = new System.Drawing.Point(22, 197);
-            dureeLabel.Name = "dureeLabel";
-            dureeLabel.Size = new System.Drawing.Size(39, 13);
-            dureeLabel.TabIndex = 5;
-            dureeLabel.Text = "Duree:";
-            // 
             // dureeTextBox
             // 
             this.dureeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.soinBindingSource, "Duree", true));
@@ -149,15 +178,6 @@
             this.dureeTextBox.ReadOnly = true;
             this.dureeTextBox.Size = new System.Drawing.Size(121, 20);
             this.dureeTextBox.TabIndex = 6;
-            // 
-            // noTypeSoinLabel
-            // 
-            noTypeSoinLabel.AutoSize = true;
-            noTypeSoinLabel.Location = new System.Drawing.Point(22, 223);
-            noTypeSoinLabel.Name = "noTypeSoinLabel";
-            noTypeSoinLabel.Size = new System.Drawing.Size(75, 13);
-            noTypeSoinLabel.TabIndex = 7;
-            noTypeSoinLabel.Text = "No Type Soin:";
             // 
             // noTypeSoinComboBox
             // 
@@ -173,14 +193,10 @@
             this.noTypeSoinComboBox.TabIndex = 8;
             this.noTypeSoinComboBox.ValueMember = "NoTypeSoin";
             // 
-            // prixLabel
+            // typeSoinBindingSource
             // 
-            prixLabel.AutoSize = true;
-            prixLabel.Location = new System.Drawing.Point(22, 250);
-            prixLabel.Name = "prixLabel";
-            prixLabel.Size = new System.Drawing.Size(27, 13);
-            prixLabel.TabIndex = 9;
-            prixLabel.Text = "Prix:";
+            this.typeSoinBindingSource.DataMember = "TypeSoin";
+            this.typeSoinBindingSource.DataSource = this.bDB56Projet1BKGDataSet;
             // 
             // prixTextBox
             // 
@@ -190,23 +206,10 @@
             this.prixTextBox.Size = new System.Drawing.Size(121, 20);
             this.prixTextBox.TabIndex = 10;
             // 
-            // typeSoinBindingSource
-            // 
-            this.typeSoinBindingSource.DataMember = "TypeSoin";
-            this.typeSoinBindingSource.DataSource = this.bDB56Projet1BKGDataSet;
-            // 
-            // typeSoinTableAdapter
-            // 
-            this.typeSoinTableAdapter.ClearBeforeFill = true;
-            // 
             // assistantSoinBindingSource
             // 
             this.assistantSoinBindingSource.DataMember = "AssistantSoin";
             this.assistantSoinBindingSource.DataSource = this.bDB56Projet1BKGDataSet;
-            // 
-            // assistantSoinTableAdapter
-            // 
-            this.assistantSoinTableAdapter.ClearBeforeFill = true;
             // 
             // btnFermer
             // 
@@ -274,11 +277,20 @@
             this.label1.TabIndex = 25;
             this.label1.Text = "Gestion des soins";
             // 
+            // planifSoinBindingSource
+            // 
+            this.planifSoinBindingSource.DataMember = "PlanifSoin";
+            this.planifSoinBindingSource.DataSource = this.bDB56Projet1BKGDataSet;
+            // 
+            // planifSoinTableAdapter
+            // 
+            this.planifSoinTableAdapter.ClearBeforeFill = true;
+            // 
             // GestionSoin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(507, 450);
+            this.ClientSize = new System.Drawing.Size(498, 484);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnFermer);
             this.Controls.Add(this.btnAnnuler);
@@ -303,6 +315,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.soinBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.typeSoinBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.assistantSoinBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.planifSoinBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -330,5 +343,7 @@
         private System.Windows.Forms.Button btnModifier;
         private System.Windows.Forms.Button btnAjouter;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.BindingSource planifSoinBindingSource;
+        private BDB56Projet1BKGDataSetTableAdapters.PlanifSoinTableAdapter planifSoinTableAdapter;
     }
 }
