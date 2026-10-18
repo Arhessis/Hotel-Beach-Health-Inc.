@@ -145,7 +145,7 @@
             // 
             // cboNoPersonne
             // 
-            this.cboNoPersonne.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.planifSoinBindingSource, "NoPersonne", true, System.Windows.Forms.DataSourceUpdateMode.OnValidation, null, ""));
+            this.cboNoPersonne.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.planifSoinBindingSource, "NoPersonne", true));
             this.cboNoPersonne.FormattingEnabled = true;
             this.cboNoPersonne.Location = new System.Drawing.Point(92, 79);
             this.cboNoPersonne.Name = "cboNoPersonne";
@@ -154,14 +154,16 @@
             // 
             // cboNoAssistant
             // 
-            this.cboNoAssistant.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.planifSoinBindingSource, "NoAssistant", true, System.Windows.Forms.DataSourceUpdateMode.OnValidation, null, "")); this.cboNoAssistant.Location = new System.Drawing.Point(92, 106);
+            this.cboNoAssistant.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.planifSoinBindingSource, "NoAssistant", true));
+            this.cboNoAssistant.Location = new System.Drawing.Point(92, 106);
             this.cboNoAssistant.Name = "cboNoAssistant";
             this.cboNoAssistant.Size = new System.Drawing.Size(173, 21);
             this.cboNoAssistant.TabIndex = 4;
             // 
             // cboNoSoin
             // 
-            this.cboNoSoin.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.planifSoinBindingSource, "NoSoin", true, System.Windows.Forms.DataSourceUpdateMode.OnValidation, null, "")); this.cboNoSoin.FormattingEnabled = true;
+            this.cboNoSoin.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.planifSoinBindingSource, "NoSoin", true));
+            this.cboNoSoin.FormattingEnabled = true;
             this.cboNoSoin.Location = new System.Drawing.Point(92, 159);
             this.cboNoSoin.Name = "cboNoSoin";
             this.cboNoSoin.Size = new System.Drawing.Size(173, 21);

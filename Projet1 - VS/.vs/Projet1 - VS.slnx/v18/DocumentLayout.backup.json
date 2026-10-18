@@ -1,38 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\star\\Documents\\School\\bd_projet_1\\Projet1 - VS\\",
+  "WorkspaceRootPath": "C:\\Users\\georg\\OneDrive\\Documents\\HotelPlageSante\\Projet1 - VS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|c:\\users\\star\\documents\\school\\bd_projet_1\\projet1 - vs\\plannificationsoin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|c:\\users\\georg\\onedrive\\documents\\hotelplagesante\\projet1 - vs\\plannificationsoin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|solutionrelative:plannificationsoin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|c:\\users\\georg\\onedrive\\documents\\hotelplagesante\\projet1 - vs\\plannificationsoin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|solutionrelative:plannificationsoin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|C:\\Users\\star\\Documents\\School\\bd_projet_1\\Projet1 - VS\\gestionassistantetsoin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|solutionrelative:gestionassistantetsoin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|C:\\Users\\star\\Documents\\School\\bd_projet_1\\Projet1 - VS\\gestionassistantetsoin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|solutionrelative:gestionassistantetsoin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|C:\\Users\\star\\Documents\\School\\bd_projet_1\\Projet1 - VS\\ajouterassist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|solutionrelative:ajouterassist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|C:\\Users\\star\\Documents\\School\\bd_projet_1\\Projet1 - VS\\gestionassistantetsoin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|solutionrelative:gestionassistantetsoin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|C:\\Users\\star\\Documents\\School\\bd_projet_1\\Projet1 - VS\\ajouterassist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|solutionrelative:ajouterassist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|C:\\Users\\star\\Documents\\School\\bd_projet_1\\Projet1 - VS\\gestionutilisateurs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|solutionrelative:gestionutilisateurs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|C:\\Users\\star\\Documents\\School\\bd_projet_1\\Projet1 - VS\\gestionutilisateurs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|solutionrelative:gestionutilisateurs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,97 +26,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "PlannificationSoin.cs",
-              "DocumentMoniker": "C:\\Users\\star\\Documents\\School\\bd_projet_1\\Projet1 - VS\\PlannificationSoin.cs",
+              "DocumentMoniker": "C:\\Users\\georg\\OneDrive\\Documents\\HotelPlageSante\\Projet1 - VS\\PlannificationSoin.cs",
               "RelativeDocumentMoniker": "PlannificationSoin.cs",
-              "ToolTip": "C:\\Users\\star\\Documents\\School\\bd_projet_1\\Projet1 - VS\\PlannificationSoin.cs",
+              "ToolTip": "C:\\Users\\georg\\OneDrive\\Documents\\HotelPlageSante\\Projet1 - VS\\PlannificationSoin.cs",
               "RelativeToolTip": "PlannificationSoin.cs",
-              "ViewState": "AgIAAMUAAAAAAAAAAAArwNwAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAmwAkAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-18T05:29:37.235Z",
+              "WhenOpened": "2026-10-18T13:52:06.945Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "GestionAssistantEtSoin.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\star\\Documents\\School\\bd_projet_1\\Projet1 - VS\\GestionAssistantEtSoin.Designer.cs",
-              "RelativeDocumentMoniker": "GestionAssistantEtSoin.Designer.cs",
-              "ToolTip": "C:\\Users\\star\\Documents\\School\\bd_projet_1\\Projet1 - VS\\GestionAssistantEtSoin.Designer.cs",
-              "RelativeToolTip": "GestionAssistantEtSoin.Designer.cs",
-              "ViewState": "AgIAAGEBAAAAAAAAAAAAAGEBAAABAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "PlannificationSoin.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\georg\\OneDrive\\Documents\\HotelPlageSante\\Projet1 - VS\\PlannificationSoin.cs",
+              "RelativeDocumentMoniker": "PlannificationSoin.cs",
+              "ToolTip": "C:\\Users\\georg\\OneDrive\\Documents\\HotelPlageSante\\Projet1 - VS\\PlannificationSoin.cs [Design]",
+              "RelativeToolTip": "PlannificationSoin.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-17T23:44:15.742Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AjouterAssist.cs",
-              "DocumentMoniker": "C:\\Users\\star\\Documents\\School\\bd_projet_1\\Projet1 - VS\\AjouterAssist.cs",
-              "RelativeDocumentMoniker": "AjouterAssist.cs",
-              "ToolTip": "C:\\Users\\star\\Documents\\School\\bd_projet_1\\Projet1 - VS\\AjouterAssist.cs",
-              "RelativeToolTip": "AjouterAssist.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAAAEYAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-14T18:07:39.869Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AjouterAssist.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\star\\Documents\\School\\bd_projet_1\\Projet1 - VS\\AjouterAssist.cs",
-              "RelativeDocumentMoniker": "AjouterAssist.cs",
-              "ToolTip": "C:\\wamp64\\www\\project1Base3\\Projet1 - VS\\AjouterAssist.cs [Design]",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\wamp64\\www\\project1Base3\\Projet1 - VS\\AjouterAssist.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-14T18:07:19.172Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "GestionAssistantEtSoin.cs",
-              "DocumentMoniker": "C:\\Users\\star\\Documents\\School\\bd_projet_1\\Projet1 - VS\\GestionAssistantEtSoin.cs",
-              "RelativeDocumentMoniker": "GestionAssistantEtSoin.cs",
-              "ToolTip": "C:\\Users\\star\\Documents\\School\\bd_projet_1\\Projet1 - VS\\GestionAssistantEtSoin.cs",
-              "RelativeToolTip": "GestionAssistantEtSoin.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAYwBwAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-13T19:33:21.461Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "GestionAssistantEtSoin.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\star\\Documents\\School\\bd_projet_1\\Projet1 - VS\\GestionAssistantEtSoin.cs",
-              "RelativeDocumentMoniker": "GestionAssistantEtSoin.cs",
-              "ToolTip": "C:\\wamp64\\www\\project1Base3\\Projet1 - VS\\GestionAssistantEtSoin.cs [Design]",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\wamp64\\www\\project1Base3\\Projet1 - VS\\GestionAssistantEtSoin.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-13T19:32:16.363Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "GestionUtilisateurs.cs",
-              "DocumentMoniker": "C:\\Users\\star\\Documents\\School\\bd_projet_1\\Projet1 - VS\\GestionUtilisateurs.cs",
-              "RelativeDocumentMoniker": "GestionUtilisateurs.cs",
-              "ToolTip": "C:\\Users\\star\\Documents\\School\\bd_projet_1\\Projet1 - VS\\GestionUtilisateurs.cs",
-              "RelativeToolTip": "GestionUtilisateurs.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAD4vyQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-18T05:20:11.214Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "GestionUtilisateurs.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\star\\Documents\\School\\bd_projet_1\\Projet1 - VS\\GestionUtilisateurs.cs",
-              "RelativeDocumentMoniker": "GestionUtilisateurs.cs",
-              "ToolTip": "C:\\wamp64\\www\\project1Base3\\Projet1 - VS\\GestionUtilisateurs.cs [Design]",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\wamp64\\www\\project1Base3\\Projet1 - VS\\GestionUtilisateurs.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-18T05:20:11.214Z"
+              "WhenOpened": "2026-10-18T13:50:37.021Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

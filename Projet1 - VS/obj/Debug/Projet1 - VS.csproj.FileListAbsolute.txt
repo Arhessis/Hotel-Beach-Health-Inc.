@@ -58,3 +58,5 @@ C:\Users\georg\OneDrive\Documents\HotelPlageSante\Projet1 - VS\obj\Debug\Projet1
 C:\Users\georg\OneDrive\Documents\HotelPlageSante\Projet1 - VS\obj\Debug\Projet1___VS.MenuAdmin.resources
 C:\Users\georg\OneDrive\Documents\HotelPlageSante\Projet1 - VS\obj\Debug\Projet1___VS.PlannificationSoin.resources
 >>>>>>> f803aefa7a163089536a45288d11c45accc96bb7
+C:\Users\georg\OneDrive\Documents\HotelPlageSante\Projet1 - VS\obj\Debug\Projet1___VS.AjouterAssist.resources
+C:\Users\georg\OneDrive\Documents\HotelPlageSante\Projet1 - VS\obj\Debug\Projet1___VS.AjouterSoinAssistant.resources

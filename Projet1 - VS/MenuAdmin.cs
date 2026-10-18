@@ -87,17 +87,13 @@ namespace Projet1___VS
 
         private void déconnexionToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            this.DialogResult = DialogResult.OK;
+            this.Close();
         }
 
         private void quitterToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void MenuAdmin_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
