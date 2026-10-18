@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GestionAssistantEtSoin));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -39,29 +38,6 @@
             this.bDB56Projet1BKGDataSet = new Projet1___VS.BDB56Projet1BKGDataSet();
             this.assistantBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.assistantTableAdapter = new Projet1___VS.BDB56Projet1BKGDataSetTableAdapters.AssistantTableAdapter();
-            this.tableAdapterManager = new Projet1___VS.BDB56Projet1BKGDataSetTableAdapters.TableAdapterManager();
-<<<<<<< HEAD
-            this.assistantBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.assistantBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-=======
-            this.dgSoin = new System.Windows.Forms.DataGridView();
-            this.NoSoin = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Description = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Duree = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NoTypeSoin = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Prix = new System.Windows.Forms.DataGridViewTextBoxColumn();
->>>>>>> f803aefa7a163089536a45288d11c45accc96bb7
             this.dgAssistant = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -81,18 +57,10 @@
             this.btnAjouterSoin = new System.Windows.Forms.Button();
             this.btnSupprimerSoin = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.bDB56Projet1BKGDataSet)).BeginInit();
-<<<<<<< HEAD
             ((System.ComponentModel.ISupportInitialize)(this.assistantBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.assistantBindingNavigator)).BeginInit();
-            this.assistantBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgAssistant)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.soinBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.soinDataGridView)).BeginInit();
-=======
-            ((System.ComponentModel.ISupportInitialize)(this.dgAssitant)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgSoin)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgAssistant)).BeginInit();
->>>>>>> f803aefa7a163089536a45288d11c45accc96bb7
             this.SuspendLayout();
             // 
             // bDB56Projet1BKGDataSet
@@ -108,166 +76,6 @@
             // assistantTableAdapter
             // 
             this.assistantTableAdapter.ClearBeforeFill = true;
-            // 
-            // tableAdapterManager
-            // 
-            this.tableAdapterManager.AssistantSoinTableAdapter = null;
-            this.tableAdapterManager.AssistantTableAdapter = this.assistantTableAdapter;
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.ChambreTableAdapter = null;
-            this.tableAdapterManager.ClientTableAdapter = null;
-            this.tableAdapterManager.InviteTableAdapter = null;
-            this.tableAdapterManager.PlanifSoinTableAdapter = null;
-            this.tableAdapterManager.ReservationChambreTableAdapter = null;
-            this.tableAdapterManager.SoinTableAdapter = null;
-            this.tableAdapterManager.TypeChambreTableAdapter = null;
-            this.tableAdapterManager.TypeSoinTableAdapter = null;
-            this.tableAdapterManager.TypeUtilisateurTableAdapter = null;
-            this.tableAdapterManager.UpdateOrder = Projet1___VS.BDB56Projet1BKGDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            this.tableAdapterManager.UtilisateurTableAdapter = null;
-            // 
-            // assistantBindingNavigator
-            // 
-<<<<<<< HEAD
-            this.assistantBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
-            this.assistantBindingNavigator.BindingSource = this.assistantBindingSource;
-            this.assistantBindingNavigator.CountItem = this.bindingNavigatorCountItem;
-            this.assistantBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
-            this.assistantBindingNavigator.ImageScalingSize = new System.Drawing.Size(32, 32);
-            this.assistantBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.bindingNavigatorMoveFirstItem,
-            this.bindingNavigatorMovePreviousItem,
-            this.bindingNavigatorSeparator,
-            this.bindingNavigatorPositionItem,
-            this.bindingNavigatorCountItem,
-            this.bindingNavigatorSeparator1,
-            this.bindingNavigatorMoveNextItem,
-            this.bindingNavigatorMoveLastItem,
-            this.bindingNavigatorSeparator2,
-            this.bindingNavigatorAddNewItem,
-            this.bindingNavigatorDeleteItem,
-            this.assistantBindingNavigatorSaveItem});
-            this.assistantBindingNavigator.Location = new System.Drawing.Point(0, 0);
-            this.assistantBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
-            this.assistantBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
-            this.assistantBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
-            this.assistantBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
-            this.assistantBindingNavigator.Name = "assistantBindingNavigator";
-            this.assistantBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.assistantBindingNavigator.Size = new System.Drawing.Size(1700, 50);
-            this.assistantBindingNavigator.TabIndex = 0;
-            this.assistantBindingNavigator.Text = "bindingNavigator1";
-=======
-            this.dgSoin.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgSoin.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.NoSoin,
-            this.Description,
-            this.Duree,
-            this.NoTypeSoin,
-            this.Prix});
-            this.dgSoin.Location = new System.Drawing.Point(0, 87);
-            this.dgSoin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.dgSoin.Name = "dgSoin";
-            this.dgSoin.RowHeadersWidth = 82;
-            this.dgSoin.RowTemplate.Height = 33;
-            this.dgSoin.Size = new System.Drawing.Size(516, 78);
-            this.dgSoin.TabIndex = 1;
->>>>>>> f803aefa7a163089536a45288d11c45accc96bb7
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(46, 44);
-            this.bindingNavigatorAddNewItem.Text = "Add new";
-            // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(70, 36);
-            this.bindingNavigatorCountItem.Text = "of {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(46, 36);
-            this.bindingNavigatorDeleteItem.Text = "Delete";
-            // 
-            // bindingNavigatorMoveFirstItem
-            // 
-            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
-            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
-            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(46, 36);
-            this.bindingNavigatorMoveFirstItem.Text = "Move first";
-            // 
-            // bindingNavigatorMovePreviousItem
-            // 
-            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
-            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
-            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(46, 36);
-            this.bindingNavigatorMovePreviousItem.Text = "Move previous";
-            // 
-<<<<<<< HEAD
-            // bindingNavigatorSeparator
-            // 
-            this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 42);
-            // 
-            // bindingNavigatorPositionItem
-            // 
-            this.bindingNavigatorPositionItem.AccessibleName = "Position";
-            this.bindingNavigatorPositionItem.AutoSize = false;
-            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 39);
-            this.bindingNavigatorPositionItem.Text = "0";
-            this.bindingNavigatorPositionItem.ToolTipText = "Current position";
-            // 
-            // bindingNavigatorSeparator1
-            // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 42);
-            // 
-            // bindingNavigatorMoveNextItem
-            // 
-            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
-            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
-            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(46, 36);
-            this.bindingNavigatorMoveNextItem.Text = "Move next";
-            // 
-            // bindingNavigatorMoveLastItem
-            // 
-            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
-            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
-            this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(46, 36);
-            this.bindingNavigatorMoveLastItem.Text = "Move last";
-            // 
-            // bindingNavigatorSeparator2
-            // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 42);
-            // 
-            // assistantBindingNavigatorSaveItem
-            // 
-            this.assistantBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.assistantBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("assistantBindingNavigatorSaveItem.Image")));
-            this.assistantBindingNavigatorSaveItem.Name = "assistantBindingNavigatorSaveItem";
-            this.assistantBindingNavigatorSaveItem.Size = new System.Drawing.Size(46, 36);
-            this.assistantBindingNavigatorSaveItem.Text = "Save Data";
             // 
             // dgAssistant
             // 
@@ -285,19 +93,12 @@
             dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgAssistant.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.dgAssistant.ColumnHeadersHeight = 46;
-=======
-            // dgAssistant
-            // 
-            this.dgAssistant.AutoGenerateColumns = false;
-            this.dgAssistant.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
->>>>>>> f803aefa7a163089536a45288d11c45accc96bb7
             this.dgAssistant.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4,
             this.dataGridViewTextBoxColumn5});
-<<<<<<< HEAD
             this.dgAssistant.DataSource = this.assistantBindingSource;
             dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
@@ -307,7 +108,8 @@
             dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgAssistant.DefaultCellStyle = dataGridViewCellStyle8;
-            this.dgAssistant.Location = new System.Drawing.Point(31, 76);
+            this.dgAssistant.Location = new System.Drawing.Point(31, 31);
+            this.dgAssistant.MultiSelect = false;
             this.dgAssistant.Name = "dgAssistant";
             dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
@@ -317,23 +119,15 @@
             dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgAssistant.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            this.dgAssistant.RowHeadersVisible = false;
             this.dgAssistant.RowHeadersWidth = 82;
             this.dgAssistant.RowTemplate.Height = 33;
-            this.dgAssistant.Size = new System.Drawing.Size(916, 220);
+            this.dgAssistant.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgAssistant.Size = new System.Drawing.Size(916, 265);
             this.dgAssistant.TabIndex = 1;
             this.dgAssistant.CellValidating += new System.Windows.Forms.DataGridViewCellValidatingEventHandler(this.dgAssistant_CellValidating);
             this.dgAssistant.RowValidated += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgAssistant_RowValidated);
             this.dgAssistant.SelectionChanged += new System.EventHandler(this.dgAssistant_SelectionChanged);
-=======
-            this.dgAssistant.DataSource = this.dgAssitant;
-            this.dgAssistant.Location = new System.Drawing.Point(144, 6);
-            this.dgAssistant.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.dgAssistant.Name = "dgAssistant";
-            this.dgAssistant.RowHeadersWidth = 82;
-            this.dgAssistant.RowTemplate.Height = 33;
-            this.dgAssistant.Size = new System.Drawing.Size(150, 114);
-            this.dgAssistant.TabIndex = 1;
->>>>>>> f803aefa7a163089536a45288d11c45accc96bb7
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -341,6 +135,7 @@
             this.dataGridViewTextBoxColumn1.HeaderText = "NoAssistant";
             this.dataGridViewTextBoxColumn1.MinimumWidth = 10;
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn2
             // 
@@ -411,6 +206,7 @@
             dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.soinDataGridView.DefaultCellStyle = dataGridViewCellStyle11;
             this.soinDataGridView.Location = new System.Drawing.Point(31, 426);
+            this.soinDataGridView.MultiSelect = false;
             this.soinDataGridView.Name = "soinDataGridView";
             this.soinDataGridView.ReadOnly = true;
             dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -421,8 +217,10 @@
             dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.soinDataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            this.soinDataGridView.RowHeadersVisible = false;
             this.soinDataGridView.RowHeadersWidth = 82;
             this.soinDataGridView.RowTemplate.Height = 33;
+            this.soinDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.soinDataGridView.Size = new System.Drawing.Size(916, 220);
             this.soinDataGridView.TabIndex = 3;
             // 
@@ -510,7 +308,6 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(1700, 953);
             this.Controls.Add(this.btnSupprimerSoin);
             this.Controls.Add(this.btnAjouterSoin);
@@ -518,33 +315,15 @@
             this.Controls.Add(this.btnAjouter);
             this.Controls.Add(this.soinDataGridView);
             this.Controls.Add(this.dgAssistant);
-            this.Controls.Add(this.assistantBindingNavigator);
-=======
-            this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(632, 461);
-            this.Controls.Add(this.dgAssistant);
-            this.Controls.Add(this.dgSoin);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
->>>>>>> f803aefa7a163089536a45288d11c45accc96bb7
             this.Name = "GestionAssistantEtSoin";
             this.Text = "GestionAssistantEtSoin";
             this.Load += new System.EventHandler(this.GestionAssistantEtSoin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bDB56Projet1BKGDataSet)).EndInit();
-<<<<<<< HEAD
             ((System.ComponentModel.ISupportInitialize)(this.assistantBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.assistantBindingNavigator)).EndInit();
-            this.assistantBindingNavigator.ResumeLayout(false);
-            this.assistantBindingNavigator.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgAssistant)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.soinBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.soinDataGridView)).EndInit();
-=======
-            ((System.ComponentModel.ISupportInitialize)(this.dgAssitant)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgSoin)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgAssistant)).EndInit();
->>>>>>> f803aefa7a163089536a45288d11c45accc96bb7
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -553,29 +332,6 @@
         private BDB56Projet1BKGDataSet bDB56Projet1BKGDataSet;
         private System.Windows.Forms.BindingSource assistantBindingSource;
         private BDB56Projet1BKGDataSetTableAdapters.AssistantTableAdapter assistantTableAdapter;
-        private BDB56Projet1BKGDataSetTableAdapters.TableAdapterManager tableAdapterManager;
-<<<<<<< HEAD
-        private System.Windows.Forms.BindingNavigator assistantBindingNavigator;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
-        private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMovePreviousItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator;
-        private System.Windows.Forms.ToolStripTextBox bindingNavigatorPositionItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator1;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
-        private System.Windows.Forms.ToolStripButton assistantBindingNavigatorSaveItem;
-=======
-        private System.Windows.Forms.DataGridView dgSoin;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NoSoin;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Description;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Duree;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NoTypeSoin;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Prix;
->>>>>>> f803aefa7a163089536a45288d11c45accc96bb7
         private System.Windows.Forms.DataGridView dgAssistant;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
