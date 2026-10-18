@@ -3,6 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\georg\\OneDrive\\Documents\\HotelPlageSante\\Projet1 - VS\\",
   "Documents": [
     {
+<<<<<<< Updated upstream
 <<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|c:\\users\\star\\documents\\school\\bd_projet_1\\projet1 - vs\\frmvisualisation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|solutionrelative:frmvisualisation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
@@ -22,6 +23,14 @@
       "AbsoluteMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|C:\\Users\\georg\\OneDrive\\Documents\\HotelPlageSante\\Projet1 - VS\\gestionsoin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|solutionrelative:gestionsoin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
 >>>>>>> Gestion-des-soins
+=======
+      "AbsoluteMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|C:\\Users\\georg\\OneDrive\\Documents\\HotelPlageSante\\Projet1 - VS\\gestionsoin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|solutionrelative:gestionsoin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|c:\\users\\georg\\onedrive\\documents\\hotelplagesante\\projet1 - vs\\gestionsoin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|solutionrelative:gestionsoin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> Stashed changes
     }
   ],
   "DocumentGroupContainers": [
@@ -31,6 +40,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< Updated upstream
 <<<<<<< HEAD
           "SelectedChildIndex": 3,
 =======
@@ -59,11 +69,27 @@
               "WhenOpened": "2026-10-18T17:35:36.089Z",
               "IsPinned": true,
 >>>>>>> Gestion-des-soins
+=======
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GestionSoin.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\georg\\OneDrive\\Documents\\HotelPlageSante\\Projet1 - VS\\GestionSoin.cs",
+              "RelativeDocumentMoniker": "GestionSoin.cs",
+              "ToolTip": "C:\\Users\\georg\\OneDrive\\Documents\\HotelPlageSante\\Projet1 - VS\\GestionSoin.cs [Design]",
+              "RelativeToolTip": "GestionSoin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-18T22:52:03.839Z",
+              "IsPinned": true,
+>>>>>>> Stashed changes
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+<<<<<<< Updated upstream
 <<<<<<< HEAD
               "Title": "frmVisualisation.cs",
               "DocumentMoniker": "C:\\Users\\star\\Documents\\School\\bd_projet_1\\Projet1 - VS\\frmVisualisation.cs",
@@ -71,11 +97,21 @@
               "ToolTip": "C:\\Users\\star\\Documents\\School\\bd_projet_1\\Projet1 - VS\\frmVisualisation.cs",
               "RelativeToolTip": "frmVisualisation.cs",
               "ViewState": "AgIAACQAAAAAAAAAAAAowAoAAAAKAAAAAAAAAA==",
+=======
+              "Title": "GestionSoin.cs",
+              "DocumentMoniker": "C:\\Users\\georg\\OneDrive\\Documents\\HotelPlageSante\\Projet1 - VS\\GestionSoin.cs",
+              "RelativeDocumentMoniker": "GestionSoin.cs",
+              "ToolTip": "C:\\Users\\georg\\OneDrive\\Documents\\HotelPlageSante\\Projet1 - VS\\GestionSoin.cs",
+              "RelativeToolTip": "GestionSoin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+>>>>>>> Stashed changes
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-18T15:25:00.219Z",
+              "WhenOpened": "2026-10-18T22:52:04.027Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
+<<<<<<< Updated upstream
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "frmVisualisation.cs [Design]",
@@ -101,6 +137,10 @@
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
 >>>>>>> Gestion-des-soins
+=======
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+>>>>>>> Stashed changes
             }
           ]
         }
