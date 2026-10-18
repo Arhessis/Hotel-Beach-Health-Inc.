@@ -28,17 +28,6 @@ namespace Projet1___VS
             InitializeComponent();
         }
 
-<<<<<<< HEAD
-=======
-        private void assistantBindingNavigatorSaveItem_Click(object sender, EventArgs e)
-        {
-            this.Validate();
-            //this.assistantBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.bDB56Projet1BKGDataSet);
-
-        }
->>>>>>> f803aefa7a163089536a45288d11c45accc96bb7
-
 
         private void GestionAssistantEtSoin_Load(object sender, EventArgs e)
         {
