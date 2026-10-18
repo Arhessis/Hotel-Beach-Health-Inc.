@@ -17,19 +17,43 @@ namespace Projet1___VS
             InitializeComponent();
         }
 
-        private void inviteBindingNavigatorSaveItem_Click(object sender, EventArgs e)
-        {
-            this.Validate();
-            this.inviteBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.bDB56Projet1BKGDataSet);
-
-        }
+        public BDB56Projet1BKGDataSet.InviteRow unInvite;
 
         private void frmInvite_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'bDB56Projet1BKGDataSet.Invite' table. You can move, or remove it, as needed.
-            this.inviteTableAdapter.Fill(this.bDB56Projet1BKGDataSet.Invite);
+            if (unInvite.RowState == DataRowState.Detached)
+            {
+                this.Text = "Ajouter un invité";
+                lblTitre.Text = "Ajouter un invité";
+                lblSousTitre.Text = "Invité du client " + unInvite.NoClient + " (maximum 9 invités par client)";
+            }
+            else
+            {
+                this.Text = "Modifier un invité";
+                lblTitre.Text = "Modifier un invité";
+                lblSousTitre.Text = "Seul le nom est modifiable";
+            }
 
+            txtNoInvite.Text = unInvite.NoInvite.ToString();
+            txtNomPrenom.Text = unInvite.IsNomPrenomNull() ? string.Empty : unInvite.NomPrenom;
+            txtNoClient.Text = unInvite.NoClient.ToString();
+        }
+
+        private void btnEnregistrer_Click(object sender, EventArgs e)
+        {
+            if (txtNomPrenom.Text.Trim() == string.Empty)
+                errMessage.SetError(txtNomPrenom, "Le nom de l'invité ne peut pas être vide");
+            else
+            {
+                errMessage.SetError(txtNomPrenom, string.Empty);
+                unInvite.NomPrenom = txtNomPrenom.Text.Trim();
+                this.Close();
+            }
+        }
+
+        private void btnAnnuler_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

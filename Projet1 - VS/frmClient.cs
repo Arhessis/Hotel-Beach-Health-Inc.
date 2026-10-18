@@ -17,34 +17,68 @@ namespace Projet1___VS
             InitializeComponent();
         }
 
-        private void clientBindingNavigatorSaveItem_Click(object sender, EventArgs e)
-        {
-            this.Validate();
-            this.clientBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.bDB56Projet1BKGDataSet);
-
-        }
+        public BDB56Projet1BKGDataSet.ClientRow unClient;
 
         private void frmClient_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'bDB56Projet1BKGDataSet.Client' table. You can move, or remove it, as needed.
-            this.clientTableAdapter.Fill(this.bDB56Projet1BKGDataSet.Client);
+            if (unClient.RowState == DataRowState.Detached)
+            {
+                this.Text = "Ajouter un client";
+                lblTitre.Text = "Ajouter un client";
+                lblSousTitre.Text = "Tous les champs sont obligatoires";
+            }
+            else
+            {
+                this.Text = "Modifier un client";
+                lblTitre.Text = "Modifier un client";
+                lblSousTitre.Text = "Le numéro et la date d'inscription ne sont pas modifiables";
+            }
 
+            txtNoClient.Text = unClient.NoClient.ToString();
+            txtNom.Text = unClient.IsNomNull() ? string.Empty : unClient.Nom;
+            txtPrenom.Text = unClient.IsPrenomNull() ? string.Empty : unClient.Prenom;
+            txtVille.Text = unClient.IsVilleNull() ? string.Empty : unClient.Ville;
+            txtPays.Text = unClient.IsPaysNull() ? string.Empty : unClient.Pays;
+            txtAdresse.Text = unClient.IsAdresseNull() ? string.Empty : unClient.Adresse;
+            txtCodePostal.Text = unClient.IsCodePostalNull() ? string.Empty : unClient.CodePostal;
+            dtpDateInscription.Value = unClient.IsDateInscriptionNull() ? DateTime.Now.Date : unClient.DateInscription;
         }
 
-        private void btnAjouter_Click(object sender, EventArgs e)
+        private bool ChampObligatoire(TextBox txt, string messageErreur)
         {
-
+            if (txt.Text.Trim() == string.Empty)
+            {
+                errMessage.SetError(txt, messageErreur);
+                return false;
+            }
+            errMessage.SetError(txt, string.Empty);
+            return true;
         }
 
-        private void btnSupprimer_Click(object sender, EventArgs e)
+        private void btnEnregistrer_Click(object sender, EventArgs e)
         {
+            bool valide = ChampObligatoire(txtNom, "Le nom ne peut pas être vide")
+                        & ChampObligatoire(txtPrenom, "Le prénom ne peut pas être vide")
+                        & ChampObligatoire(txtVille, "La ville ne peut pas être vide")
+                        & ChampObligatoire(txtPays, "Le pays ne peut pas être vide")
+                        & ChampObligatoire(txtAdresse, "L'adresse ne peut pas être vide")
+                        & ChampObligatoire(txtCodePostal, "Le code postal ne peut pas être vide");
 
+            if (valide)
+            {
+                unClient.Nom = txtNom.Text.Trim();
+                unClient.Prenom = txtPrenom.Text.Trim();
+                unClient.Ville = txtVille.Text.Trim();
+                unClient.Pays = txtPays.Text.Trim();
+                unClient.Adresse = txtAdresse.Text.Trim();
+                unClient.CodePostal = txtCodePostal.Text.Trim();
+                this.Close();
+            }
         }
 
         private void btnAnnuler_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
     }
 }
