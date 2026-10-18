@@ -205,5 +205,55 @@ namespace Projet1___VS
                 bDB56Projet1BKGDataSet.Soin.RejectChanges();
             }
         }
+
+        private void btnSupprimer_Click(object sender, EventArgs e)
+        {
+            if (soinBindingSource.Current == null) return;
+
+            DataRowView currentRow = (DataRowView)soinBindingSource.Current;
+            decimal noSoin = Convert.ToDecimal(currentRow["NoSoin"]);
+            string description = currentRow["Description"].ToString();
+
+            bool estOffertParAssistant = bDB56Projet1BKGDataSet.AssistantSoin.Any(a =>
+                a.RowState != DataRowState.Deleted &&
+                a.NoSoin == noSoin);
+
+            if (estOffertParAssistant)
+            {
+                MessageBox.Show(
+                    $"Impossible de supprimer le soin '{description}' car il est actuellement offert par un ou plusieurs assistants.",
+                    "Suppression refusée",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+                return;
+            }
+
+            bool estPlanifie = bDB56Projet1BKGDataSet.PlanifSoin.Any(p =>
+                p.RowState != DataRowState.Deleted &&
+                p.NoSoin == noSoin);
+
+            if (estPlanifie)
+            {
+                MessageBox.Show(
+                    $"Impossible de supprimer le soin '{description}' car des rendez-vous de soins sont déjà planifiés.",
+                    "Suppression refusée",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+                return;
+            }
+
+            DialogResult confirmation = MessageBox.Show(
+                $"Voulez-vous vraiment supprimer le soin '{description}' (No {noSoin}) ?",
+                "Confirmation de suppression",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question);
+
+            if (confirmation == DialogResult.Yes)
+            {
+                soinBindingSource.RemoveCurrent();
+
+                SauvegarderDonnees();
+            }
+        }
     }
 }
