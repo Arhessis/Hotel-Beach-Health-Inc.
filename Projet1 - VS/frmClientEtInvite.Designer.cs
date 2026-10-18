@@ -1,6 +1,6 @@
 ﻿namespace Projet1___VS
 {
-    partial class GestionClientEtInvite
+    partial class frmClientEtInvite
     {
         /// <summary>
         /// Required designer variable.

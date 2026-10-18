@@ -90,17 +90,17 @@
     <Compile Include="GestionAssistantEtSoin.Designer.cs">
       <DependentUpon>GestionAssistantEtSoin.cs</DependentUpon>
     </Compile>
-    <Compile Include="GestionChambre.cs">
+    <Compile Include="frmChambre.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GestionChambre.Designer.cs">
-      <DependentUpon>GestionChambre.cs</DependentUpon>
+    <Compile Include="frmChambre.Designer.cs">
+      <DependentUpon>frmChambre.cs</DependentUpon>
     </Compile>
-    <Compile Include="GestionTypeChambre.cs">
+    <Compile Include="frmTypeChambre.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GestionTypeChambre.Designer.cs">
-      <DependentUpon>GestionTypeChambre.cs</DependentUpon>
+    <Compile Include="frmTypeChambre.Designer.cs">
+      <DependentUpon>frmTypeChambre.cs</DependentUpon>
     </Compile>
     <Compile Include="GestionUtilisateurs.cs">
       <SubType>Form</SubType>
@@ -114,17 +114,17 @@
     <Compile Include="MenuAdmin.Designer.cs">
       <DependentUpon>MenuAdmin.cs</DependentUpon>
     </Compile>
-    <Compile Include="GestionChambreEtType.cs">
+    <Compile Include="frmChambreEtType.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GestionChambreEtType.Designer.cs">
-      <DependentUpon>GestionChambreEtType.cs</DependentUpon>
+    <Compile Include="frmChambreEtType.Designer.cs">
+      <DependentUpon>frmChambreEtType.cs</DependentUpon>
     </Compile>
-    <Compile Include="GestionClientEtInvite.cs">
+    <Compile Include="frmClientEtInvite.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GestionClientEtInvite.Designer.cs">
-      <DependentUpon>GestionClientEtInvite.cs</DependentUpon>
+    <Compile Include="frmClientEtInvite.Designer.cs">
+      <DependentUpon>frmClientEtInvite.cs</DependentUpon>
     </Compile>
     <Compile Include="GestionSoin.cs">
       <SubType>Form</SubType>
@@ -176,11 +176,11 @@
     <EmbeddedResource Include="GestionAssistantEtSoin.resx">
       <DependentUpon>GestionAssistantEtSoin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GestionChambreEtType.resx">
-      <DependentUpon>GestionChambreEtType.cs</DependentUpon>
+    <EmbeddedResource Include="frmChambreEtType.resx">
+      <DependentUpon>frmChambreEtType.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GestionClientEtInvite.resx">
-      <DependentUpon>GestionClientEtInvite.cs</DependentUpon>
+    <EmbeddedResource Include="frmClientEtInvite.resx">
+      <DependentUpon>frmClientEtInvite.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GestionUtilisateurs.resx">
       <DependentUpon>GestionUtilisateurs.cs</DependentUpon>

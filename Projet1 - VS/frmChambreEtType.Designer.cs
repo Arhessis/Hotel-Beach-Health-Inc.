@@ -1,6 +1,6 @@
 ﻿namespace Projet1___VS
 {
-    partial class GestionChambreEtType
+    partial class frmChambreEtType
     {
         /// <summary>
         /// Required designer variable.

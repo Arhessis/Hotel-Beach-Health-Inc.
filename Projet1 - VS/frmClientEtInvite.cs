@@ -11,11 +11,11 @@ using System.Windows.Forms;
 
 namespace Projet1___VS
 {
-    public partial class GestionClientEtInvite : Form
+    public partial class frmClientEtInvite : Form
     {
         private bool conflit = false;
 
-        public GestionClientEtInvite()
+        public frmClientEtInvite()
         {
             InitializeComponent();
         }

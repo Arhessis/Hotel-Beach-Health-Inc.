@@ -11,11 +11,11 @@ using System.Windows.Forms;
 
 namespace Projet1___VS
 {
-    public partial class GestionChambreEtType : Form
+    public partial class frmChambreEtType : Form
     {
         private bool conflit = false;
 
-        public GestionChambreEtType()
+        public frmChambreEtType()
         {
             InitializeComponent();
         }
@@ -154,7 +154,7 @@ namespace Projet1___VS
 
             unType.NoTypeChambre = noTypeMax + 1;
 
-            GestionTypeChambre frmAjout = new GestionTypeChambre();
+            frmTypeChambre frmAjout = new frmTypeChambre();
             frmAjout.unType = unType;
             frmAjout.ShowDialog();
 
@@ -185,7 +185,7 @@ namespace Projet1___VS
                 (BDB56Projet1BKGDataSet.TypeChambreRow)((DataRowView)typeChambreBindingSource.Current).Row;
             decimal noType = unType.NoTypeChambre;
 
-            GestionTypeChambre frmModif = new GestionTypeChambre();
+            frmTypeChambre frmModif = new frmTypeChambre();
             frmModif.unType = unType;
             frmModif.ShowDialog();
 
@@ -260,7 +260,7 @@ namespace Projet1___VS
             uneChambre.NoChambre = noChambreMax + 1;
             uneChambre.NoTypeChambre = NoCourant(typeChambreBindingSource, "NoTypeChambre");
 
-            GestionChambre frmAjout = new GestionChambre();
+            frmChambre frmAjout = new frmChambre();
             frmAjout.uneChambre = uneChambre;
             frmAjout.ShowDialog();
 
@@ -293,7 +293,7 @@ namespace Projet1___VS
                 (BDB56Projet1BKGDataSet.ChambreRow)((DataRowView)chambreBindingSource.Current).Row;
             decimal noChambre = uneChambre.NoChambre;
 
-            GestionChambre frmModif = new GestionChambre();
+            frmChambre frmModif = new frmChambre();
             frmModif.uneChambre = uneChambre;
             frmModif.ShowDialog();
 

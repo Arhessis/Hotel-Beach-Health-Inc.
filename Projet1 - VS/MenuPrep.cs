@@ -15,7 +15,7 @@ namespace Projet1___VS
         private void gestionClientEtInvitésToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Hide();
-            using (GestionClientEtInvite frm = new GestionClientEtInvite())
+            using (frmClientEtInvite frm = new frmClientEtInvite())
             {
                 frm.ShowDialog();
             }

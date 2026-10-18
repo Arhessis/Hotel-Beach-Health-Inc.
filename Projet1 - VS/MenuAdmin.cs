@@ -14,11 +14,11 @@ namespace Projet1___VS
     {
         public string NoUtilisateur { get; set; }
 
-        GestionClientEtInvite gestionClientEtInvite = new GestionClientEtInvite();
+        frmClientEtInvite gestionClientEtInvite = new frmClientEtInvite();
         GestionAssistantEtSoin gestionAssistantEtSoin = new GestionAssistantEtSoin();
         GestionSoin gestionSoin = new GestionSoin();
         PlannificationSoin plannificationSoin = new PlannificationSoin();
-        GestionChambreEtType gestionChambreEtType = new GestionChambreEtType();
+        frmChambreEtType gestionChambreEtType = new frmChambreEtType();
         ReservationChambre reservationChambre = new ReservationChambre();
         Visualisation visualiserRapport = new Visualisation();
 

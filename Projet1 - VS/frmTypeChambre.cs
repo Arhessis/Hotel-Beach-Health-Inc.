@@ -12,11 +12,11 @@ using System.Windows.Forms;
 
 namespace Projet1___VS
 {
-    public partial class GestionTypeChambre : Form
+    public partial class frmTypeChambre : Form
     {
         public Regex exprMontant { get; }
 
-        public GestionTypeChambre()
+        public frmTypeChambre()
         {
             InitializeComponent();
 

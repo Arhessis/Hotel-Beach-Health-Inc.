@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Projet1___VS
 {
-    public partial class GestionChambre : Form
+    public partial class frmChambre : Form
     {
-        public GestionChambre()
+        public frmChambre()
         {
             InitializeComponent();
         }
