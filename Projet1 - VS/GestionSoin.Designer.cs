@@ -220,6 +220,7 @@
             this.btnFermer.TabIndex = 24;
             this.btnFermer.Text = "Fermer";
             this.btnFermer.UseVisualStyleBackColor = true;
+            this.btnFermer.Click += new System.EventHandler(this.btnFermer_Click);
             // 
             // btnAnnuler
             // 
@@ -230,6 +231,7 @@
             this.btnAnnuler.TabIndex = 23;
             this.btnAnnuler.Text = "Annuler";
             this.btnAnnuler.UseVisualStyleBackColor = true;
+            this.btnAnnuler.Click += new System.EventHandler(this.btnAnnuler_Click);
             // 
             // btnEnregistrer
             // 
@@ -239,6 +241,7 @@
             this.btnEnregistrer.TabIndex = 22;
             this.btnEnregistrer.Text = "Enregister";
             this.btnEnregistrer.UseVisualStyleBackColor = true;
+            this.btnEnregistrer.Click += new System.EventHandler(this.btnEnregistrer_Click);
             // 
             // btnSupprimer
             // 
