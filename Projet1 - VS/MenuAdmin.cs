@@ -14,7 +14,6 @@ namespace Projet1___VS
     {
         public string NoUtilisateur { get; set; }
 
-        GestionUtilisateurs gestionUtilisateurs = new GestionUtilisateurs();
         GestionClientEtInvite gestionClientEtInvite = new GestionClientEtInvite();
         GestionAssistantEtSoin gestionAssistantEtSoin = new GestionAssistantEtSoin();
         GestionSoin gestionSoin = new GestionSoin();
@@ -31,7 +30,9 @@ namespace Projet1___VS
         private void gestionUtilisateursToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Hide();
-            gestionUtilisateurs.ShowDialog();
+            decimal loggedInId = decimal.TryParse(this.NoUtilisateur, out decimal id) ? id : 1;
+            GestionUtilisateurs frm = new GestionUtilisateurs(loggedInId);
+            frm.ShowDialog();
             this.Show();
         }
 
@@ -92,6 +93,11 @@ namespace Projet1___VS
         private void quitterToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void MenuAdmin_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

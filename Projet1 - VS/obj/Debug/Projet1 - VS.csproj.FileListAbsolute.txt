@@ -23,15 +23,14 @@ C:\Users\georg\OneDrive\Documents\HotelPlageSante\Projet1 - VS\obj\Debug\Projet1
 C:\Users\georg\OneDrive\Documents\HotelPlageSante\Projet1 - VS\obj\Debug\Projet1___VS.GestionChambreEtType.resources
 C:\Users\georg\OneDrive\Documents\HotelPlageSante\Projet1 - VS\obj\Debug\Projet1___VS.GestionClientEtInvite.resources
 C:\Users\georg\OneDrive\Documents\HotelPlageSante\Projet1 - VS\obj\Debug\Projet1___VS.GestionUtilisateurs.resources
-C:\Users\georg\OneDrive\Documents\HotelPlageSante\Projet1 - VS\obj\Debug\Projet1___VS.MenuAdmin.resources
 C:\Users\georg\OneDrive\Documents\HotelPlageSante\Projet1 - VS\obj\Debug\Projet1___VS.MenuPrep.resources
-C:\Users\georg\OneDrive\Documents\HotelPlageSante\Projet1 - VS\obj\Debug\Projet1___VS.PlannificationSoin.resources
 C:\Users\georg\OneDrive\Documents\HotelPlageSante\Projet1 - VS\obj\Debug\Projet1___VS.Properties.Resources.resources
 C:\Users\georg\OneDrive\Documents\HotelPlageSante\Projet1 - VS\obj\Debug\Projet1___VS.ReservationChambre.resources
 C:\Users\georg\OneDrive\Documents\HotelPlageSante\Projet1 - VS\obj\Debug\Projet1 - VS.csproj.GenerateResource.cache
 C:\Users\georg\OneDrive\Documents\HotelPlageSante\Projet1 - VS\obj\Debug\Projet1 - VS.csproj.CoreCompileInputs.cache
 C:\Users\georg\OneDrive\Documents\HotelPlageSante\Projet1 - VS\obj\Debug\Projet1 - VS.exe
 C:\Users\georg\OneDrive\Documents\HotelPlageSante\Projet1 - VS\obj\Debug\Projet1 - VS.pdb
+<<<<<<< HEAD
 C:\wamp64\www\project1Base3\Projet1 - VS\bin\Debug\Projet1 - VS.exe.config
 C:\wamp64\www\project1Base3\Projet1 - VS\bin\Debug\Projet1 - VS.exe
 C:\wamp64\www\project1Base3\Projet1 - VS\bin\Debug\Projet1 - VS.pdb
@@ -54,3 +53,8 @@ C:\wamp64\www\project1Base3\Projet1 - VS\obj\Debug\Projet1 - VS.exe
 C:\wamp64\www\project1Base3\Projet1 - VS\obj\Debug\Projet1 - VS.pdb
 C:\wamp64\www\project1Base3\Projet1 - VS\obj\Debug\Projet1___VS.AjouterAssist.resources
 C:\wamp64\www\project1Base3\Projet1 - VS\obj\Debug\Projet1___VS.AjouterSoinAssistant.resources
+=======
+C:\Users\georg\OneDrive\Documents\HotelPlageSante\Projet1 - VS\obj\Debug\Projet1___VS.GestionAssistantEtSoin.resources
+C:\Users\georg\OneDrive\Documents\HotelPlageSante\Projet1 - VS\obj\Debug\Projet1___VS.MenuAdmin.resources
+C:\Users\georg\OneDrive\Documents\HotelPlageSante\Projet1 - VS\obj\Debug\Projet1___VS.PlannificationSoin.resources
+>>>>>>> f803aefa7a163089536a45288d11c45accc96bb7

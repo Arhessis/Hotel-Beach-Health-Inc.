@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PlannificationSoin));
             System.Windows.Forms.Label noPersonneLabel;
             System.Windows.Forms.Label noAssistantLabel;
             System.Windows.Forms.Label dateHeureLabel;
@@ -38,35 +37,80 @@
             this.planifSoinBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.planifSoinTableAdapter = new Projet1___VS.BDB56Projet1BKGDataSetTableAdapters.PlanifSoinTableAdapter();
             this.tableAdapterManager = new Projet1___VS.BDB56Projet1BKGDataSetTableAdapters.TableAdapterManager();
-            this.planifSoinBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
-            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
-            this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
-            this.planifSoinBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.noPersonneTextBox = new System.Windows.Forms.TextBox();
-            this.noAssistantTextBox = new System.Windows.Forms.TextBox();
-            this.dateHeureDateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.noSoinTextBox = new System.Windows.Forms.TextBox();
+            this.cboNoPersonne = new System.Windows.Forms.ComboBox();
+            this.cboNoAssistant = new System.Windows.Forms.ComboBox();
+            this.cboNoSoin = new System.Windows.Forms.ComboBox();
+            this.dtpDateHeure = new System.Windows.Forms.DateTimePicker();
+            this.planifSoinDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnAjouter = new System.Windows.Forms.Button();
+            this.btnFermer = new System.Windows.Forms.Button();
+            this.btnAnnuler = new System.Windows.Forms.Button();
+            this.btnEnregistrer = new System.Windows.Forms.Button();
             this.btnSupprimer = new System.Windows.Forms.Button();
+            this.btnAjouter = new System.Windows.Forms.Button();
+            this.clientBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.clientTableAdapter = new Projet1___VS.BDB56Projet1BKGDataSetTableAdapters.ClientTableAdapter();
+            this.inviteBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.inviteTableAdapter = new Projet1___VS.BDB56Projet1BKGDataSetTableAdapters.InviteTableAdapter();
+            this.soinBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.soinTableAdapter = new Projet1___VS.BDB56Projet1BKGDataSetTableAdapters.SoinTableAdapter();
+            this.assistantBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.assistantTableAdapter = new Projet1___VS.BDB56Projet1BKGDataSetTableAdapters.AssistantTableAdapter();
+            this.assistantSoinBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.assistantSoinTableAdapter = new Projet1___VS.BDB56Projet1BKGDataSetTableAdapters.AssistantSoinTableAdapter();
             noPersonneLabel = new System.Windows.Forms.Label();
             noAssistantLabel = new System.Windows.Forms.Label();
             dateHeureLabel = new System.Windows.Forms.Label();
             noSoinLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.bDB56Projet1BKGDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.planifSoinBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.planifSoinBindingNavigator)).BeginInit();
-            this.planifSoinBindingNavigator.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.planifSoinDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clientBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.inviteBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.soinBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.assistantBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.assistantSoinBindingSource)).BeginInit();
             this.SuspendLayout();
+            // 
+            // noPersonneLabel
+            // 
+            noPersonneLabel.AutoSize = true;
+            noPersonneLabel.Location = new System.Drawing.Point(14, 82);
+            noPersonneLabel.Name = "noPersonneLabel";
+            noPersonneLabel.Size = new System.Drawing.Size(72, 13);
+            noPersonneLabel.TabIndex = 1;
+            noPersonneLabel.Text = "No Personne:";
+            // 
+            // noAssistantLabel
+            // 
+            noAssistantLabel.AutoSize = true;
+            noAssistantLabel.Location = new System.Drawing.Point(14, 109);
+            noAssistantLabel.Name = "noAssistantLabel";
+            noAssistantLabel.Size = new System.Drawing.Size(69, 13);
+            noAssistantLabel.TabIndex = 3;
+            noAssistantLabel.Text = "No Assistant:";
+            // 
+            // dateHeureLabel
+            // 
+            dateHeureLabel.AutoSize = true;
+            dateHeureLabel.Location = new System.Drawing.Point(14, 137);
+            dateHeureLabel.Name = "dateHeureLabel";
+            dateHeureLabel.Size = new System.Drawing.Size(65, 13);
+            dateHeureLabel.TabIndex = 5;
+            dateHeureLabel.Text = "Date Heure:";
+            // 
+            // noSoinLabel
+            // 
+            noSoinLabel.AutoSize = true;
+            noSoinLabel.Location = new System.Drawing.Point(14, 162);
+            noSoinLabel.Name = "noSoinLabel";
+            noSoinLabel.Size = new System.Drawing.Size(48, 13);
+            noSoinLabel.TabIndex = 7;
+            noSoinLabel.Text = "No Soin:";
             // 
             // bDB56Projet1BKGDataSet
             // 
@@ -99,259 +143,218 @@
             this.tableAdapterManager.UpdateOrder = Projet1___VS.BDB56Projet1BKGDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.UtilisateurTableAdapter = null;
             // 
-            // planifSoinBindingNavigator
+            // cboNoPersonne
             // 
-            this.planifSoinBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
-            this.planifSoinBindingNavigator.BindingSource = this.planifSoinBindingSource;
-            this.planifSoinBindingNavigator.CountItem = this.bindingNavigatorCountItem;
-            this.planifSoinBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
-            this.planifSoinBindingNavigator.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.planifSoinBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.bindingNavigatorMoveFirstItem,
-            this.bindingNavigatorMovePreviousItem,
-            this.bindingNavigatorSeparator,
-            this.bindingNavigatorPositionItem,
-            this.bindingNavigatorCountItem,
-            this.bindingNavigatorSeparator1,
-            this.bindingNavigatorMoveNextItem,
-            this.bindingNavigatorMoveLastItem,
-            this.bindingNavigatorSeparator2,
-            this.bindingNavigatorAddNewItem,
-            this.bindingNavigatorDeleteItem,
-            this.planifSoinBindingNavigatorSaveItem});
-            this.planifSoinBindingNavigator.Location = new System.Drawing.Point(0, 0);
-            this.planifSoinBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
-            this.planifSoinBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
-            this.planifSoinBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
-            this.planifSoinBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
-            this.planifSoinBindingNavigator.Name = "planifSoinBindingNavigator";
-            this.planifSoinBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.planifSoinBindingNavigator.Size = new System.Drawing.Size(467, 27);
-            this.planifSoinBindingNavigator.TabIndex = 0;
-            this.planifSoinBindingNavigator.Text = "bindingNavigator1";
+            this.cboNoPersonne.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.planifSoinBindingSource, "NoPersonne", true, System.Windows.Forms.DataSourceUpdateMode.OnValidation, null, ""));
+            this.cboNoPersonne.FormattingEnabled = true;
+            this.cboNoPersonne.Location = new System.Drawing.Point(92, 79);
+            this.cboNoPersonne.Name = "cboNoPersonne";
+            this.cboNoPersonne.Size = new System.Drawing.Size(173, 21);
+            this.cboNoPersonne.TabIndex = 2;
             // 
-            // bindingNavigatorMoveFirstItem
+            // cboNoAssistant
             // 
-            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
-            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
-            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 28);
-            this.bindingNavigatorMoveFirstItem.Text = "Move first";
+            this.cboNoAssistant.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.planifSoinBindingSource, "NoAssistant", true, System.Windows.Forms.DataSourceUpdateMode.OnValidation, null, "")); this.cboNoAssistant.Location = new System.Drawing.Point(92, 106);
+            this.cboNoAssistant.Name = "cboNoAssistant";
+            this.cboNoAssistant.Size = new System.Drawing.Size(173, 21);
+            this.cboNoAssistant.TabIndex = 4;
             // 
-            // bindingNavigatorMovePreviousItem
+            // cboNoSoin
             // 
-            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
-            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
-            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 28);
-            this.bindingNavigatorMovePreviousItem.Text = "Move previous";
+            this.cboNoSoin.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.planifSoinBindingSource, "NoSoin", true, System.Windows.Forms.DataSourceUpdateMode.OnValidation, null, "")); this.cboNoSoin.FormattingEnabled = true;
+            this.cboNoSoin.Location = new System.Drawing.Point(92, 159);
+            this.cboNoSoin.Name = "cboNoSoin";
+            this.cboNoSoin.Size = new System.Drawing.Size(173, 21);
+            this.cboNoSoin.TabIndex = 8;
             // 
-            // bindingNavigatorSeparator
+            // dtpDateHeure
             // 
-            this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 31);
+            this.dtpDateHeure.CustomFormat = "dd/MM/yyyy HH:mm";
+            this.dtpDateHeure.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.planifSoinBindingSource, "DateHeure", true));
+            this.dtpDateHeure.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpDateHeure.Location = new System.Drawing.Point(92, 133);
+            this.dtpDateHeure.Name = "dtpDateHeure";
+            this.dtpDateHeure.Size = new System.Drawing.Size(173, 20);
+            this.dtpDateHeure.TabIndex = 6;
             // 
-            // bindingNavigatorPositionItem
+            // planifSoinDataGridView
             // 
-            this.bindingNavigatorPositionItem.AccessibleName = "Position";
-            this.bindingNavigatorPositionItem.AutoSize = false;
-            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 27);
-            this.bindingNavigatorPositionItem.Text = "0";
-            this.bindingNavigatorPositionItem.ToolTipText = "Current position";
+            this.planifSoinDataGridView.AutoGenerateColumns = false;
+            this.planifSoinDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.planifSoinDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4});
+            this.planifSoinDataGridView.DataSource = this.planifSoinBindingSource;
+            this.planifSoinDataGridView.Location = new System.Drawing.Point(12, 203);
+            this.planifSoinDataGridView.Name = "planifSoinDataGridView";
+            this.planifSoinDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.planifSoinDataGridView.Size = new System.Drawing.Size(443, 220);
+            this.planifSoinDataGridView.TabIndex = 8;
             // 
-            // bindingNavigatorCountItem
+            // dataGridViewTextBoxColumn1
             // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(45, 28);
-            this.bindingNavigatorCountItem.Text = "of {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "NoPersonne";
+            this.dataGridViewTextBoxColumn1.HeaderText = "NoPersonne";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             // 
-            // bindingNavigatorSeparator1
+            // dataGridViewTextBoxColumn2
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 31);
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "NoAssistant";
+            this.dataGridViewTextBoxColumn2.HeaderText = "NoAssistant";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             // 
-            // bindingNavigatorMoveNextItem
+            // dataGridViewTextBoxColumn3
             // 
-            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
-            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
-            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 28);
-            this.bindingNavigatorMoveNextItem.Text = "Move next";
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "DateHeure";
+            this.dataGridViewTextBoxColumn3.HeaderText = "DateHeure";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             // 
-            // bindingNavigatorMoveLastItem
+            // dataGridViewTextBoxColumn4
             // 
-            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
-            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
-            this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 28);
-            this.bindingNavigatorMoveLastItem.Text = "Move last";
-            // 
-            // bindingNavigatorSeparator2
-            // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 31);
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 24);
-            this.bindingNavigatorAddNewItem.Text = "Add new";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 28);
-            this.bindingNavigatorDeleteItem.Text = "Delete";
-            // 
-            // planifSoinBindingNavigatorSaveItem
-            // 
-            this.planifSoinBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.planifSoinBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("planifSoinBindingNavigatorSaveItem.Image")));
-            this.planifSoinBindingNavigatorSaveItem.Name = "planifSoinBindingNavigatorSaveItem";
-            this.planifSoinBindingNavigatorSaveItem.Size = new System.Drawing.Size(29, 28);
-            this.planifSoinBindingNavigatorSaveItem.Text = "Save Data";
-            this.planifSoinBindingNavigatorSaveItem.Click += new System.EventHandler(this.planifSoinBindingNavigatorSaveItem_Click);
-            // 
-            // noPersonneLabel
-            // 
-            noPersonneLabel.AutoSize = true;
-            noPersonneLabel.Font = new System.Drawing.Font("Montserrat ExtraBold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            noPersonneLabel.Location = new System.Drawing.Point(20, 127);
-            noPersonneLabel.Name = "noPersonneLabel";
-            noPersonneLabel.Size = new System.Drawing.Size(134, 27);
-            noPersonneLabel.TabIndex = 1;
-            noPersonneLabel.Text = "No Personne:";
-            // 
-            // noPersonneTextBox
-            // 
-            this.noPersonneTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.planifSoinBindingSource, "NoPersonne", true));
-            this.noPersonneTextBox.Location = new System.Drawing.Point(170, 130);
-            this.noPersonneTextBox.Name = "noPersonneTextBox";
-            this.noPersonneTextBox.Size = new System.Drawing.Size(200, 22);
-            this.noPersonneTextBox.TabIndex = 2;
-            // 
-            // noAssistantLabel
-            // 
-            noAssistantLabel.AutoSize = true;
-            noAssistantLabel.Font = new System.Drawing.Font("Montserrat ExtraBold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            noAssistantLabel.Location = new System.Drawing.Point(20, 155);
-            noAssistantLabel.Name = "noAssistantLabel";
-            noAssistantLabel.Size = new System.Drawing.Size(131, 27);
-            noAssistantLabel.TabIndex = 3;
-            noAssistantLabel.Text = "No Assistant:";
-            // 
-            // noAssistantTextBox
-            // 
-            this.noAssistantTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.planifSoinBindingSource, "NoAssistant", true));
-            this.noAssistantTextBox.Location = new System.Drawing.Point(170, 158);
-            this.noAssistantTextBox.Name = "noAssistantTextBox";
-            this.noAssistantTextBox.Size = new System.Drawing.Size(200, 22);
-            this.noAssistantTextBox.TabIndex = 4;
-            // 
-            // dateHeureLabel
-            // 
-            dateHeureLabel.AutoSize = true;
-            dateHeureLabel.Font = new System.Drawing.Font("Montserrat ExtraBold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dateHeureLabel.Location = new System.Drawing.Point(20, 184);
-            dateHeureLabel.Name = "dateHeureLabel";
-            dateHeureLabel.Size = new System.Drawing.Size(122, 27);
-            dateHeureLabel.TabIndex = 5;
-            dateHeureLabel.Text = "Date Heure:";
-            // 
-            // dateHeureDateTimePicker
-            // 
-            this.dateHeureDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.planifSoinBindingSource, "DateHeure", true));
-            this.dateHeureDateTimePicker.Location = new System.Drawing.Point(170, 186);
-            this.dateHeureDateTimePicker.Name = "dateHeureDateTimePicker";
-            this.dateHeureDateTimePicker.Size = new System.Drawing.Size(200, 22);
-            this.dateHeureDateTimePicker.TabIndex = 6;
-            // 
-            // noSoinLabel
-            // 
-            noSoinLabel.AutoSize = true;
-            noSoinLabel.Font = new System.Drawing.Font("Montserrat ExtraBold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            noSoinLabel.Location = new System.Drawing.Point(20, 211);
-            noSoinLabel.Name = "noSoinLabel";
-            noSoinLabel.Size = new System.Drawing.Size(86, 27);
-            noSoinLabel.TabIndex = 7;
-            noSoinLabel.Text = "No Soin:";
-            // 
-            // noSoinTextBox
-            // 
-            this.noSoinTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.planifSoinBindingSource, "NoSoin", true));
-            this.noSoinTextBox.Location = new System.Drawing.Point(170, 214);
-            this.noSoinTextBox.Name = "noSoinTextBox";
-            this.noSoinTextBox.Size = new System.Drawing.Size(200, 22);
-            this.noSoinTextBox.TabIndex = 8;
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "NoSoin";
+            this.dataGridViewTextBoxColumn4.HeaderText = "NoSoin";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Montserrat ExtraBold", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 53);
+            this.label1.Font = new System.Drawing.Font("Baskervville", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(80, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(441, 52);
+            this.label1.Size = new System.Drawing.Size(305, 40);
             this.label1.TabIndex = 9;
             this.label1.Text = "Plannification des soins";
             // 
-            // btnAjouter
+            // btnFermer
             // 
-            this.btnAjouter.Font = new System.Drawing.Font("Montserrat ExtraBold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAjouter.Location = new System.Drawing.Point(12, 255);
-            this.btnAjouter.Name = "btnAjouter";
-            this.btnAjouter.Size = new System.Drawing.Size(204, 81);
-            this.btnAjouter.TabIndex = 10;
-            this.btnAjouter.Text = "Ajouter";
-            this.btnAjouter.UseVisualStyleBackColor = true;
+            this.btnFermer.CausesValidation = false;
+            this.btnFermer.Location = new System.Drawing.Point(379, 147);
+            this.btnFermer.Name = "btnFermer";
+            this.btnFermer.Size = new System.Drawing.Size(81, 29);
+            this.btnFermer.TabIndex = 23;
+            this.btnFermer.Text = "Fermer";
+            this.btnFermer.UseVisualStyleBackColor = true;
+            this.btnFermer.Click += new System.EventHandler(this.btnFermer_Click);
+            // 
+            // btnAnnuler
+            // 
+            this.btnAnnuler.CausesValidation = false;
+            this.btnAnnuler.Location = new System.Drawing.Point(292, 147);
+            this.btnAnnuler.Name = "btnAnnuler";
+            this.btnAnnuler.Size = new System.Drawing.Size(81, 30);
+            this.btnAnnuler.TabIndex = 22;
+            this.btnAnnuler.Text = "Annuler";
+            this.btnAnnuler.UseVisualStyleBackColor = true;
+            this.btnAnnuler.Click += new System.EventHandler(this.btnAnnuler_Click);
+            // 
+            // btnEnregistrer
+            // 
+            this.btnEnregistrer.Location = new System.Drawing.Point(379, 109);
+            this.btnEnregistrer.Name = "btnEnregistrer";
+            this.btnEnregistrer.Size = new System.Drawing.Size(81, 30);
+            this.btnEnregistrer.TabIndex = 21;
+            this.btnEnregistrer.Text = "Enregister";
+            this.btnEnregistrer.UseVisualStyleBackColor = true;
+            this.btnEnregistrer.Click += new System.EventHandler(this.btnEnregistrer_Click);
             // 
             // btnSupprimer
             // 
-            this.btnSupprimer.Font = new System.Drawing.Font("Montserrat ExtraBold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSupprimer.Location = new System.Drawing.Point(232, 255);
+            this.btnSupprimer.Location = new System.Drawing.Point(292, 108);
             this.btnSupprimer.Name = "btnSupprimer";
-            this.btnSupprimer.Size = new System.Drawing.Size(204, 81);
-            this.btnSupprimer.TabIndex = 11;
+            this.btnSupprimer.Size = new System.Drawing.Size(81, 33);
+            this.btnSupprimer.TabIndex = 20;
             this.btnSupprimer.Text = "Supprimer";
             this.btnSupprimer.UseVisualStyleBackColor = true;
+            this.btnSupprimer.Click += new System.EventHandler(this.btnSupprimer_Click);
+            // 
+            // btnAjouter
+            // 
+            this.btnAjouter.Location = new System.Drawing.Point(292, 70);
+            this.btnAjouter.Name = "btnAjouter";
+            this.btnAjouter.Size = new System.Drawing.Size(81, 32);
+            this.btnAjouter.TabIndex = 19;
+            this.btnAjouter.Text = "Ajouter";
+            this.btnAjouter.UseVisualStyleBackColor = true;
+            this.btnAjouter.Click += new System.EventHandler(this.btnAjouter_Click);
+            // 
+            // clientBindingSource
+            // 
+            this.clientBindingSource.DataMember = "Client";
+            this.clientBindingSource.DataSource = this.bDB56Projet1BKGDataSet;
+            // 
+            // clientTableAdapter
+            // 
+            this.clientTableAdapter.ClearBeforeFill = true;
+            // 
+            // inviteBindingSource
+            // 
+            this.inviteBindingSource.DataMember = "Invite";
+            this.inviteBindingSource.DataSource = this.bDB56Projet1BKGDataSet;
+            // 
+            // inviteTableAdapter
+            // 
+            this.inviteTableAdapter.ClearBeforeFill = true;
+            // 
+            // soinBindingSource
+            // 
+            this.soinBindingSource.DataMember = "Soin";
+            this.soinBindingSource.DataSource = this.bDB56Projet1BKGDataSet;
+            // 
+            // soinTableAdapter
+            // 
+            this.soinTableAdapter.ClearBeforeFill = true;
+            // 
+            // assistantBindingSource
+            // 
+            this.assistantBindingSource.DataMember = "Assistant";
+            this.assistantBindingSource.DataSource = this.bDB56Projet1BKGDataSet;
+            // 
+            // assistantTableAdapter
+            // 
+            this.assistantTableAdapter.ClearBeforeFill = true;
+            // 
+            // assistantSoinBindingSource
+            // 
+            this.assistantSoinBindingSource.DataMember = "AssistantSoin";
+            this.assistantSoinBindingSource.DataSource = this.bDB56Projet1BKGDataSet;
+            // 
+            // assistantSoinTableAdapter
+            // 
+            this.assistantSoinTableAdapter.ClearBeforeFill = true;
             // 
             // PlannificationSoin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(467, 361);
+            this.ClientSize = new System.Drawing.Size(475, 441);
+            this.Controls.Add(this.btnFermer);
+            this.Controls.Add(this.btnAnnuler);
+            this.Controls.Add(this.btnEnregistrer);
             this.Controls.Add(this.btnSupprimer);
             this.Controls.Add(this.btnAjouter);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.planifSoinDataGridView);
             this.Controls.Add(noPersonneLabel);
-            this.Controls.Add(this.noPersonneTextBox);
+            this.Controls.Add(this.cboNoPersonne);
             this.Controls.Add(noAssistantLabel);
-            this.Controls.Add(this.noAssistantTextBox);
+            this.Controls.Add(this.cboNoAssistant);
             this.Controls.Add(dateHeureLabel);
-            this.Controls.Add(this.dateHeureDateTimePicker);
+            this.Controls.Add(this.dtpDateHeure);
             this.Controls.Add(noSoinLabel);
-            this.Controls.Add(this.noSoinTextBox);
-            this.Controls.Add(this.planifSoinBindingNavigator);
+            this.Controls.Add(this.cboNoSoin);
             this.Name = "PlannificationSoin";
             this.Text = "PlannificationSoin";
             this.Load += new System.EventHandler(this.PlannificationSoin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bDB56Projet1BKGDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.planifSoinBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.planifSoinBindingNavigator)).EndInit();
-            this.planifSoinBindingNavigator.ResumeLayout(false);
-            this.planifSoinBindingNavigator.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.planifSoinDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clientBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.inviteBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.soinBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.assistantBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.assistantSoinBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -363,25 +366,30 @@
         private System.Windows.Forms.BindingSource planifSoinBindingSource;
         private BDB56Projet1BKGDataSetTableAdapters.PlanifSoinTableAdapter planifSoinTableAdapter;
         private BDB56Projet1BKGDataSetTableAdapters.TableAdapterManager tableAdapterManager;
-        private System.Windows.Forms.BindingNavigator planifSoinBindingNavigator;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
-        private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMovePreviousItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator;
-        private System.Windows.Forms.ToolStripTextBox bindingNavigatorPositionItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator1;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
-        private System.Windows.Forms.ToolStripButton planifSoinBindingNavigatorSaveItem;
-        private System.Windows.Forms.TextBox noPersonneTextBox;
-        private System.Windows.Forms.TextBox noAssistantTextBox;
-        private System.Windows.Forms.DateTimePicker dateHeureDateTimePicker;
-        private System.Windows.Forms.TextBox noSoinTextBox;
+        private System.Windows.Forms.ComboBox cboNoPersonne;
+        private System.Windows.Forms.ComboBox cboNoAssistant;
+        private System.Windows.Forms.ComboBox cboNoSoin;
+        private System.Windows.Forms.DateTimePicker dtpDateHeure;
+        private System.Windows.Forms.DataGridView planifSoinDataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnAjouter;
+        private System.Windows.Forms.Button btnFermer;
+        private System.Windows.Forms.Button btnAnnuler;
+        private System.Windows.Forms.Button btnEnregistrer;
         private System.Windows.Forms.Button btnSupprimer;
+        private System.Windows.Forms.Button btnAjouter;
+        private System.Windows.Forms.BindingSource clientBindingSource;
+        private BDB56Projet1BKGDataSetTableAdapters.ClientTableAdapter clientTableAdapter;
+        private System.Windows.Forms.BindingSource inviteBindingSource;
+        private BDB56Projet1BKGDataSetTableAdapters.InviteTableAdapter inviteTableAdapter;
+        private System.Windows.Forms.BindingSource soinBindingSource;
+        private BDB56Projet1BKGDataSetTableAdapters.SoinTableAdapter soinTableAdapter;
+        private System.Windows.Forms.BindingSource assistantBindingSource;
+        private BDB56Projet1BKGDataSetTableAdapters.AssistantTableAdapter assistantTableAdapter;
+        private System.Windows.Forms.BindingSource assistantSoinBindingSource;
+        private BDB56Projet1BKGDataSetTableAdapters.AssistantSoinTableAdapter assistantSoinTableAdapter;
     }
 }

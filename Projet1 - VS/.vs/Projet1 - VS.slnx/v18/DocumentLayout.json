@@ -1,5 +1,6 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "WorkspaceRootPath": "C:\\wamp64\\www\\project1Base3\\Projet1 - VS\\",
   "Documents": [
     {
@@ -31,6 +32,10 @@
       "RelativeMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|solutionrelative:ajouterassist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
+=======
+  "WorkspaceRootPath": "C:\\Users\\georg\\OneDrive\\Documents\\HotelPlageSante\\Projet1 - VS\\",
+  "Documents": [],
+>>>>>>> f803aefa7a163089536a45288d11c45accc96bb7
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -38,11 +43,16 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
           "SelectedChildIndex": 6,
+=======
+          "SelectedChildIndex": -1,
+>>>>>>> f803aefa7a163089536a45288d11c45accc96bb7
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+<<<<<<< HEAD
             },
             {
               "$type": "Document",
@@ -131,6 +141,8 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-13T19:32:16.363Z",
               "EditorCaption": " [Design]"
+=======
+>>>>>>> f803aefa7a163089536a45288d11c45accc96bb7
             }
           ]
         }

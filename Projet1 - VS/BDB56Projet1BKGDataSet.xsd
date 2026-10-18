@@ -1072,7 +1072,7 @@ SELECT NoUtilisateur, Nom, MotDePasse, NoType FROM Utilisateur WHERE (NoType = @
     </xs:unique>
     <xs:unique name="Utilisateur_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
       <xs:selector xpath=".//mstns:Utilisateur" />
-      <xs:field xpath="mstns:NoType" />
+      <xs:field xpath="mstns:NoUtilisateur" />
     </xs:unique>
   </xs:element>
   <xs:annotation>
