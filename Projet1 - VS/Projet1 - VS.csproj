@@ -46,6 +46,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AjouterAssist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AjouterAssist.Designer.cs">
+      <DependentUpon>AjouterAssist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AjouterSoinAssistant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AjouterSoinAssistant.Designer.cs">
+      <DependentUpon>AjouterSoinAssistant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BDB56Projet1BKGDataSet.cs">
+      <DependentUpon>BDB56Projet1BKGDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="BDB56Projet1BKGDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -69,6 +84,12 @@
     <Compile Include="frmInvite.Designer.cs">
       <DependentUpon>frmInvite.cs</DependentUpon>
     </Compile>
+    <Compile Include="GestionAssistantEtSoin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionAssistantEtSoin.Designer.cs">
+      <DependentUpon>GestionAssistantEtSoin.cs</DependentUpon>
+    </Compile>
     <Compile Include="GestionChambre.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,12 +107,6 @@
     </Compile>
     <Compile Include="MenuAdmin.Designer.cs">
       <DependentUpon>MenuAdmin.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GestionAssistantEtSoin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GestionAssistantEtSoin.Designer.cs">
-      <DependentUpon>GestionAssistantEtSoin.cs</DependentUpon>
     </Compile>
     <Compile Include="GestionChambreEtType.cs">
       <SubType>Form</SubType>
@@ -143,6 +158,12 @@
     <Compile Include="Visualisation.Designer.cs">
       <DependentUpon>Visualisation.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AjouterAssist.resx">
+      <DependentUpon>AjouterAssist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AjouterSoinAssistant.resx">
+      <DependentUpon>AjouterSoinAssistant.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Connexion.resx">
       <DependentUpon>Connexion.cs</DependentUpon>
     </EmbeddedResource>
