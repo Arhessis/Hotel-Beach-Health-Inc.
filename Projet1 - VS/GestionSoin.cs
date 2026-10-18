@@ -86,7 +86,12 @@ namespace Projet1___VS
 
         private void btnModifier_Click(object sender, EventArgs e)
         {
+            if (soinBindingSource.Current == null) return;
 
+            enModeAjout = false;
+
+            GererEtatControles(true);
+            descriptionTextBox.Focus();
         }
     }
 }
