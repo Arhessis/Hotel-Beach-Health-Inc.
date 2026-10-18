@@ -66,11 +66,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BDB56Projet1BKGDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Connexion.cs">
+    <Compile Include="frmConnexion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Connexion.Designer.cs">
-      <DependentUpon>Connexion.cs</DependentUpon>
+    <Compile Include="frmConnexion.Designer.cs">
+      <DependentUpon>frmConnexion.cs</DependentUpon>
     </Compile>
     <Compile Include="frmClient.cs">
       <SubType>Form</SubType>
@@ -108,11 +108,11 @@
     <Compile Include="GestionUtilisateurs.Designer.cs">
       <DependentUpon>GestionUtilisateurs.cs</DependentUpon>
     </Compile>
-    <Compile Include="MenuAdmin.cs">
+    <Compile Include="frmMenuAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MenuAdmin.Designer.cs">
-      <DependentUpon>MenuAdmin.cs</DependentUpon>
+    <Compile Include="frmMenuAdmin.Designer.cs">
+      <DependentUpon>frmMenuAdmin.cs</DependentUpon>
     </Compile>
     <Compile Include="frmChambreEtType.cs">
       <SubType>Form</SubType>
@@ -132,11 +132,11 @@
     <Compile Include="GestionSoin.Designer.cs">
       <DependentUpon>GestionSoin.cs</DependentUpon>
     </Compile>
-    <Compile Include="MenuPrep.cs">
+    <Compile Include="frmMenuPrep.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MenuPrep.Designer.cs">
-      <DependentUpon>MenuPrep.cs</DependentUpon>
+    <Compile Include="frmMenuPrep.Designer.cs">
+      <DependentUpon>frmMenuPrep.cs</DependentUpon>
     </Compile>
     <Compile Include="PlannificationSoin.cs">
       <SubType>Form</SubType>
@@ -164,8 +164,8 @@
     <EmbeddedResource Include="AjouterSoinAssistant.resx">
       <DependentUpon>AjouterSoinAssistant.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Connexion.resx">
-      <DependentUpon>Connexion.cs</DependentUpon>
+    <EmbeddedResource Include="frmConnexion.resx">
+      <DependentUpon>frmConnexion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmClient.resx">
       <DependentUpon>frmClient.cs</DependentUpon>
@@ -185,11 +185,11 @@
     <EmbeddedResource Include="GestionUtilisateurs.resx">
       <DependentUpon>GestionUtilisateurs.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuAdmin.resx">
-      <DependentUpon>MenuAdmin.cs</DependentUpon>
+    <EmbeddedResource Include="frmMenuAdmin.resx">
+      <DependentUpon>frmMenuAdmin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuPrep.resx">
-      <DependentUpon>MenuPrep.cs</DependentUpon>
+    <EmbeddedResource Include="frmMenuPrep.resx">
+      <DependentUpon>frmMenuPrep.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PlannificationSoin.resx">
       <DependentUpon>PlannificationSoin.cs</DependentUpon>

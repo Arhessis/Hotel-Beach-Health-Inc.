@@ -10,9 +10,10 @@ using System.Windows.Forms;
 
 namespace Projet1___VS
 {
-    public partial class MenuAdmin : Form
+    public partial class frmMenuAdmin : Form
     {
         public string NoUtilisateur { get; set; }
+        public string NomUtilisateur { get; set; }
 
         frmClientEtInvite gestionClientEtInvite = new frmClientEtInvite();
         GestionAssistantEtSoin gestionAssistantEtSoin = new GestionAssistantEtSoin();
@@ -22,12 +23,17 @@ namespace Projet1___VS
         ReservationChambre reservationChambre = new ReservationChambre();
         Visualisation visualiserRapport = new Visualisation();
 
-        public MenuAdmin()
+        public frmMenuAdmin()
         {
             InitializeComponent();
         }
 
-        private void gestionUtilisateursToolStripMenuItem_Click(object sender, EventArgs e)
+        private void MenuAdmin_Load(object sender, EventArgs e)
+        {
+            lblBienvenue.Text = "Bienvenue, " + NomUtilisateur;
+        }
+
+        private void btnUtilisateurs_Click(object sender, EventArgs e)
         {
             this.Hide();
             decimal loggedInId = decimal.TryParse(this.NoUtilisateur, out decimal id) ? id : 1;
@@ -36,64 +42,69 @@ namespace Projet1___VS
             this.Show();
         }
 
-        private void gestionClientEtInvitésToolStripMenuItem_Click(object sender, EventArgs e)
+        private void btnClientsInvites_Click(object sender, EventArgs e)
         {
             this.Hide();
             gestionClientEtInvite.ShowDialog();
             this.Show();
         }
 
-        private void gestionAssistantEtSoinToolStripMenuItem_Click(object sender, EventArgs e)
+        private void btnAssistants_Click(object sender, EventArgs e)
         {
             this.Hide();
             gestionAssistantEtSoin.ShowDialog();
             this.Show();
         }
 
-        private void gestionSoinToolStripMenuItem_Click(object sender, EventArgs e)
+        private void btnSoins_Click(object sender, EventArgs e)
         {
             this.Hide();
             gestionSoin.ShowDialog();
             this.Show();
         }
 
-        private void planificationsDesToolStripMenuItem_Click(object sender, EventArgs e)
+        private void btnPlanification_Click(object sender, EventArgs e)
         {
             this.Hide();
             plannificationSoin.ShowDialog();
             this.Show();
         }
 
-        private void gestionChambreEtTypeToolStripMenuItem_Click(object sender, EventArgs e)
+        private void btnChambres_Click(object sender, EventArgs e)
         {
             this.Hide();
             gestionChambreEtType.ShowDialog();
             this.Show();
         }
 
-        private void reservationDeChambreToolStripMenuItem_Click(object sender, EventArgs e)
+        private void btnReservations_Click(object sender, EventArgs e)
         {
             this.Hide();
             reservationChambre.ShowDialog();
             this.Show();
         }
 
-        private void visualisationDesRapportsToolStripMenuItem_Click(object sender, EventArgs e)
+        private void btnRapports_Click(object sender, EventArgs e)
         {
             this.Hide();
             visualiserRapport.ShowDialog();
             this.Show();
         }
 
-        private void déconnexionToolStripMenuItem_Click(object sender, EventArgs e)
+        private void btnDeconnexion_Click(object sender, EventArgs e)
         {
             this.DialogResult = DialogResult.OK;
             this.Close();
         }
 
-        private void quitterToolStripMenuItem_Click(object sender, EventArgs e)
+        private void btnQuitter_Click(object sender, EventArgs e)
         {
-            this.Close();
+            if (MessageBox.Show("Voulez-vous vraiment quitter l'application ?", "Quitter",
+                MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                this.DialogResult = DialogResult.Abort;
+                this.Close();
+            }
         }
     }
 }
