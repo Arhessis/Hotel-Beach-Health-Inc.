@@ -86,3 +86,10 @@ C:\Users\star\Documents\School\bd_projet_1\Projet1 - VS\obj\Debug\Projet1___VS.f
 C:\Users\star\Documents\School\bd_projet_1\Projet1 - VS\obj\Debug\Projet1___VS.frmMenuAdmin.resources
 C:\Users\star\Documents\School\bd_projet_1\Projet1 - VS\obj\Debug\Projet1___VS.frmMenuPrep.resources
 C:\Users\star\Documents\School\bd_projet_1\Projet1 - VS\obj\Debug\Projet1___VS.frmVisualisation.resources
+C:\wamp64\www\project1Base3\Projet1 - VS\obj\Debug\Projet1___VS.frmConnexion.resources
+C:\wamp64\www\project1Base3\Projet1 - VS\obj\Debug\Projet1___VS.frmChambreEtType.resources
+C:\wamp64\www\project1Base3\Projet1 - VS\obj\Debug\Projet1___VS.frmClientEtInvite.resources
+C:\wamp64\www\project1Base3\Projet1 - VS\obj\Debug\Projet1___VS.frmMenuAdmin.resources
+C:\wamp64\www\project1Base3\Projet1 - VS\obj\Debug\Projet1___VS.frmMenuPrep.resources
+C:\wamp64\www\project1Base3\Projet1 - VS\obj\Debug\Projet1___VS.frmVisualisation.resources
+C:\wamp64\www\project1Base3\Projet1 - VS\obj\Debug\Projet1___VS.AjouterReservation.resources

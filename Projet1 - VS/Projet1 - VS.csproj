@@ -52,6 +52,12 @@
     <Compile Include="AjouterAssist.Designer.cs">
       <DependentUpon>AjouterAssist.cs</DependentUpon>
     </Compile>
+    <Compile Include="AjouterReservation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AjouterReservation.Designer.cs">
+      <DependentUpon>AjouterReservation.cs</DependentUpon>
+    </Compile>
     <Compile Include="AjouterSoinAssistant.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -160,6 +166,9 @@
     </Compile>
     <EmbeddedResource Include="AjouterAssist.resx">
       <DependentUpon>AjouterAssist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AjouterReservation.resx">
+      <DependentUpon>AjouterReservation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AjouterSoinAssistant.resx">
       <DependentUpon>AjouterSoinAssistant.cs</DependentUpon>
