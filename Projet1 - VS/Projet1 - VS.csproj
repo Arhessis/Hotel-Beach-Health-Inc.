@@ -152,11 +152,11 @@
     <Compile Include="ReservationChambre.Designer.cs">
       <DependentUpon>ReservationChambre.cs</DependentUpon>
     </Compile>
-    <Compile Include="Visualisation.cs">
+    <Compile Include="frmVisualisation.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Visualisation.Designer.cs">
-      <DependentUpon>Visualisation.cs</DependentUpon>
+    <Compile Include="frmVisualisation.Designer.cs">
+      <DependentUpon>frmVisualisation.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="AjouterAssist.resx">
       <DependentUpon>AjouterAssist.cs</DependentUpon>
@@ -205,6 +205,9 @@
     </Compile>
     <EmbeddedResource Include="ReservationChambre.resx">
       <DependentUpon>ReservationChambre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVisualisation.resx">
+      <DependentUpon>frmVisualisation.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="BDB56Projet1BKGDataSet.xsc">
       <DependentUpon>BDB56Projet1BKGDataSet.xsd</DependentUpon>

@@ -3,36 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\star\\Documents\\School\\bd_projet_1\\Projet1 - VS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|c:\\users\\star\\documents\\school\\bd_projet_1\\projet1 - vs\\frmmenuadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|solutionrelative:frmmenuadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|c:\\users\\star\\documents\\school\\bd_projet_1\\projet1 - vs\\frmvisualisation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|solutionrelative:frmvisualisation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|c:\\users\\star\\documents\\school\\bd_projet_1\\projet1 - vs\\frmmenuadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|solutionrelative:frmmenuadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|c:\\users\\star\\documents\\school\\bd_projet_1\\projet1 - vs\\frmvisualisation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|solutionrelative:frmvisualisation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|c:\\users\\star\\documents\\school\\bd_projet_1\\projet1 - vs\\frmmenuprep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|solutionrelative:frmmenuprep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|c:\\users\\star\\documents\\school\\bd_projet_1\\projet1 - vs\\frmmenuprep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|solutionrelative:frmmenuprep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|c:\\users\\star\\documents\\school\\bd_projet_1\\projet1 - vs\\frmmenuadmin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|solutionrelative:frmmenuadmin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|c:\\users\\star\\documents\\school\\bd_projet_1\\projet1 - vs\\plannificationsoin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|solutionrelative:plannificationsoin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|c:\\users\\star\\documents\\school\\bd_projet_1\\projet1 - vs\\frmconnexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|solutionrelative:frmconnexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|c:\\users\\star\\documents\\school\\bd_projet_1\\projet1 - vs\\frmconnexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|solutionrelative:frmconnexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|c:\\users\\star\\documents\\school\\bd_projet_1\\projet1 - vs\\frmchambreettype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|solutionrelative:frmchambreettype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,103 +30,39 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "frmMenuPrep.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\star\\Documents\\School\\bd_projet_1\\Projet1 - VS\\frmMenuPrep.cs",
-              "RelativeDocumentMoniker": "frmMenuPrep.cs",
-              "ToolTip": "C:\\Users\\star\\Documents\\School\\bd_projet_1\\Projet1 - VS\\frmMenuPrep.cs [Design]",
-              "RelativeToolTip": "frmMenuPrep.cs [Design]",
+              "DocumentIndex": 2,
+              "Title": "frmChambreEtType.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\star\\Documents\\School\\bd_projet_1\\Projet1 - VS\\frmChambreEtType.cs",
+              "RelativeDocumentMoniker": "frmChambreEtType.cs",
+              "ToolTip": "C:\\Users\\star\\Documents\\School\\bd_projet_1\\Projet1 - VS\\frmChambreEtType.cs [Design]",
+              "RelativeToolTip": "frmChambreEtType.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-18T15:07:44.133Z",
+              "WhenOpened": "2026-10-18T15:25:13.689Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "frmMenuAdmin.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\star\\Documents\\School\\bd_projet_1\\Projet1 - VS\\frmMenuAdmin.cs",
-              "RelativeDocumentMoniker": "frmMenuAdmin.cs",
-              "ToolTip": "C:\\Users\\star\\Documents\\School\\bd_projet_1\\Projet1 - VS\\frmMenuAdmin.cs [Design]",
-              "RelativeToolTip": "frmMenuAdmin.cs [Design]",
+              "Title": "frmVisualisation.cs",
+              "DocumentMoniker": "C:\\Users\\star\\Documents\\School\\bd_projet_1\\Projet1 - VS\\frmVisualisation.cs",
+              "RelativeDocumentMoniker": "frmVisualisation.cs",
+              "ToolTip": "C:\\Users\\star\\Documents\\School\\bd_projet_1\\Projet1 - VS\\frmVisualisation.cs",
+              "RelativeToolTip": "frmVisualisation.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAowAoAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-18T15:00:43.008Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "frmMenuPrep.cs",
-              "DocumentMoniker": "C:\\Users\\star\\Documents\\School\\bd_projet_1\\Projet1 - VS\\frmMenuPrep.cs",
-              "RelativeDocumentMoniker": "frmMenuPrep.cs",
-              "ToolTip": "C:\\Users\\star\\Documents\\School\\bd_projet_1\\Projet1 - VS\\frmMenuPrep.cs",
-              "RelativeToolTip": "frmMenuPrep.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAABgAAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-18T14:57:17.044Z",
+              "WhenOpened": "2026-10-18T15:25:00.219Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "frmMenuAdmin.cs",
-              "DocumentMoniker": "C:\\Users\\star\\Documents\\School\\bd_projet_1\\Projet1 - VS\\frmMenuAdmin.cs",
-              "RelativeDocumentMoniker": "frmMenuAdmin.cs",
-              "ToolTip": "C:\\Users\\star\\Documents\\School\\bd_projet_1\\Projet1 - VS\\frmMenuAdmin.cs",
-              "RelativeToolTip": "frmMenuAdmin.cs",
-              "ViewState": "AgIAAGUAAAAAAAAAAAAhwBwAAAAJAAAAAAAAAA==",
+              "Title": "frmVisualisation.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\star\\Documents\\School\\bd_projet_1\\Projet1 - VS\\frmVisualisation.cs",
+              "RelativeDocumentMoniker": "frmVisualisation.cs",
+              "ToolTip": "C:\\Users\\star\\Documents\\School\\bd_projet_1\\Projet1 - VS\\frmVisualisation.cs [Design]",
+              "RelativeToolTip": "frmVisualisation.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-18T14:56:44.797Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "frmMenuAdmin.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\star\\Documents\\School\\bd_projet_1\\Projet1 - VS\\frmMenuAdmin.Designer.cs",
-              "RelativeDocumentMoniker": "frmMenuAdmin.Designer.cs",
-              "ToolTip": "C:\\Users\\star\\Documents\\School\\bd_projet_1\\Projet1 - VS\\frmMenuAdmin.Designer.cs",
-              "RelativeToolTip": "frmMenuAdmin.Designer.cs",
-              "ViewState": "AgIAAOgAAAAAAAAAAAAUwBwAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-18T15:02:53.633Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "PlannificationSoin.cs",
-              "DocumentMoniker": "C:\\Users\\star\\Documents\\School\\bd_projet_1\\Projet1 - VS\\PlannificationSoin.cs",
-              "RelativeDocumentMoniker": "PlannificationSoin.cs",
-              "ToolTip": "C:\\Users\\star\\Documents\\School\\bd_projet_1\\Projet1 - VS\\PlannificationSoin.cs",
-              "RelativeToolTip": "PlannificationSoin.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAuwAsAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-18T14:57:30.374Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "frmConnexion.cs",
-              "DocumentMoniker": "C:\\Users\\star\\Documents\\School\\bd_projet_1\\Projet1 - VS\\frmConnexion.cs",
-              "RelativeDocumentMoniker": "frmConnexion.cs",
-              "ToolTip": "C:\\Users\\star\\Documents\\School\\bd_projet_1\\Projet1 - VS\\frmConnexion.cs",
-              "RelativeToolTip": "frmConnexion.cs",
-              "ViewState": "AgIAAHUAAAAAAAAAAAAowHoAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-18T14:54:31.687Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "frmConnexion.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\star\\Documents\\School\\bd_projet_1\\Projet1 - VS\\frmConnexion.cs",
-              "RelativeDocumentMoniker": "frmConnexion.cs",
-              "ToolTip": "C:\\Users\\star\\Documents\\School\\bd_projet_1\\Projet1 - VS\\frmConnexion.cs [Design]",
-              "RelativeToolTip": "frmConnexion.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-18T14:47:10.447Z",
+              "WhenOpened": "2026-10-18T15:24:53.723Z",
               "EditorCaption": " [Design]"
             }
           ]
