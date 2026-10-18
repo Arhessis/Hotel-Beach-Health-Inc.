@@ -59,5 +59,34 @@ namespace Projet1___VS
             prixTextBox.ReadOnly = !enEdition;
             noTypeSoinComboBox.Enabled = enEdition;
         }
+
+        private void btnAjouter_Click(object sender, EventArgs e)
+        {
+            enModeAjout = true;
+
+            soinBindingSource.AddNew();
+
+            decimal prochainNo = 1;
+            if (bDB56Projet1BKGDataSet.Soin.Count > 0)
+            {
+                prochainNo = bDB56Projet1BKGDataSet.Soin.Max(s => s.NoSoin) + 1;
+            }
+            noSoinTextBox.Text = prochainNo.ToString();
+
+            dureeTextBox.Text = "60";
+
+            if (bDB56Projet1BKGDataSet.TypeSoin.Count > 0)
+            {
+                noTypeSoinComboBox.SelectedValue = bDB56Projet1BKGDataSet.TypeSoin.First().NoTypeSoin;
+            }
+
+            GererEtatControles(true);
+            descriptionTextBox.Focus();
+        }
+
+        private void btnModifier_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
