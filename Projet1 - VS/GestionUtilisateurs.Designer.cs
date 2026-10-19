@@ -58,6 +58,8 @@
             this.btnFermer = new System.Windows.Forms.Button();
             this.txtNoUtilisateur = new System.Windows.Forms.TextBox();
             this.cboTypeUtilisateur = new System.Windows.Forms.ComboBox();
+            this.btnTypePrecedent = new System.Windows.Forms.Button();
+            this.btnTypeSuivant = new System.Windows.Forms.Button();
             noUtilisateurLabel = new System.Windows.Forms.Label();
             nomLabel = new System.Windows.Forms.Label();
             motDePasseLabel = new System.Windows.Forms.Label();
@@ -68,6 +70,42 @@
             ((System.ComponentModel.ISupportInitialize)(this.typeUtilisateurBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.typeUtilisateurDataGridView)).BeginInit();
             this.SuspendLayout();
+            // 
+            // noUtilisateurLabel
+            // 
+            noUtilisateurLabel.AutoSize = true;
+            noUtilisateurLabel.Location = new System.Drawing.Point(26, 97);
+            noUtilisateurLabel.Name = "noUtilisateurLabel";
+            noUtilisateurLabel.Size = new System.Drawing.Size(73, 13);
+            noUtilisateurLabel.TabIndex = 3;
+            noUtilisateurLabel.Text = "No Utilisateur:";
+            // 
+            // nomLabel
+            // 
+            nomLabel.AutoSize = true;
+            nomLabel.Location = new System.Drawing.Point(26, 123);
+            nomLabel.Name = "nomLabel";
+            nomLabel.Size = new System.Drawing.Size(32, 13);
+            nomLabel.TabIndex = 5;
+            nomLabel.Text = "Nom:";
+            // 
+            // motDePasseLabel
+            // 
+            motDePasseLabel.AutoSize = true;
+            motDePasseLabel.Location = new System.Drawing.Point(26, 149);
+            motDePasseLabel.Name = "motDePasseLabel";
+            motDePasseLabel.Size = new System.Drawing.Size(77, 13);
+            motDePasseLabel.TabIndex = 7;
+            motDePasseLabel.Text = "Mot De Passe:";
+            // 
+            // noTypeLabel1
+            // 
+            noTypeLabel1.AutoSize = true;
+            noTypeLabel1.Location = new System.Drawing.Point(26, 175);
+            noTypeLabel1.Name = "noTypeLabel1";
+            noTypeLabel1.Size = new System.Drawing.Size(51, 13);
+            noTypeLabel1.TabIndex = 11;
+            noTypeLabel1.Text = "No Type:";
             // 
             // bDB56Projet1BKGDataSet
             // 
@@ -155,24 +193,6 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Gestion des utilisateurs";
             // 
-            // noUtilisateurLabel
-            // 
-            noUtilisateurLabel.AutoSize = true;
-            noUtilisateurLabel.Location = new System.Drawing.Point(26, 97);
-            noUtilisateurLabel.Name = "noUtilisateurLabel";
-            noUtilisateurLabel.Size = new System.Drawing.Size(73, 13);
-            noUtilisateurLabel.TabIndex = 3;
-            noUtilisateurLabel.Text = "No Utilisateur:";
-            // 
-            // nomLabel
-            // 
-            nomLabel.AutoSize = true;
-            nomLabel.Location = new System.Drawing.Point(26, 123);
-            nomLabel.Name = "nomLabel";
-            nomLabel.Size = new System.Drawing.Size(32, 13);
-            nomLabel.TabIndex = 5;
-            nomLabel.Text = "Nom:";
-            // 
             // txtNom
             // 
             this.txtNom.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.utilisateurBindingSource, "Nom", true));
@@ -182,15 +202,6 @@
             this.txtNom.Size = new System.Drawing.Size(100, 20);
             this.txtNom.TabIndex = 6;
             // 
-            // motDePasseLabel
-            // 
-            motDePasseLabel.AutoSize = true;
-            motDePasseLabel.Location = new System.Drawing.Point(26, 149);
-            motDePasseLabel.Name = "motDePasseLabel";
-            motDePasseLabel.Size = new System.Drawing.Size(77, 13);
-            motDePasseLabel.TabIndex = 7;
-            motDePasseLabel.Text = "Mot De Passe:";
-            // 
             // txtMotDePasse
             // 
             this.txtMotDePasse.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.utilisateurBindingSource, "MotDePasse", true));
@@ -199,15 +210,6 @@
             this.txtMotDePasse.Name = "txtMotDePasse";
             this.txtMotDePasse.Size = new System.Drawing.Size(100, 20);
             this.txtMotDePasse.TabIndex = 8;
-            // 
-            // noTypeLabel1
-            // 
-            noTypeLabel1.AutoSize = true;
-            noTypeLabel1.Location = new System.Drawing.Point(26, 175);
-            noTypeLabel1.Name = "noTypeLabel1";
-            noTypeLabel1.Size = new System.Drawing.Size(51, 13);
-            noTypeLabel1.TabIndex = 11;
-            noTypeLabel1.Text = "No Type:";
             // 
             // typeUtilisateurBindingSource
             // 
@@ -286,32 +288,28 @@
             // 
             // btnAnnuler
             // 
+            this.btnAnnuler.CausesValidation = false;
             this.btnAnnuler.Location = new System.Drawing.Point(264, 171);
             this.btnAnnuler.Name = "btnAnnuler";
             this.btnAnnuler.Size = new System.Drawing.Size(81, 30);
             this.btnAnnuler.TabIndex = 17;
             this.btnAnnuler.Text = "Annuler";
             this.btnAnnuler.UseVisualStyleBackColor = true;
-            this.btnAnnuler.CausesValidation = false;
             this.btnAnnuler.Click += new System.EventHandler(this.btnAnnuler_Click);
-
             // 
             // btnFermer
             // 
+            this.btnFermer.CausesValidation = false;
             this.btnFermer.Location = new System.Drawing.Point(351, 171);
             this.btnFermer.Name = "btnFermer";
             this.btnFermer.Size = new System.Drawing.Size(81, 29);
             this.btnFermer.TabIndex = 18;
             this.btnFermer.Text = "Fermer";
             this.btnFermer.UseVisualStyleBackColor = true;
-            this.btnFermer.CausesValidation = false;
             this.btnFermer.Click += new System.EventHandler(this.btnFermer_Click);
-
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.GestionUtilisateurs_FormClosing);
             // 
             // txtNoUtilisateur
             // 
-            this.txtNoUtilisateur.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.utilisateurBindingSource, "NoUtilisateur", true));
             this.txtNoUtilisateur.Location = new System.Drawing.Point(109, 94);
             this.txtNoUtilisateur.Name = "txtNoUtilisateur";
             this.txtNoUtilisateur.ReadOnly = true;
@@ -331,11 +329,37 @@
             this.cboTypeUtilisateur.TabIndex = 12;
             this.cboTypeUtilisateur.ValueMember = "NoType";
             // 
+            // btnTypePrecedent
+            // 
+            this.btnTypePrecedent.Font = new System.Drawing.Font("Microsoft Tai Le", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTypePrecedent.Location = new System.Drawing.Point(19, 455);
+            this.btnTypePrecedent.Margin = new System.Windows.Forms.Padding(2);
+            this.btnTypePrecedent.Name = "btnTypePrecedent";
+            this.btnTypePrecedent.Size = new System.Drawing.Size(80, 42);
+            this.btnTypePrecedent.TabIndex = 19;
+            this.btnTypePrecedent.Text = "<--";
+            this.btnTypePrecedent.UseVisualStyleBackColor = true;
+            this.btnTypePrecedent.Click += new System.EventHandler(this.btnTypePrecedent_Click);
+            // 
+            // btnTypeSuivant
+            // 
+            this.btnTypeSuivant.Font = new System.Drawing.Font("Microsoft Tai Le", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTypeSuivant.Location = new System.Drawing.Point(375, 455);
+            this.btnTypeSuivant.Margin = new System.Windows.Forms.Padding(2);
+            this.btnTypeSuivant.Name = "btnTypeSuivant";
+            this.btnTypeSuivant.Size = new System.Drawing.Size(80, 42);
+            this.btnTypeSuivant.TabIndex = 20;
+            this.btnTypeSuivant.Text = "-->";
+            this.btnTypeSuivant.UseVisualStyleBackColor = true;
+            this.btnTypeSuivant.Click += new System.EventHandler(this.btnTypeSuivant_Click);
+            // 
             // GestionUtilisateurs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(470, 456);
+            this.ClientSize = new System.Drawing.Size(470, 518);
+            this.Controls.Add(this.btnTypeSuivant);
+            this.Controls.Add(this.btnTypePrecedent);
             this.Controls.Add(this.btnFermer);
             this.Controls.Add(this.btnAnnuler);
             this.Controls.Add(this.btnEnregistrer);
@@ -356,6 +380,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "GestionUtilisateurs";
             this.Text = "GestionUtilisateurs";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.GestionUtilisateurs_FormClosing);
             this.Load += new System.EventHandler(this.GestionUtilisateurs_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bDB56Projet1BKGDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.utilisateurBindingSource)).EndInit();
@@ -394,5 +419,7 @@
         private System.Windows.Forms.Button btnFermer;
         private System.Windows.Forms.TextBox txtNoUtilisateur;
         private System.Windows.Forms.ComboBox cboTypeUtilisateur;
+        private System.Windows.Forms.Button btnTypePrecedent;
+        private System.Windows.Forms.Button btnTypeSuivant;
     }
 }

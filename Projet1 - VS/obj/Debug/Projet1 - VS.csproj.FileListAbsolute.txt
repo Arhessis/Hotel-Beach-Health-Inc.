@@ -93,3 +93,11 @@ C:\wamp64\www\project1Base3\Projet1 - VS\obj\Debug\Projet1___VS.frmMenuAdmin.res
 C:\wamp64\www\project1Base3\Projet1 - VS\obj\Debug\Projet1___VS.frmMenuPrep.resources
 C:\wamp64\www\project1Base3\Projet1 - VS\obj\Debug\Projet1___VS.frmVisualisation.resources
 C:\wamp64\www\project1Base3\Projet1 - VS\obj\Debug\Projet1___VS.AjouterReservation.resources
+C:\Users\georg\OneDrive\Documents\HotelPlageSante\Projet1 - VS\obj\Debug\Projet1___VS.AjouterReservation.resources
+C:\Users\georg\OneDrive\Documents\HotelPlageSante\Projet1 - VS\obj\Debug\Projet1___VS.frmConnexion.resources
+C:\Users\georg\OneDrive\Documents\HotelPlageSante\Projet1 - VS\obj\Debug\Projet1___VS.frmChambreEtType.resources
+C:\Users\georg\OneDrive\Documents\HotelPlageSante\Projet1 - VS\obj\Debug\Projet1___VS.frmClientEtInvite.resources
+C:\Users\georg\OneDrive\Documents\HotelPlageSante\Projet1 - VS\obj\Debug\Projet1___VS.GestionSoin.resources
+C:\Users\georg\OneDrive\Documents\HotelPlageSante\Projet1 - VS\obj\Debug\Projet1___VS.frmMenuAdmin.resources
+C:\Users\georg\OneDrive\Documents\HotelPlageSante\Projet1 - VS\obj\Debug\Projet1___VS.frmMenuPrep.resources
+C:\Users\georg\OneDrive\Documents\HotelPlageSante\Projet1 - VS\obj\Debug\Projet1___VS.frmVisualisation.resources

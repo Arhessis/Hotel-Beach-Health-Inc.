@@ -62,6 +62,8 @@
             this.assistantTableAdapter = new Projet1___VS.BDB56Projet1BKGDataSetTableAdapters.AssistantTableAdapter();
             this.assistantSoinBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.assistantSoinTableAdapter = new Projet1___VS.BDB56Projet1BKGDataSetTableAdapters.AssistantSoinTableAdapter();
+            this.btnTypePrecedent = new System.Windows.Forms.Button();
+            this.btnTypeSuivant = new System.Windows.Forms.Button();
             noPersonneLabel = new System.Windows.Forms.Label();
             noAssistantLabel = new System.Windows.Forms.Label();
             dateHeureLabel = new System.Windows.Forms.Label();
@@ -326,11 +328,37 @@
             // 
             this.assistantSoinTableAdapter.ClearBeforeFill = true;
             // 
+            // btnTypePrecedent
+            // 
+            this.btnTypePrecedent.Font = new System.Drawing.Font("Microsoft Tai Le", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTypePrecedent.Location = new System.Drawing.Point(17, 442);
+            this.btnTypePrecedent.Margin = new System.Windows.Forms.Padding(2);
+            this.btnTypePrecedent.Name = "btnTypePrecedent";
+            this.btnTypePrecedent.Size = new System.Drawing.Size(80, 42);
+            this.btnTypePrecedent.TabIndex = 24;
+            this.btnTypePrecedent.Text = "<--";
+            this.btnTypePrecedent.UseVisualStyleBackColor = true;
+            this.btnTypePrecedent.Click += new System.EventHandler(this.btnTypePrecedent_Click);
+            // 
+            // btnTypeSuivant
+            // 
+            this.btnTypeSuivant.Font = new System.Drawing.Font("Microsoft Tai Le", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTypeSuivant.Location = new System.Drawing.Point(361, 442);
+            this.btnTypeSuivant.Margin = new System.Windows.Forms.Padding(2);
+            this.btnTypeSuivant.Name = "btnTypeSuivant";
+            this.btnTypeSuivant.Size = new System.Drawing.Size(80, 42);
+            this.btnTypeSuivant.TabIndex = 25;
+            this.btnTypeSuivant.Text = "-->";
+            this.btnTypeSuivant.UseVisualStyleBackColor = true;
+            this.btnTypeSuivant.Click += new System.EventHandler(this.btnTypeSuivant_Click);
+            // 
             // PlannificationSoin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(475, 441);
+            this.ClientSize = new System.Drawing.Size(475, 507);
+            this.Controls.Add(this.btnTypeSuivant);
+            this.Controls.Add(this.btnTypePrecedent);
             this.Controls.Add(this.btnFermer);
             this.Controls.Add(this.btnAnnuler);
             this.Controls.Add(this.btnEnregistrer);
@@ -393,5 +421,7 @@
         private BDB56Projet1BKGDataSetTableAdapters.AssistantTableAdapter assistantTableAdapter;
         private System.Windows.Forms.BindingSource assistantSoinBindingSource;
         private BDB56Projet1BKGDataSetTableAdapters.AssistantSoinTableAdapter assistantSoinTableAdapter;
+        private System.Windows.Forms.Button btnTypePrecedent;
+        private System.Windows.Forms.Button btnTypeSuivant;
     }
 }

@@ -25,8 +25,21 @@ namespace Projet1___VS
         {
             try
             {
+                utilisateurDataGridView.AllowUserToAddRows = false;
+                txtNoUtilisateur.DataBindings.Clear();
+                txtNom.DataBindings.Clear();
+                txtMotDePasse.DataBindings.Clear();
+                cboTypeUtilisateur.DataBindings.Clear();
+
+                cboTypeUtilisateur.DataSource = typeUtilisateurBindingSource;
+                cboTypeUtilisateur.DisplayMember = "identification";
+                cboTypeUtilisateur.ValueMember = "NoType";
+
                 this.typeUtilisateurTableAdapter.Fill(this.bDB56Projet1BKGDataSet.TypeUtilisateur);
                 this.utilisateurTableAdapter.Fill(this.bDB56Projet1BKGDataSet.Utilisateur);
+
+                this.utilisateurBindingSource.CurrentChanged += utilisateurBindingSource_CurrentChanged;
+                utilisateurBindingSource_CurrentChanged(null, null);
 
                 GererEtatControles(false);
             }
@@ -34,6 +47,26 @@ namespace Projet1___VS
             {
                 MessageBox.Show("Erreur lors du chargement des données : " + ex.Message,
                     "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void utilisateurBindingSource_CurrentChanged(object sender, EventArgs e)
+        {
+            if (enModeAjout) return;
+
+            if (utilisateurBindingSource.Current is DataRowView drv)
+            {
+                txtNoUtilisateur.Text = drv["NoUtilisateur"].ToString();
+                txtNom.Text = drv["Nom"].ToString();
+                txtMotDePasse.Text = drv["MotDePasse"].ToString();
+                cboTypeUtilisateur.SelectedValue = drv["NoType"];
+            }
+            else
+            {
+                txtNoUtilisateur.Clear();
+                txtNom.Clear();
+                txtMotDePasse.Clear();
+                cboTypeUtilisateur.SelectedIndex = -1;
             }
         }
 
@@ -58,11 +91,9 @@ namespace Projet1___VS
             }
             else if (enModeModification)
             {
-                if (utilisateurBindingSource.Current != null)
+                if (utilisateurBindingSource.Current is DataRowView currentRow)
                 {
-                    DataRowView currentRow = (DataRowView)utilisateurBindingSource.Current;
                     decimal selectedUserId = Convert.ToDecimal(currentRow["NoUtilisateur"]);
-
                     cboTypeUtilisateur.Enabled = (selectedUserId != noUtilisateurConnecte);
                 }
             }
@@ -83,13 +114,12 @@ namespace Projet1___VS
                 prochainNo = bDB56Projet1BKGDataSet.Utilisateur.Max(u => u.NoUtilisateur) + 1;
             }
 
-            DataRowView nouvelleLigne = (DataRowView)utilisateurBindingSource.AddNew();
-            nouvelleLigne["NoUtilisateur"] = prochainNo;
+            txtNoUtilisateur.Text = prochainNo.ToString();
+            txtNom.Clear();
+            txtMotDePasse.Clear();
 
             if (bDB56Projet1BKGDataSet.TypeUtilisateur.Count > 0)
-            {
-                nouvelleLigne["NoType"] = bDB56Projet1BKGDataSet.TypeUtilisateur[0].NoType;
-            }
+                cboTypeUtilisateur.SelectedValue = bDB56Projet1BKGDataSet.TypeUtilisateur[0].NoType;
 
             GererEtatControles(true);
             txtNom.Focus();
@@ -127,13 +157,8 @@ namespace Projet1___VS
                 return;
             }
 
-            DialogResult confirmation = MessageBox.Show(
-                $"Voulez-vous vraiment supprimer l'utilisateur '{nomCible}' (No {noCible}) ?",
-                "Confirmation de suppression",
-                MessageBoxButtons.YesNo,
-                MessageBoxIcon.Question);
-
-            if (confirmation == DialogResult.Yes)
+            if (MessageBox.Show($"Voulez-vous vraiment supprimer l'utilisateur '{nomCible}' (No {noCible}) ?",
+                "Confirmation de suppression", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 utilisateurBindingSource.RemoveCurrent();
                 SauvegarderDonnees();
@@ -145,33 +170,43 @@ namespace Projet1___VS
             string nomSaisi = txtNom.Text.Trim();
             string mdpSaisi = txtMotDePasse.Text.Trim();
 
-            if (string.IsNullOrWhiteSpace(nomSaisi) ||
-                string.IsNullOrWhiteSpace(mdpSaisi) ||
-                cboTypeUtilisateur.SelectedValue == null)
+            if (string.IsNullOrWhiteSpace(nomSaisi) || string.IsNullOrWhiteSpace(mdpSaisi) || cboTypeUtilisateur.SelectedValue == null)
             {
-                MessageBox.Show("Tous les champs sont obligatoires.",
-                    "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Tous les champs sont obligatoires.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
             if (enModeAjout)
             {
                 bool nomExisteDeja = bDB56Projet1BKGDataSet.Utilisateur.Any(u =>
-                    u.RowState != DataRowState.Deleted &&
-                    !u.IsNomNull() &&
-                    u.Nom.Trim().Equals(nomSaisi, StringComparison.OrdinalIgnoreCase));
+                    u.RowState != DataRowState.Deleted && u.Nom.Trim().Equals(nomSaisi, StringComparison.OrdinalIgnoreCase));
 
                 if (nomExisteDeja)
                 {
-                    MessageBox.Show("Ce nom d'utilisateur existe déjà. Veuillez en choisir un autre.",
-                        "Nom non unique", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Ce nom d'utilisateur existe déjà. Veuillez en choisir un autre.", "Nom non unique", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     txtNom.Focus();
                     return;
                 }
-            }
 
-            txtNom.Text = nomSaisi;
-            txtMotDePasse.Text = mdpSaisi;
+                var nouvelleLigne = bDB56Projet1BKGDataSet.Utilisateur.NewUtilisateurRow();
+                nouvelleLigne.NoUtilisateur = Convert.ToDecimal(txtNoUtilisateur.Text);
+                nouvelleLigne.Nom = nomSaisi;
+                nouvelleLigne.MotDePasse = mdpSaisi;
+                nouvelleLigne.NoType = Convert.ToDecimal(cboTypeUtilisateur.SelectedValue);
+
+                bDB56Projet1BKGDataSet.Utilisateur.AddUtilisateurRow(nouvelleLigne);
+                utilisateurBindingSource.MoveLast();
+            }
+            else if (enModeModification)
+            {
+                if (utilisateurBindingSource.Current is DataRowView currentRow)
+                {
+                    currentRow["Nom"] = nomSaisi;
+                    currentRow["MotDePasse"] = mdpSaisi;
+                    currentRow["NoType"] = cboTypeUtilisateur.SelectedValue;
+                    currentRow.EndEdit();
+                }
+            }
 
             if (SauvegarderDonnees())
             {
@@ -188,6 +223,8 @@ namespace Projet1___VS
 
             enModeAjout = false;
             enModeModification = false;
+
+            utilisateurBindingSource_CurrentChanged(null, null);
             GererEtatControles(false);
         }
 
@@ -199,22 +236,20 @@ namespace Projet1___VS
                 this.utilisateurBindingSource.EndEdit();
                 this.tableAdapterManager.UpdateAll(this.bDB56Projet1BKGDataSet);
 
-                MessageBox.Show("Données sauvegardées avec succès.",
-                    "Succès", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Données sauvegardées avec succès.", "Succès", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return true;
             }
             catch (DBConcurrencyException)
             {
-                MessageBox.Show("Conflit d'accès détecté : cet enregistrement a été modifié par un autre utilisateur. Les données vont être rechargées.",
-                    "Conflit d'accès", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Conflit d'accès détecté : cet enregistrement a été modifié par un autre utilisateur.",
+                    "Conflit", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                 this.utilisateurTableAdapter.Fill(this.bDB56Projet1BKGDataSet.Utilisateur);
                 return false;
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erreur lors de la sauvegarde : " + ex.Message,
-                    "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Erreur lors de la sauvegarde : " + ex.Message, "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
         }
@@ -228,19 +263,23 @@ namespace Projet1___VS
         {
             if (enModeAjout || enModeModification)
             {
-                DialogResult rep = MessageBox.Show(
-                    "Une opération est en cours. Voulez-vous annuler les modifications et fermer ?",
-                    "Quitter", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-
-                if (rep == DialogResult.No)
+                if (MessageBox.Show("Une opération est en cours. Voulez-vous annuler et fermer ?", "Quitter", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.No)
                 {
                     e.Cancel = true;
                     return;
                 }
-
-                utilisateurBindingSource.CancelEdit();
                 bDB56Projet1BKGDataSet.Utilisateur.RejectChanges();
             }
+        }
+
+        private void btnTypePrecedent_Click(object sender, EventArgs e)
+        {
+            utilisateurBindingSource.MovePrevious();
+        }
+
+        private void btnTypeSuivant_Click(object sender, EventArgs e)
+        {
+            utilisateurBindingSource.MoveNext();
         }
     }
 }
