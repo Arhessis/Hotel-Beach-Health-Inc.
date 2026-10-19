@@ -9,6 +9,28 @@
     {
       "AbsoluteMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|c:\\users\\georg\\onedrive\\documents\\hotelplagesante\\projet1 - vs\\gestionsoin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|solutionrelative:gestionsoin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+<<<<<<< HEAD
+=======
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|c:\\users\\georg\\onedrive\\documents\\hotelplagesante\\projet1 - vs\\frmchambreettype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|solutionrelative:frmchambreettype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+=======
+  "WorkspaceRootPath": "C:\\wamp64\\www\\project1Base3\\Projet1 - VS\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|c:\\wamp64\\www\\project1base3\\projet1 - vs\\reservationchambre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|solutionrelative:reservationchambre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|C:\\wamp64\\www\\project1Base3\\Projet1 - VS\\frmvisualisation.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|solutionrelative:frmvisualisation.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|C:\\wamp64\\www\\project1Base3\\Projet1 - VS\\ajouterreservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7253159E-3EE3-415A-B419-3C0414184DFF}|Projet1 - VS.csproj|solutionrelative:ajouterreservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+>>>>>>> bcb45afc009517090073b03ce762eed2c56c74d0
+>>>>>>> 576b24fae7ecea6a44ef4cc76b9c3de769c7850e
     }
   ],
   "DocumentGroupContainers": [
@@ -50,6 +72,44 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+<<<<<<< HEAD
+=======
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frmChambreEtType.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\georg\\OneDrive\\Documents\\HotelPlageSante\\Projet1 - VS\\frmChambreEtType.cs",
+              "RelativeDocumentMoniker": "frmChambreEtType.cs",
+              "ToolTip": "C:\\Users\\georg\\OneDrive\\Documents\\HotelPlageSante\\Projet1 - VS\\frmChambreEtType.cs [Design]",
+              "RelativeToolTip": "frmChambreEtType.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-19T00:45:58.261Z",
+=======
+              "DocumentIndex": 1,
+              "Title": "frmVisualisation.Designer.cs",
+              "DocumentMoniker": "C:\\wamp64\\www\\project1Base3\\Projet1 - VS\\frmVisualisation.Designer.cs",
+              "RelativeDocumentMoniker": "frmVisualisation.Designer.cs",
+              "ToolTip": "C:\\wamp64\\www\\project1Base3\\Projet1 - VS\\frmVisualisation.Designer.cs",
+              "RelativeToolTip": "frmVisualisation.Designer.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAwwJIBAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-19T00:17:11.849Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ReservationChambre.cs [Design]",
+              "DocumentMoniker": "C:\\wamp64\\www\\project1Base3\\Projet1 - VS\\ReservationChambre.cs",
+              "RelativeDocumentMoniker": "ReservationChambre.cs",
+              "ToolTip": "C:\\wamp64\\www\\project1Base3\\Projet1 - VS\\ReservationChambre.cs [Design]",
+              "RelativeToolTip": "ReservationChambre.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-19T00:11:28.791Z",
+>>>>>>> bcb45afc009517090073b03ce762eed2c56c74d0
+              "EditorCaption": " [Design]"
+>>>>>>> 576b24fae7ecea6a44ef4cc76b9c3de769c7850e
             }
           ]
         }
