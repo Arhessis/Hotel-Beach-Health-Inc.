@@ -1,19 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Projet1___VS
 {
-
     public partial class GestionSoin : Form
     {
         private bool enModeAjout = false;
+        private bool enModeModification = false;
 
         public GestionSoin()
         {
@@ -22,15 +17,26 @@ namespace Projet1___VS
 
         private void GestionSoin_Load(object sender, EventArgs e)
         {
-            this.planifSoinTableAdapter.Fill(this.bDB56Projet1BKGDataSet.PlanifSoin);
             try
             {
+                soinDataGridView.AllowUserToAddRows = false;
+                noSoinTextBox.DataBindings.Clear();
+                descriptionTextBox.DataBindings.Clear();
+                dureeTextBox.DataBindings.Clear();
+                prixTextBox.DataBindings.Clear();
+                noTypeSoinComboBox.DataBindings.Clear();
+
+                noTypeSoinComboBox.DataSource = typeSoinBindingSource;
+                noTypeSoinComboBox.DisplayMember = "Description";
+                noTypeSoinComboBox.ValueMember = "NoTypeSoin";
+
                 this.typeSoinTableAdapter.Fill(this.bDB56Projet1BKGDataSet.TypeSoin);
-
                 this.soinTableAdapter.Fill(this.bDB56Projet1BKGDataSet.Soin);
-
                 this.assistantSoinTableAdapter.Fill(this.bDB56Projet1BKGDataSet.AssistantSoin);
                 this.planifSoinTableAdapter.Fill(this.bDB56Projet1BKGDataSet.PlanifSoin);
+
+                this.soinBindingSource.CurrentChanged += soinBindingSource_CurrentChanged;
+                soinBindingSource_CurrentChanged(null, null);
 
                 GererEtatControles(false);
             }
@@ -39,11 +45,34 @@ namespace Projet1___VS
                 MessageBox.Show("Erreur lors du chargement des données : " + ex.Message,
                     "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
 
+        private void soinBindingSource_CurrentChanged(object sender, EventArgs e)
+        {
+            if (enModeAjout) return;
+
+            if (soinBindingSource.Current is DataRowView drv)
+            {
+                noSoinTextBox.Text = drv["NoSoin"].ToString();
+                descriptionTextBox.Text = drv["Description"].ToString();
+                dureeTextBox.Text = drv["Duree"].ToString();
+                noTypeSoinComboBox.SelectedValue = drv["NoTypeSoin"];
+                prixTextBox.Text = drv["Prix"].ToString();
+            }
+            else
+            {
+                noSoinTextBox.Clear();
+                descriptionTextBox.Clear();
+                dureeTextBox.Clear();
+                noTypeSoinComboBox.SelectedIndex = -1;
+                prixTextBox.Clear();
+            }
         }
 
         private void GererEtatControles(bool enEdition)
         {
+            soinDataGridView.Enabled = !enEdition;
+
             btnAjouter.Enabled = !enEdition;
             btnModifier.Enabled = !enEdition && soinBindingSource.Count > 0;
             btnSupprimer.Enabled = !enEdition && soinBindingSource.Count > 0;
@@ -52,7 +81,6 @@ namespace Projet1___VS
             btnAnnuler.Enabled = enEdition;
 
             noSoinTextBox.ReadOnly = true;
-
             dureeTextBox.ReadOnly = true;
 
             descriptionTextBox.ReadOnly = !enEdition;
@@ -63,17 +91,18 @@ namespace Projet1___VS
         private void btnAjouter_Click(object sender, EventArgs e)
         {
             enModeAjout = true;
-
-            soinBindingSource.AddNew();
+            enModeModification = false;
 
             decimal prochainNo = 1;
             if (bDB56Projet1BKGDataSet.Soin.Count > 0)
             {
                 prochainNo = bDB56Projet1BKGDataSet.Soin.Max(s => s.NoSoin) + 1;
             }
-            noSoinTextBox.Text = prochainNo.ToString();
 
+            noSoinTextBox.Text = prochainNo.ToString();
+            descriptionTextBox.Clear();
             dureeTextBox.Text = "60";
+            prixTextBox.Clear();
 
             if (bDB56Projet1BKGDataSet.TypeSoin.Count > 0)
             {
@@ -89,6 +118,7 @@ namespace Projet1___VS
             if (soinBindingSource.Current == null) return;
 
             enModeAjout = false;
+            enModeModification = true;
 
             GererEtatControles(true);
             descriptionTextBox.Focus();
@@ -99,27 +129,9 @@ namespace Projet1___VS
             string description = descriptionTextBox.Text.Trim();
             string prixTexte = prixTextBox.Text.Trim();
 
-            if (string.IsNullOrWhiteSpace(description))
+            if (string.IsNullOrWhiteSpace(description) || string.IsNullOrWhiteSpace(prixTexte) || noTypeSoinComboBox.SelectedValue == null)
             {
-                MessageBox.Show("La description du soin est obligatoire.",
-                    "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                descriptionTextBox.Focus();
-                return;
-            }
-
-            if (noTypeSoinComboBox.SelectedValue == null)
-            {
-                MessageBox.Show("Veuillez sélectionner un type de soin.",
-                    "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                noTypeSoinComboBox.Focus();
-                return;
-            }
-
-            if (string.IsNullOrWhiteSpace(prixTexte))
-            {
-                MessageBox.Show("Le prix du soin est obligatoire.",
-                    "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                prixTextBox.Focus();
+                MessageBox.Show("Tous les champs sont obligatoires.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
@@ -131,15 +143,33 @@ namespace Projet1___VS
                 return;
             }
 
-            DataRowView currentRow = (DataRowView)soinBindingSource.Current;
-            currentRow["Description"] = description;
-            currentRow["Duree"] = 60; 
-            currentRow["NoTypeSoin"] = noTypeSoinComboBox.SelectedValue;
-            currentRow["Prix"] = Math.Round(prix, 2);
+            if (enModeAjout)
+            {
+                var nouvelleLigne = bDB56Projet1BKGDataSet.Soin.NewSoinRow();
+                nouvelleLigne.NoSoin = Convert.ToDecimal(noSoinTextBox.Text);
+                nouvelleLigne.Description = description;
+                nouvelleLigne.Duree = 60;
+                nouvelleLigne.NoTypeSoin = Convert.ToDecimal(noTypeSoinComboBox.SelectedValue);
+                nouvelleLigne.Prix = Math.Round(prix, 2);
+
+                bDB56Projet1BKGDataSet.Soin.AddSoinRow(nouvelleLigne);
+                soinBindingSource.MoveLast();
+            }
+            else if (enModeModification)
+            {
+                if (soinBindingSource.Current is DataRowView currentRow)
+                {
+                    currentRow["Description"] = description;
+                    currentRow["NoTypeSoin"] = noTypeSoinComboBox.SelectedValue;
+                    currentRow["Prix"] = Math.Round(prix, 2);
+                    currentRow.EndEdit();
+                }
+            }
 
             if (SauvegarderDonnees())
             {
                 enModeAjout = false;
+                enModeModification = false;
                 GererEtatControles(false);
             }
         }
@@ -150,60 +180,10 @@ namespace Projet1___VS
             bDB56Projet1BKGDataSet.Soin.RejectChanges();
 
             enModeAjout = false;
+            enModeModification = false;
+
+            soinBindingSource_CurrentChanged(null, null);
             GererEtatControles(false);
-        }
-
-        private void btnFermer_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private bool SauvegarderDonnees()
-        {
-            try
-            {
-                this.Validate();
-                this.soinBindingSource.EndEdit();
-
-                this.tableAdapterManager.UpdateAll(this.bDB56Projet1BKGDataSet);
-
-                MessageBox.Show("Soin enregistré avec succès.",
-                    "Succès", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return true;
-            }
-            catch (DBConcurrencyException)
-            {
-                MessageBox.Show("Conflit d'accès détecté : ce soin a été modifié ou supprimé par un autre utilisateur. Les données vont être rechargées.",
-                    "Conflit d'accès", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
-                this.soinTableAdapter.Fill(this.bDB56Projet1BKGDataSet.Soin);
-                return false;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Erreur lors de la sauvegarde : " + ex.Message,
-                    "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return false;
-            }
-        }
-
-        private void GestionSoin_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            if (btnEnregistrer.Enabled)
-            {
-                DialogResult reponse = MessageBox.Show(
-                    "Une opération est en cours. Voulez-vous annuler les modifications et fermer ?",
-                    "Quitter", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-
-                if (reponse == DialogResult.No)
-                {
-                    e.Cancel = true;
-                    return;
-                }
-
-                soinBindingSource.CancelEdit();
-                bDB56Projet1BKGDataSet.Soin.RejectChanges();
-            }
         }
 
         private void btnSupprimer_Click(object sender, EventArgs e)
@@ -215,44 +195,81 @@ namespace Projet1___VS
             string description = currentRow["Description"].ToString();
 
             bool estOffertParAssistant = bDB56Projet1BKGDataSet.AssistantSoin.Any(a =>
-                a.RowState != DataRowState.Deleted &&
-                a.NoSoin == noSoin);
+                a.RowState != DataRowState.Deleted && a.NoSoin == noSoin);
 
             if (estOffertParAssistant)
             {
-                MessageBox.Show(
-                    $"Impossible de supprimer le soin '{description}' car il est actuellement offert par un ou plusieurs assistants.",
-                    "Suppression refusée",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Warning);
+                MessageBox.Show($"Impossible de supprimer le soin '{description}' car il est actuellement offert par un ou plusieurs assistants.",
+                    "Suppression refusée", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
             bool estPlanifie = bDB56Projet1BKGDataSet.PlanifSoin.Any(p =>
-                p.RowState != DataRowState.Deleted &&
-                p.NoSoin == noSoin);
+                p.RowState != DataRowState.Deleted && p.NoSoin == noSoin);
 
             if (estPlanifie)
             {
-                MessageBox.Show(
-                    $"Impossible de supprimer le soin '{description}' car des rendez-vous de soins sont déjà planifiés.",
-                    "Suppression refusée",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Warning);
+                MessageBox.Show($"Impossible de supprimer le soin '{description}' car des rendez-vous de soins sont déjà planifiés.",
+                    "Suppression refusée", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
             DialogResult confirmation = MessageBox.Show(
                 $"Voulez-vous vraiment supprimer le soin '{description}' (No {noSoin}) ?",
-                "Confirmation de suppression",
-                MessageBoxButtons.YesNo,
-                MessageBoxIcon.Question);
+                "Confirmation de suppression", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
             if (confirmation == DialogResult.Yes)
             {
                 soinBindingSource.RemoveCurrent();
-
                 SauvegarderDonnees();
+            }
+        }
+
+        private bool SauvegarderDonnees()
+        {
+            try
+            {
+                this.Validate();
+                this.soinBindingSource.EndEdit();
+                this.tableAdapterManager.UpdateAll(this.bDB56Projet1BKGDataSet);
+
+                MessageBox.Show("Soin enregistré avec succès.", "Succès", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return true;
+            }
+            catch (DBConcurrencyException)
+            {
+                MessageBox.Show("Conflit d'accès détecté : ce soin a été modifié ou supprimé par un autre utilisateur.",
+                    "Conflit d'accès", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                this.soinTableAdapter.Fill(this.bDB56Projet1BKGDataSet.Soin);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erreur lors de la sauvegarde : " + ex.Message, "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+        }
+
+        private void btnFermer_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void GestionSoin_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (enModeAjout || enModeModification)
+            {
+                DialogResult reponse = MessageBox.Show(
+                    "Une opération est en cours. Voulez-vous annuler les modifications et fermer ?",
+                    "Quitter", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (reponse == DialogResult.No)
+                {
+                    e.Cancel = true;
+                    return;
+                }
+                bDB56Projet1BKGDataSet.Soin.RejectChanges();
             }
         }
 
@@ -265,7 +282,5 @@ namespace Projet1___VS
         {
             soinBindingSource.MoveNext();
         }
-
-        
     }
 }
