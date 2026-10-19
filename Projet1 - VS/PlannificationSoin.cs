@@ -249,5 +249,15 @@ namespace Projet1___VS
                 return false;
             }
         }
+
+        private void btnTypePrecedent_Click(object sender, EventArgs e)
+        {
+            planifSoinBindingSource.MovePrevious();
+        }
+
+        private void btnTypeSuivant_Click(object sender, EventArgs e)
+        {
+            planifSoinBindingSource.MoveNext();
+        }
     }
 }

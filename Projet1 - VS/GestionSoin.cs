@@ -255,5 +255,17 @@ namespace Projet1___VS
                 SauvegarderDonnees();
             }
         }
+
+        private void btnTypePrecedent_Click(object sender, EventArgs e)
+        {
+            soinBindingSource.MovePrevious();
+        }
+
+        private void btnTypeSuivant_Click(object sender, EventArgs e)
+        {
+            soinBindingSource.MoveNext();
+        }
+
+        
     }
 }

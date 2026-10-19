@@ -56,6 +56,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.planifSoinBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.planifSoinTableAdapter = new Projet1___VS.BDB56Projet1BKGDataSetTableAdapters.PlanifSoinTableAdapter();
+            this.soinDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnTypePrecedent = new System.Windows.Forms.Button();
+            this.btnTypeSuivant = new System.Windows.Forms.Button();
             noSoinLabel = new System.Windows.Forms.Label();
             descriptionLabel = new System.Windows.Forms.Label();
             dureeLabel = new System.Windows.Forms.Label();
@@ -66,6 +74,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.typeSoinBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.assistantSoinBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.planifSoinBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.soinDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // noSoinLabel
@@ -214,7 +223,7 @@
             // btnFermer
             // 
             this.btnFermer.CausesValidation = false;
-            this.btnFermer.Location = new System.Drawing.Point(338, 186);
+            this.btnFermer.Location = new System.Drawing.Point(474, 182);
             this.btnFermer.Name = "btnFermer";
             this.btnFermer.Size = new System.Drawing.Size(81, 29);
             this.btnFermer.TabIndex = 24;
@@ -225,7 +234,7 @@
             // btnAnnuler
             // 
             this.btnAnnuler.CausesValidation = false;
-            this.btnAnnuler.Location = new System.Drawing.Point(251, 186);
+            this.btnAnnuler.Location = new System.Drawing.Point(387, 182);
             this.btnAnnuler.Name = "btnAnnuler";
             this.btnAnnuler.Size = new System.Drawing.Size(81, 30);
             this.btnAnnuler.TabIndex = 23;
@@ -235,7 +244,7 @@
             // 
             // btnEnregistrer
             // 
-            this.btnEnregistrer.Location = new System.Drawing.Point(338, 148);
+            this.btnEnregistrer.Location = new System.Drawing.Point(474, 144);
             this.btnEnregistrer.Name = "btnEnregistrer";
             this.btnEnregistrer.Size = new System.Drawing.Size(81, 30);
             this.btnEnregistrer.TabIndex = 22;
@@ -245,7 +254,7 @@
             // 
             // btnSupprimer
             // 
-            this.btnSupprimer.Location = new System.Drawing.Point(251, 147);
+            this.btnSupprimer.Location = new System.Drawing.Point(387, 143);
             this.btnSupprimer.Name = "btnSupprimer";
             this.btnSupprimer.Size = new System.Drawing.Size(81, 33);
             this.btnSupprimer.TabIndex = 21;
@@ -255,7 +264,7 @@
             // 
             // btnModifier
             // 
-            this.btnModifier.Location = new System.Drawing.Point(338, 109);
+            this.btnModifier.Location = new System.Drawing.Point(474, 105);
             this.btnModifier.Name = "btnModifier";
             this.btnModifier.Size = new System.Drawing.Size(81, 32);
             this.btnModifier.TabIndex = 20;
@@ -265,7 +274,7 @@
             // 
             // btnAjouter
             // 
-            this.btnAjouter.Location = new System.Drawing.Point(251, 109);
+            this.btnAjouter.Location = new System.Drawing.Point(387, 105);
             this.btnAjouter.Name = "btnAjouter";
             this.btnAjouter.Size = new System.Drawing.Size(81, 32);
             this.btnAjouter.TabIndex = 19;
@@ -277,7 +286,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Baskervville", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(109, 21);
+            this.label1.Location = new System.Drawing.Point(197, 23);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(228, 40);
             this.label1.TabIndex = 25;
@@ -292,11 +301,85 @@
             // 
             this.planifSoinTableAdapter.ClearBeforeFill = true;
             // 
+            // soinDataGridView
+            // 
+            this.soinDataGridView.AutoGenerateColumns = false;
+            this.soinDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.soinDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5});
+            this.soinDataGridView.DataSource = this.soinBindingSource;
+            this.soinDataGridView.Location = new System.Drawing.Point(12, 226);
+            this.soinDataGridView.Name = "soinDataGridView";
+            this.soinDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.soinDataGridView.Size = new System.Drawing.Size(543, 220);
+            this.soinDataGridView.TabIndex = 25;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "NoSoin";
+            this.dataGridViewTextBoxColumn1.HeaderText = "NoSoin";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Description";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Description";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Duree";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Duree";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "NoTypeSoin";
+            this.dataGridViewTextBoxColumn4.HeaderText = "NoTypeSoin";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "Prix";
+            this.dataGridViewTextBoxColumn5.HeaderText = "Prix";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            // 
+            // btnTypePrecedent
+            // 
+            this.btnTypePrecedent.Font = new System.Drawing.Font("Microsoft Tai Le", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTypePrecedent.Location = new System.Drawing.Point(16, 477);
+            this.btnTypePrecedent.Margin = new System.Windows.Forms.Padding(2);
+            this.btnTypePrecedent.Name = "btnTypePrecedent";
+            this.btnTypePrecedent.Size = new System.Drawing.Size(80, 42);
+            this.btnTypePrecedent.TabIndex = 26;
+            this.btnTypePrecedent.Text = "<--";
+            this.btnTypePrecedent.UseVisualStyleBackColor = true;
+            this.btnTypePrecedent.Click += new System.EventHandler(this.btnTypePrecedent_Click);
+            // 
+            // btnTypeSuivant
+            // 
+            this.btnTypeSuivant.Font = new System.Drawing.Font("Microsoft Tai Le", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTypeSuivant.Location = new System.Drawing.Point(475, 477);
+            this.btnTypeSuivant.Margin = new System.Windows.Forms.Padding(2);
+            this.btnTypeSuivant.Name = "btnTypeSuivant";
+            this.btnTypeSuivant.Size = new System.Drawing.Size(80, 42);
+            this.btnTypeSuivant.TabIndex = 27;
+            this.btnTypeSuivant.Text = "-->";
+            this.btnTypeSuivant.UseVisualStyleBackColor = true;
+            this.btnTypeSuivant.Click += new System.EventHandler(this.btnTypeSuivant_Click);
+            // 
             // GestionSoin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(498, 233);
+            this.ClientSize = new System.Drawing.Size(585, 539);
+            this.Controls.Add(this.btnTypeSuivant);
+            this.Controls.Add(this.btnTypePrecedent);
+            this.Controls.Add(this.soinDataGridView);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnFermer);
             this.Controls.Add(this.btnAnnuler);
@@ -322,6 +405,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.typeSoinBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.assistantSoinBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.planifSoinBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.soinDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -351,5 +435,13 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.BindingSource planifSoinBindingSource;
         private BDB56Projet1BKGDataSetTableAdapters.PlanifSoinTableAdapter planifSoinTableAdapter;
+        private System.Windows.Forms.DataGridView soinDataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.Button btnTypePrecedent;
+        private System.Windows.Forms.Button btnTypeSuivant;
     }
 }
