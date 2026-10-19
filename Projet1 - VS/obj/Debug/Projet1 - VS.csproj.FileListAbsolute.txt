@@ -93,3 +93,4 @@ C:\wamp64\www\project1Base3\Projet1 - VS\obj\Debug\Projet1___VS.frmMenuAdmin.res
 C:\wamp64\www\project1Base3\Projet1 - VS\obj\Debug\Projet1___VS.frmMenuPrep.resources
 C:\wamp64\www\project1Base3\Projet1 - VS\obj\Debug\Projet1___VS.frmVisualisation.resources
 C:\wamp64\www\project1Base3\Projet1 - VS\obj\Debug\Projet1___VS.AjouterReservation.resources
+C:\wamp64\www\project1Base3\Projet1 - VS\obj\Debug\Projet1___VS.GestionSoin.resources
