@@ -55,6 +55,7 @@
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnSupprimer = new System.Windows.Forms.Button();
             this.btnAjouter = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.bDB56Projet1BKGDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.reservationChambreBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.reservationChambreBindingNavigator)).BeginInit();
@@ -120,7 +121,7 @@
             this.reservationChambreBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.reservationChambreBindingNavigator.Name = "reservationChambreBindingNavigator";
             this.reservationChambreBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.reservationChambreBindingNavigator.Size = new System.Drawing.Size(1365, 50);
+            this.reservationChambreBindingNavigator.Size = new System.Drawing.Size(1365, 42);
             this.reservationChambreBindingNavigator.TabIndex = 0;
             this.reservationChambreBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -130,7 +131,7 @@
             this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
             this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(46, 44);
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(46, 36);
             this.bindingNavigatorAddNewItem.Text = "Add new";
             // 
             // bindingNavigatorCountItem
@@ -221,6 +222,8 @@
             // 
             // reservationChambreDataGridView
             // 
+            this.reservationChambreDataGridView.AllowUserToAddRows = false;
+            this.reservationChambreDataGridView.AllowUserToDeleteRows = false;
             this.reservationChambreDataGridView.AutoGenerateColumns = false;
             this.reservationChambreDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.reservationChambreDataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
@@ -232,11 +235,11 @@
             this.dataGridViewTextBoxColumn4,
             this.dataGridViewTextBoxColumn5});
             this.reservationChambreDataGridView.DataSource = this.reservationChambreBindingSource;
-            this.reservationChambreDataGridView.Location = new System.Drawing.Point(12, 59);
+            this.reservationChambreDataGridView.Location = new System.Drawing.Point(12, 126);
             this.reservationChambreDataGridView.Name = "reservationChambreDataGridView";
             this.reservationChambreDataGridView.RowHeadersWidth = 82;
             this.reservationChambreDataGridView.RowTemplate.Height = 33;
-            this.reservationChambreDataGridView.Size = new System.Drawing.Size(1085, 379);
+            this.reservationChambreDataGridView.Size = new System.Drawing.Size(1318, 379);
             this.reservationChambreDataGridView.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
@@ -276,7 +279,7 @@
             // 
             // btnSupprimer
             // 
-            this.btnSupprimer.Location = new System.Drawing.Point(832, 497);
+            this.btnSupprimer.Location = new System.Drawing.Point(369, 550);
             this.btnSupprimer.Name = "btnSupprimer";
             this.btnSupprimer.Size = new System.Drawing.Size(265, 117);
             this.btnSupprimer.TabIndex = 2;
@@ -286,19 +289,31 @@
             // 
             // btnAjouter
             // 
-            this.btnAjouter.Location = new System.Drawing.Point(12, 497);
+            this.btnAjouter.Location = new System.Drawing.Point(12, 550);
             this.btnAjouter.Name = "btnAjouter";
-            this.btnAjouter.Size = new System.Drawing.Size(268, 132);
+            this.btnAjouter.Size = new System.Drawing.Size(265, 117);
             this.btnAjouter.TabIndex = 3;
             this.btnAjouter.Text = "Ajouter";
             this.btnAjouter.UseVisualStyleBackColor = true;
             this.btnAjouter.Click += new System.EventHandler(this.btnAjouter_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(13, 62);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(621, 61);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Reservation de chambre";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // ReservationChambre
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1365, 746);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnAjouter);
             this.Controls.Add(this.btnSupprimer);
             this.Controls.Add(this.reservationChambreDataGridView);
@@ -344,5 +359,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.Button btnSupprimer;
         private System.Windows.Forms.Button btnAjouter;
+        private System.Windows.Forms.Label label1;
     }
 }

@@ -48,13 +48,15 @@
             // 
             this.cbClient.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbClient.FormattingEnabled = true;
-            this.cbClient.Location = new System.Drawing.Point(48, 124);
+            this.cbClient.Location = new System.Drawing.Point(9, 126);
             this.cbClient.Name = "cbClient";
             this.cbClient.Size = new System.Drawing.Size(150, 33);
             this.cbClient.TabIndex = 0;
             // 
             // dgChambre
             // 
+            this.dgChambre.AllowUserToAddRows = false;
+            this.dgChambre.AllowUserToDeleteRows = false;
             this.dgChambre.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgChambre.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgChambre.ColumnHeadersHeight = 46;
@@ -71,7 +73,7 @@
             // dtpDebut
             // 
             this.dtpDebut.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpDebut.Location = new System.Drawing.Point(324, 122);
+            this.dtpDebut.Location = new System.Drawing.Point(284, 128);
             this.dtpDebut.Name = "dtpDebut";
             this.dtpDebut.Size = new System.Drawing.Size(200, 31);
             this.dtpDebut.TabIndex = 2;
@@ -79,14 +81,14 @@
             // dtpFin
             // 
             this.dtpFin.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFin.Location = new System.Drawing.Point(634, 122);
+            this.dtpFin.Location = new System.Drawing.Point(613, 128);
             this.dtpFin.Name = "dtpFin";
             this.dtpFin.Size = new System.Drawing.Size(200, 31);
             this.dtpFin.TabIndex = 3;
             // 
             // nudPersonnes
             // 
-            this.nudPersonnes.Location = new System.Drawing.Point(935, 126);
+            this.nudPersonnes.Location = new System.Drawing.Point(910, 126);
             this.nudPersonnes.Maximum = new decimal(new int[] {
             6,
             0,
@@ -108,9 +110,9 @@
             // 
             // btnOK
             // 
-            this.btnOK.Location = new System.Drawing.Point(22, 493);
+            this.btnOK.Location = new System.Drawing.Point(709, 490);
             this.btnOK.Name = "btnOK";
-            this.btnOK.Size = new System.Drawing.Size(127, 114);
+            this.btnOK.Size = new System.Drawing.Size(149, 114);
             this.btnOK.TabIndex = 5;
             this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = true;
@@ -119,7 +121,7 @@
             // btnAnnuler
             // 
             this.btnAnnuler.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnAnnuler.Location = new System.Drawing.Point(818, 496);
+            this.btnAnnuler.Location = new System.Drawing.Point(943, 493);
             this.btnAnnuler.Name = "btnAnnuler";
             this.btnAnnuler.Size = new System.Drawing.Size(149, 111);
             this.btnAnnuler.TabIndex = 6;
@@ -139,7 +141,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(331, 75);
+            this.label2.Location = new System.Drawing.Point(279, 75);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(153, 25);
             this.label2.TabIndex = 8;
@@ -148,20 +150,20 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(629, 75);
+            this.label3.Location = new System.Drawing.Point(608, 75);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(119, 25);
+            this.label3.Size = new System.Drawing.Size(122, 25);
             this.label3.TabIndex = 9;
-            this.label3.Text = "date de fin:";
+            this.label3.Text = "Date de fin:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(918, 75);
+            this.label4.Location = new System.Drawing.Point(905, 75);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(224, 25);
+            this.label4.Size = new System.Drawing.Size(230, 25);
             this.label4.TabIndex = 10;
-            this.label4.Text = "Nombre de personnes";
+            this.label4.Text = "Nombre de personnes:";
             // 
             // label5
             // 
